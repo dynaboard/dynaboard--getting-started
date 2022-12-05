@@ -1,0 +1,21 @@
+runtimeVersion: 0.2.14
+type: com.dynaboard/project
+name: Example Template
+description: Optional description of your template
+nodes:
+  ROOT_NODE:
+    id: ROOT_NODE
+    type: ROOT_NODE
+    name: ROOT_NODE
+    parentNodeID: ROOT_NODE
+    parentSlot: ROOT_NODE
+    slots:
+      pages:
+        - nodeID: bb071577-c4ea-4614-98e6-9ad31c233cbe
+          orderKey: a0
+  bb071577-c4ea-4614-98e6-9ad31c233cbe:
+    id: bb071577-c4ea-4614-98e6-9ad31c233cbe
+    type: PAGE
+    name: index
+    parentNodeID: ROOT_NODE
+    parentSlot: pages
