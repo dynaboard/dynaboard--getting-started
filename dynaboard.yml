@@ -1,21 +1,4516 @@
-runtimeVersion: 0.2.14
+runtimeVersion: 0.3.4
+name: Getting Started
+description: 'Getting Started with Dynaboard'
 type: com.dynaboard/project
-name: Example Template
-description: Optional description of your template
 nodes:
   ROOT_NODE:
-    id: ROOT_NODE
     type: ROOT_NODE
     name: ROOT_NODE
-    parentNodeID: ROOT_NODE
-    parentSlot: ROOT_NODE
     slots:
       pages:
-        - nodeID: bb071577-c4ea-4614-98e6-9ad31c233cbe
+        - nodeID: 5aeb3de9-5348-4253-9b66-8f1c9d57b6a6
           orderKey: a0
-  bb071577-c4ea-4614-98e6-9ad31c233cbe:
-    id: bb071577-c4ea-4614-98e6-9ad31c233cbe
+        - nodeID: 231ad0b3-1f73-45d7-91a2-72f446597c62
+          orderKey: a1
+        - nodeID: 93ea36ca-7d9b-440a-b10f-0b42140a14f4
+          orderKey: a1V
+        - nodeID: a58f0ad0-bc5d-417d-aace-8d94dffc2c7b
+          orderKey: a2
+        - nodeID: 961d6820-14c8-47dc-8a92-20fd69482e08
+          orderKey: a4
+        - nodeID: 806566f5-d4f7-492e-a59e-2893112ecbc8
+          orderKey: a5
+        - nodeID: e2d3c9e7-1e2d-4e00-9243-3d1916824812
+          orderKey: a6
+        - nodeID: 8fab4b0a-2de0-4e7f-97d4-c435700d8c90
+          orderKey: a7
+      resources:
+        - nodeID: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+          orderKey: a0
+        - nodeID: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
+          orderKey: a1
+        - nodeID: c038db71-e096-4432-bf8d-3e8bad052f6a
+          orderKey: a2
+        - nodeID: 1f81be44-bd5c-4161-a6e9-bebf92ca8a46
+          orderKey: a3
+  019ce151-e9ba-4201-89a9-2a83519831b7:
+    type: TEXT
+    name: textStepOtherResourcesBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '5'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        We also include resources for things like taking actions in the user's
+        browser. E.g. all of the buttons for changing pages have been powered by
+        functions attached to a browser resource.
+      renderMode: markdown
+      verticalAlign: top
+  031f6bed-61df-4ae0-aae3-fa147b8f459f:
+    type: TEXT
+    name: textStepAccessAndAuthHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 3) Access & Authentication
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  06968d9a-f186-46a8-a0d7-ae89887cd1a9:
+    type: TEXT
+    name: textStepOverviewHeader
+    properties:
+      width: '4'
+      height: '2'
+      value: Overview
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  07144acc-876b-43c9-b6f1-20d9b353151f:
+    type: TEXT
+    name: textStepHotkeysHeader
+    properties:
+      width: '4'
+      height: '2'
+      value: 3) Hotkeys
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  07960dcc-19e6-4b74-9010-9b32823a41ce:
+    type: CONTAINER
+    name: stepInteractingWithComponents
+    slots:
+      canvas:
+        - nodeID: 67928af2-3260-404f-a10d-5b26c912b771
+          orderKey: Zy
+        - nodeID: 3cb35b3e-3938-4c56-9d35-7eb0a72d5056
+          orderKey: ZyV
+        - nodeID: 524760b9-0293-4d59-88e5-6eca634c481d
+          orderKey: Zz
+        - nodeID: 7bec9869-c0f8-4f06-acd3-ddc0eaf21ece
+          orderKey: a1V
+    properties:
+      top: '47'
+      left: '3'
+      width: '8'
+      height: '28'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
+    type: TEXT
+    name: textHeader
+    properties:
+      top: '10'
+      left: '4'
+      width: '6'
+      height: '2'
+      value: Welcome to Dynaboard!
+      fontSize: 3xl
+      textAlign: center
+  0b24d032-8017-42bc-a9e4-f44897612fa1:
+    type: TEXT
+    name: textStepOtherResourcesHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 4) Other Resources
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  0ee61185-9f1a-4ea3-9b95-b8ffbc219204:
+    type: FUNCTION
+    name: buttonIncorrectHover
+    properties:
+      action:
+        code: buttonStepSelectingComponents.text = "Select don't Click!"
+        targetNode:
+          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
+        actionType: CALL_CLIENT_FUNCTION
+  0f205c05-28de-4e01-abd2-dc54ef32d44e:
+    type: BUTTON
+    name: buttonLetsDeploy
+    properties:
+      top: '9'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: Let's deploy!
+      backgroundColor: purple.500
+      onClick:
+        function:
+          ref: 74519676-1700-4342-b844-c744042131e1
+  11140a22-70f8-4b16-8c04-71a7bf1caa0a:
+    type: INLINE_REACT
+    name: iconStepDeployApp
+    properties:
+      top: '4'
+      left: '11'
+      width: '2'
+      height: '5'
+      styles: |-
+        .size {
+          width: 64px;
+          height: 64px;
+        }
+      componentSource: |-
+        return function Component() {
+          return <div className="size"><svg viewBox="0 0 16 16" focusable="false" class="chakra-icon" aria-hidden="true"><g fill="none" fill-rule="evenodd"><path fill="rgb(105, 103, 226)" d="M2.31651 7.08164L3.9256 7.76843C3.74417 8.2399 3.59945 8.72546 3.49281 9.22054L3.43177 9.50611L5.73859 11.882L6.01602 11.8206C6.49699 11.7109 6.96872 11.5619 7.42675 11.3752L8.09397 13.0314C8.1005 13.0479 8.1109 13.0623 8.12423 13.0736C8.13755 13.0849 8.15338 13.0925 8.1703 13.0959C8.18722 13.0993 8.20469 13.0983 8.22115 13.0931C8.2376 13.0878 8.25253 13.0784 8.26459 13.0657L9.27304 12.0277C9.43761 11.8583 9.56585 11.6553 9.64948 11.4317C9.7331 11.2081 9.77026 10.969 9.75854 10.7298L9.72247 10.063C11.5896 8.6437 13.4789 6.15497 13.9935 1.81149C14.0081 1.70259 13.9981 1.59169 13.9642 1.48744C13.9303 1.38318 13.8735 1.28839 13.7982 1.21045C13.7228 1.13251 13.6311 1.07353 13.53 1.03809C13.4289 1.00266 13.3212 0.991745 13.2153 1.00619C8.997 1.5402 6.57782 3.48634 5.19899 5.4025L4.55258 5.36824C4.32065 5.35525 4.08865 5.39236 3.87149 5.4772C3.65433 5.56204 3.45682 5.69272 3.29167 5.86084L2.28322 6.89888C2.26924 6.91111 2.25866 6.92692 2.25254 6.94471C2.24641 6.9625 2.24497 6.98165 2.24835 7.0002C2.25173 7.01876 2.25981 7.03606 2.27178 7.05036C2.28375 7.06466 2.29918 7.07545 2.31651 7.08164ZM8.78615 4.55151C8.96092 4.37224 9.18338 4.25029 9.42543 4.20107C9.66748 4.15185 9.91828 4.17756 10.1461 4.27495C10.374 4.37234 10.5687 4.53705 10.7057 4.74828C10.8427 4.95951 10.9158 5.20779 10.9158 5.46176C10.9158 5.71573 10.8427 5.964 10.7057 6.17523C10.5687 6.38646 10.374 6.55117 10.1461 6.64857C9.91828 6.74596 9.66748 6.77167 9.42543 6.72245C9.18338 6.67322 8.96092 6.55128 8.78615 6.37201C8.66976 6.25262 8.57742 6.11076 8.51441 5.95456C8.4514 5.79836 8.41896 5.63089 8.41896 5.46176C8.41896 5.29263 8.4514 5.12516 8.51441 4.96896C8.57742 4.81276 8.66976 4.6709 8.78615 4.55151ZM2.0155 12.0719C1.74848 11.9755 1.46173 11.9519 1.18321 12.0034C1.15846 12.0089 1.13275 12.0079 1.10849 12.0004C1.08423 11.9929 1.06221 11.9792 1.0445 11.9606C1.02253 11.938 1.00782 11.9091 1.00236 11.8777C0.996903 11.8463 1.00096 11.8139 1.01398 11.7849C1.30944 11.131 2.09318 9.81595 3.51223 10.8783C3.51964 10.8851 3.52557 10.8935 3.52963 10.9028C3.53369 10.9122 3.53579 10.9223 3.53579 10.9325C3.53579 10.9428 3.53369 10.9529 3.52963 10.9622C3.52557 10.9716 3.51964 10.9799 3.51223 10.9868C3.32224 11.1408 3.17014 11.3386 3.0682 11.5644C2.96627 11.7901 2.91737 12.0373 2.92546 12.2861C2.9265 12.3153 2.93823 12.343 2.9583 12.3637C2.97837 12.3843 3.0053 12.3964 3.03366 12.3975C3.27432 12.4074 3.51389 12.3592 3.73313 12.2565C3.95236 12.1538 4.14514 11.9996 4.29596 11.8064C4.3026 11.798 4.31096 11.7913 4.32043 11.7866C4.32991 11.782 4.34027 11.7796 4.35076 11.7796C4.36124 11.7796 4.3716 11.782 4.38108 11.7866C4.39055 11.7913 4.39891 11.798 4.40555 11.8064C4.60252 12.0477 5.1449 12.8358 4.54426 13.5969C4.28205 13.9213 3.90634 14.1264 3.49835 14.168C2.91575 14.2323 1.83933 14.4279 1.3996 14.9447C1.38195 14.9663 1.35896 14.9825 1.33307 14.9916C1.30717 15.0007 1.27936 15.0025 1.25259 14.9966C1.22583 14.9907 1.2011 14.9775 1.18107 14.9583C1.16103 14.9391 1.14643 14.9147 1.13882 14.8876C0.983461 14.3422 0.742098 13.1228 2.0155 12.0719Z"></path></g></svg></div>
+        }
+  126dbaab-022a-4cda-aa92-7e6069488a54:
+    type: TEXT
+    name: textStepFunctionTypesBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '7'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Dynaboard functions can run on either the server (in this case
+        Dynaboard’s servers) or the client (the user’s browser). Unless
+        specified, most functions that make API or database calls run on the
+        server.
+
+        Clicking on the button below will make an API call to a random data REST
+        API using the `restApiExample` function found in the pages function
+        panel at the bottom left of the screen.
+      renderMode: markdown
+      verticalAlign: top
+  1ab1fb38-1f61-407d-8255-1ac682beee4b:
+    type: TEXT
+    name: textStepLookAtAuthBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '4'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Dynaboard applications can be publicly accessible, completely private,
+        or anything in between. We’ll take a quick look at what’s possible on
+        the next page.
+      renderMode: markdown
+      verticalAlign: top
+  1b48819d-8cbc-4859-ad53-689584fc9a59:
+    type: CONTAINER
+    name: stepFunctionTypes
+    slots:
+      canvas:
+        - nodeID: a9482ac7-ba31-4089-8182-46d043e80fd9
+          orderKey: Zu
+        - nodeID: 126dbaab-022a-4cda-aa92-7e6069488a54
+          orderKey: Zv
+        - nodeID: 7a34934a-47de-4bf0-a1a3-ce28bb912778
+          orderKey: ZvV
+        - nodeID: 99cb35af-7af9-490f-bdaf-3fd5d66600e6
+          orderKey: Zvl
+        - nodeID: 2b9d1cb6-3a9d-43d7-ae16-88d60e443fd0
+          orderKey: Zw
+    properties:
+      top: '22'
+      left: '3'
+      width: '8'
+      height: '30'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  1c5460ce-7123-4c4e-a6cd-c9853dedcb0e:
+    type: TEXT
+    name: textStepCustomCodeHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 2) Custom Code
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  1debd6f8-b87a-4532-b84e-dd2211949297:
+    type: CONTAINER
+    name: stepComponentTypes
+    slots:
+      canvas:
+        - nodeID: 42f25b38-10d0-461e-b950-9bdb93b74a6a
+          orderKey: Zz
+        - nodeID: c71077df-99ec-4ceb-8fe9-740ef703feae
+          orderKey: a0
+    properties:
+      top: '22'
+      left: '3'
+      width: '8'
+      height: '17'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  1e33b59d-d7b9-4230-bf59-6bd887aef34c:
+    type: FUNCTION
+    name: exampleInterpolationFunction
+    properties:
+      action:
+        message: I'm a {{inputStepBasicInterpolation.value || "Basic"}} toast!
+        variant: primary
+        dismissButton: Yum!
+        duration: 5000
+        path: ''
+        target: _self
+        targetNode:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+        actionType: POP_TOAST
+  1f32aa32-e1be-4abc-ba78-50ac72fdf597:
+    type: TEXT
+    name: textStepDeployAppHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 3) Deploying an Application
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  1f81be44-bd5c-4161-a6e9-bebf92ca8a46:
+    type: RESOURCE/ONE_TIME_PIN_AUTH
+    name: oneTimePinAuth1
+  21523aaf-c7b5-46d2-8cd5-a140392b2be1:
+    type: CONTAINER
+    name: stepAPIAndDB
+    slots:
+      canvas:
+        - nodeID: af585dea-6b97-4de3-a6fb-beaa16ab088f
+          orderKey: Zz
+        - nodeID: e30418dc-f865-4cd7-add9-8be99dd00787
+          orderKey: a0
+    properties:
+      top: '29'
+      left: '3'
+      width: '8'
+      height: '20'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  231ad0b3-1f73-45d7-91a2-72f446597c62:
+    type: PAGE
+    name: interactAndSelect
+    slots:
+      canvas:
+        - nodeID: 99ea5ef6-c815-4a73-aad9-16886214aa11
+          orderKey: Zu
+        - nodeID: 50d5738c-31e9-4fe8-a00d-3cf1cc941f4d
+          orderKey: ZuV
+        - nodeID: 5003b15c-a4a4-44b3-a2bc-c76ef5cc432c
+          orderKey: ZwV
+        - nodeID: 07960dcc-19e6-4b74-9010-9b32823a41ce
+          orderKey: Zx
+        - nodeID: 905787e7-415d-48e3-9a8d-ade548bf72ee
+          orderKey: ZxV
+        - nodeID: eabd6207-2bbe-44bd-a312-9bdf2f0bc5c1
+          orderKey: Zy
+      functions:
+        - nodeID: 0ee61185-9f1a-4ea3-9b95-b8ffbc219204
+          orderKey: a0
+        - nodeID: 518557e3-7065-4fa3-bb80-671de06d1bab
+          orderKey: a1
+        - nodeID: 8ad8f28e-5eed-499f-aac2-2194f052755d
+          orderKey: a2
+    properties:
+      minHeight: 1896px
+  256cac47-94fe-4a58-897d-ad4a2c2b09ec:
+    type: TEXT
+    name: textStepFirstComponentHeader
+    properties:
+      width: '6'
+      height: '2'
+      value: 2) Add Your First Component
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  284b9f04-b755-400e-8f44-d3d0b2d583b4:
+    type: TEXT
+    name: textStepLookAtResourcesBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '4'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Unlike interpolation, functions have to be attached to a specific
+        resource before they can be run. We’ll look at the different types of
+        available resources on the next page.
+      renderMode: markdown
+      verticalAlign: top
+  29613932-d73b-45f3-9d5e-9d3ac10bfecd:
+    type: TEXT
+    name: textStepDeployAppBody
+    properties:
+      top: '4'
+      width: '10'
+      height: '5'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        When you’re ready, deploying is easy! Deploy your app by clicking on the
+        “rocket ship” icon in the top right corner of the screen.
+      renderMode: markdown
+      verticalAlign: top
+  29bd4661-e2aa-40e0-bb02-df08e21ad388:
+    type: TEXT
+    name: textSubheader
+    properties:
+      top: '13'
+      left: '3'
+      width: '8'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        h2, h3 {
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+      value: >-
+        This getting started guide is here to help you learn the in's and out's
+        of Dynaboard in just a few minutes. Once you've learned the basics we
+        have example apps, boilerplates, and additional documentation
+        [additional documentation](https://dynaboard.com/docs) to help you start
+        building!
+      renderMode: markdown
+      textAlign: center
+  29ec7a77-959e-4ed7-811d-911d2cc9e604:
+    type: TEXT
+    name: textHeader
+    properties:
+      top: '10'
+      left: '3'
+      width: '8'
+      height: '2'
+      value: Authentication Overview
+      fontSize: 3xl
+      textAlign: center
+  2b9d1cb6-3a9d-43d7-ae16-88d60e443fd0:
+    type: BUTTON
+    name: buttonClientFunction
+    properties:
+      top: '25'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: Call A Client Function
+      backgroundColor: purple.500
+      onClick:
+        function:
+          ref: c504c7a4-322c-4044-8b0d-4a2c3d0825c3
+  2fae4be0-4bca-43c0-8e66-cb4d6f61204d:
+    type: CONTAINER
+    name: stepOtherResources
+    slots:
+      canvas:
+        - nodeID: 0b24d032-8017-42bc-a9e4-f44897612fa1
+          orderKey: Zz
+        - nodeID: 019ce151-e9ba-4201-89a9-2a83519831b7
+          orderKey: a0
+    properties:
+      top: '80'
+      left: '3'
+      width: '8'
+      height: '11'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  300b4537-1bb5-40ab-a16c-a2ce137ee97a:
+    type: CONTAINER
+    name: stepLookAtAuth
+    slots:
+      canvas:
+        - nodeID: f198ba12-ffde-4aa6-a5c6-5d15934b7fab
+          orderKey: Zz
+        - nodeID: 1ab1fb38-1f61-407d-8255-1ac682beee4b
+          orderKey: ZzG
+        - nodeID: 4d1c2620-2f2c-4a02-9f82-6c812390a0e7
+          orderKey: ZzV
+    properties:
+      top: '92'
+      left: '3'
+      width: '8'
+      height: '13'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  326d90c8-eb46-4b88-943d-a9545ac28c63:
+    type: CHART
+    name: chartAdvancedJS
+    properties:
+      top: '10'
+      width: '12'
+      height: '19'
+      title: Number of Accounts by Type
+      isInteractive: 'false'
+      dataSource: |-
+        {{
+          Object.entries(
+            getRandomExampleData.data.data.reduce((accumulator, currentValue) => {
+              if (!accumulator[currentValue.accountName]) {
+                accumulator[currentValue.accountName] = 1
+              } else {
+                accumulator[currentValue.accountName]++
+              }
+              return accumulator
+            }, {})
+          ).map((entry) => {
+            return { accountType: entry[0], accountCount: entry[1] }
+          })
+        }}
+      dimensions:
+        - key: Untitled Dimension 1
+          id: 410a976e-e589-4100-82b6-9b73aa074fe8
+          name: '# of Accounts'
+          side: left
+          yKey: accountCount
+          type: bar
+          mode: lines
+          lineShape: spline
+          markerColor: purple.500
+      xKey: accountType
+      horizontalAxisTitle: Account Type
+      leftVerticalAxisTitle: '# of Accounts'
+  34c49a14-83e8-41ac-aa8c-cc26ab9a5b78:
+    type: FUNCTION
+    name: nextPage
+    properties:
+      action:
+        path: /resources
+        target: _self
+        targetNode:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+        actionType: NAVIGATE_TO_PAGE
+  39312066-5888-477f-839c-17b612478f26:
+    type: CONTAINER
+    name: stepSlugAndCustomDomain
+    slots:
+      canvas:
+        - nodeID: 8fb56e8b-33a2-4872-b236-654d3df09183
+          orderKey: Zz
+        - nodeID: 7f9ed033-f24f-40ec-8a8b-20882a600498
+          orderKey: a0
+    properties:
+      top: '21'
+      left: '3'
+      width: '8'
+      height: '21'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  3abefd26-2678-4703-a97e-cffd09fc68aa:
+    type: TEXT
+    name: textStepAddingNewComponentsBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Now that you know how to interact with and select components, let's try
+        adding some new ones to a page! We'll do that on the next page, so
+        select the Interact Tool again and click on the button below.
+      renderMode: markdown
+      verticalAlign: top
+  3b67f3b2-6205-486b-915c-f9bb681df868:
+    type: TEXT
+    name: textStepFirstComponentBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Once you've found a component you'd like to see, try dragging it into
+        the container below. You can also delete the component by selecting it
+        and pressing delete on your keyboard.
+      renderMode: markdown
+      verticalAlign: top
+  3cb35b3e-3938-4c56-9d35-7eb0a72d5056:
+    type: TEXT
+    name: textStepInteractingWithComponentsBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Buttons aren't the only components you can interact with inside the
+        editor. Inputs, tables, and graphs support interactions as well. Try
+        switching back to the `Interact Tool` and typing something in the input
+        below.
+      renderMode: markdown
+      verticalAlign: top
+  3d7f92e2-3abb-44cc-828a-435a4a27ba49:
+    type: TEXT
+    name: textInitialInfo
+    properties:
+      top: '13'
+      left: '3'
+      width: '8'
+      height: '15'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Underlying all functions are resources. Resources can be many things
+        including TypeScript / JavaScript / Python execution environments,
+        database connections, API integrations, and authentication providers.
+
+
+        &nbsp;
+
+
+        To see the full list of existing and available resources click on the
+        `Resources` tab on the far left side of the page. Once you do, you’ll
+        see the left side panel change to show all resources that are currently
+        attached to this project. From there click on the `+` just to the right
+        of `Project Resources` to see the full list.
+      renderMode: markdown
+      textAlign: center
+  400e871c-38dd-414b-8082-8b3c93d40faf:
+    type: TEXT
+    name: textStepLoadingDataBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        All components have either a `.data` property or `.value` property that
+        becomes the displayed data. In the case of the table below we've
+        dynamically loaded data from a function. Try selecting it to see
+        properties or interacting with it to see how it behaves.
+      renderMode: markdown
+      verticalAlign: top
+  4068f097-33e2-4e41-a82c-b3a40fede933:
+    type: TEXT
+    name: textStepLoadingDataBody2
+    properties:
+      top: '39'
+      width: '12'
+      height: '5'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        If you checked out the `.data` property of the table above, you probably
+        noticed something interesting. That's our "double-curly" syntax! It lets
+        you write TypeScript / JavaScript in locations where it isn't normally
+        possible to load dynamic data.
+      renderMode: markdown
+      verticalAlign: top
+  4298f146-c2ef-48a5-bebf-eca74cf71723:
+    type: FUNCTION
+    name: nextPage
+    properties:
+      action:
+        path: /functionsAndEvents
+        target: _self
+        targetNode:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+        actionType: NAVIGATE_TO_PAGE
+  42f25b38-10d0-461e-b950-9bdb93b74a6a:
+    type: TEXT
+    name: textStepComponentTypesHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 1) Exploring Different Types of Components
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  431d3e3e-9514-453c-b9a3-0ab1a58eb9e9:
+    type: FUNCTION
+    name: nextPage
+    properties:
+      action:
+        path: https://dynaboard.app
+        target: _self
+        targetNode:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+        actionType: NAVIGATE_TO_PAGE
+  43461a71-9326-484d-b7cd-5b5672f605ca:
+    type: TEXT
+    name: textStepNextStepsHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 3) Next Steps
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  4503712d-3187-402a-a8b4-4d37c68d14d9:
+    type: TEXT
+    name: textStepInterpolationInFunctionsHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 2) Interpolation Inside of Functions
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  47d9140b-938f-4379-b439-939b0d013776:
+    type: CONTAINER
+    name: stepEvents
+    slots:
+      canvas:
+        - nodeID: ab48e725-55d2-44a1-9480-6b7e28d355b1
+          orderKey: Zz
+        - nodeID: 902a6702-5915-42f2-8c6a-bb7b57d4d28e
+          orderKey: a0
+    properties:
+      top: '69'
+      left: '3'
+      width: '8'
+      height: '17'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  4b0b677a-e2c6-4d25-9a89-b9019d27a628:
+    type: TEXT
+    name: textStepCallingFunctionsHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 2) Calling Functions From Other Functions
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  4ccb5f46-1497-4e44-85c9-2b6903249936:
+    type: TEXT
+    name: textSubheader
+    properties:
+      top: '13'
+      left: '3'
+      width: '8'
+      height: '7'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Adding authentication to a Dynaboard only takes a minute with our
+        pre-built components and resources. You can also configure your own SSO
+        provider for even more control with only a few extra steps.
+      renderMode: markdown
+      textAlign: center
+  4d1c2620-2f2c-4a02-9f82-6c812390a0e7:
+    type: BUTTON
+    name: buttonTakeALook
+    properties:
+      top: '9'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: Let's take a look!
+      backgroundColor: purple.500
+      onClick:
+        function:
+          ref: 7970ae3b-8c41-4e13-8871-6d728f4ff828
+  4dc07e3e-403d-499d-ad85-d8276a8b3bb6:
+    type: INPUT
+    name: inputStepBasicInterpolation
+    properties:
+      top: '12'
+      left: '2'
+      width: '10'
+      height: '2'
+      placeholder: Basic
+  5003b15c-a4a4-44b3-a2bc-c76ef5cc432c:
+    type: CONTAINER
+    name: stepSelectingComponents
+    slots:
+      canvas:
+        - nodeID: 534b0b2e-3f07-4dbc-bccf-4aaf7eda5062
+          orderKey: Zy
+        - nodeID: 51a517c2-bc25-46fa-a3c6-6047c917a1eb
+          orderKey: Zz
+        - nodeID: b3235929-1257-4e2c-b50a-af7fb82269b4
+          orderKey: a0
+        - nodeID: e2fd1996-b298-479f-9f6c-2010518396ba
+          orderKey: a1
+        - nodeID: 8af6fe5b-13e8-486e-9d93-3ad3a630dc28
+          orderKey: a2V
+    properties:
+      top: '22'
+      left: '3'
+      width: '8'
+      height: '24'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  50d5738c-31e9-4fe8-a00d-3cf1cc941f4d:
+    type: TEXT
+    name: textSubheader
+    properties:
+      top: '13'
+      left: '3'
+      width: '8'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Swapping between the `Select Tool` and the `Interact Tool` to work with
+        components is something you'll do frequently as you build and test your
+        applications.
+      renderMode: markdown
+      textAlign: center
+  50fc096f-3698-4f0a-b71c-16162146d649:
+    type: TEXT
+    name: textStepNextStepsBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '4'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        If you’re now looking at this in your deployed app, congratulations on
+        deploying your first dynaboard app! 🎉
+
+
+        &nbsp;
+
+
+        Click the button below to go back to the portal and start building your
+        next app with one of our templates.
+      renderMode: markdown
+      verticalAlign: top
+  515ea689-acba-4b65-b743-02e41e0a539c:
+    type: TEXT
+    name: textStepOverviewBody2
+    properties:
+      top: '9'
+      width: '11'
+      height: '16'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: |-
+        1. Interaction & Selection
+        2. Adding UI Components
+        3. Making Applications Dynamic with Interpolation
+        4. Using Functions and Events
+        5. Loading Data with Resources
+        6. Securing Applications with Authentication
+        7. Deploying Applications
+      renderMode: markdown
+      fontSize: xl
+      verticalAlign: top
+      fontWeight: '600'
+  518557e3-7065-4fa3-bb80-671de06d1bab:
+    type: FUNCTION
+    name: buttonIncorrectLeave
+    properties:
+      action:
+        code: buttonStepSelectingComponents.text = "Select Me!"
+        targetNode:
+          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
+        actionType: CALL_CLIENT_FUNCTION
+  51a517c2-bc25-46fa-a3c6-6047c917a1eb:
+    type: TEXT
+    name: textStepSelectingComponentsBody
+    properties:
+      top: '4'
+      width: '10'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        To edit components on a page you first need to select them, so if you
+        haven't already, switch back to the `Select Tool` by clicking the icon
+        above. Now select the button below.
+      renderMode: markdown
+      verticalAlign: top
+  51f3641d-40a2-427d-93b0-15de34669fc6:
+    type: TEXT
+    name: textStepAdvancedJSHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 3) Advanced JavaScript Example
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  524760b9-0293-4d59-88e5-6eca634c481d:
+    type: INPUT
+    name: inputStepInteractingWithComponents
+    properties:
+      top: '12'
+      left: '3'
+      width: '8'
+      height: '2'
+      placeholder: Type here!
+  534b0b2e-3f07-4dbc-bccf-4aaf7eda5062:
+    type: TEXT
+    name: textStepSelectingComponentsHeader
+    properties:
+      width: '6'
+      height: '2'
+      value: 1) Selecting Components
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  55ff6f4e-a38f-4649-aada-3ce074dce023:
+    type: CONTAINER
+    name: stepBasicInterpolation
+    slots:
+      canvas:
+        - nodeID: d0d4161b-ad10-46a8-92ac-493b442caa22
+          orderKey: Zx
+        - nodeID: deacc279-17c8-47c2-ba93-28fa0bc45e3e
+          orderKey: ZxV
+        - nodeID: 4dc07e3e-403d-499d-ad85-d8276a8b3bb6
+          orderKey: Zy
+        - nodeID: 86be3c07-c257-4a81-ba5d-727e7f0b5fef
+          orderKey: ZzV
+    properties:
+      top: '22'
+      left: '3'
+      width: '8'
+      height: '22'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  56967eac-f86e-46b9-b5ff-5d9afe635432:
+    type: CONTAINER
+    name: stepLetsGetStarted
+    slots:
+      canvas:
+        - nodeID: fedeac1a-159b-4e19-af31-49aab150ab28
+          orderKey: Zv
+        - nodeID: 76169d73-f4ef-4df8-99a4-0d46b3c50ab5
+          orderKey: Zz
+        - nodeID: 601de6dc-8e7d-4935-a2f1-11914abd9944
+          orderKey: ZzV
+        - nodeID: e47886a1-c3a4-4eb1-b2fd-3ec2b50a2664
+          orderKey: a0
+    properties:
+      top: '51'
+      left: '3'
+      width: '8'
+      height: '19'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  5932b31a-027a-4b09-a9af-eaf159429d05:
+    type: CONTAINER
+    name: stepDeployApp
+    slots:
+      canvas:
+        - nodeID: 59bc1e2e-6551-484a-ba50-35f50283fda8
+          orderKey: Zx
+        - nodeID: 29613932-d73b-45f3-9d5e-9d3ac10bfecd
+          orderKey: ZxV
+        - nodeID: 11140a22-70f8-4b16-8c04-71a7bf1caa0a
+          orderKey: Zy
+    properties:
+      top: '43'
+      left: '3'
+      width: '8'
+      height: '12'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  59bc1e2e-6551-484a-ba50-35f50283fda8:
+    type: TEXT
+    name: textStepDeployAppHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 2) Deploying an App
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  5aeb3de9-5348-4253-9b66-8f1c9d57b6a6:
     type: PAGE
     name: index
-    parentNodeID: ROOT_NODE
-    parentSlot: pages
+    slots:
+      canvas:
+        - nodeID: 0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3
+          orderKey: Zx
+        - nodeID: 29bd4661-e2aa-40e0-bb02-df08e21ad388
+          orderKey: Zy
+        - nodeID: b9a6bd3f-d349-4e7d-9557-10a16e07407d
+          orderKey: a0V
+        - nodeID: 56967eac-f86e-46b9-b5ff-5d9afe635432
+          orderKey: a1
+      functions:
+        - nodeID: 8cba5efc-01ce-402f-832e-0ab517766f2d
+          orderKey: a0
+    properties:
+      minHeight: 1280px
+      styles: |-
+        element.styles {
+
+        }
+  5bec42b7-20c4-4576-b0b3-d6c8a03c7822:
+    type: CONTAINER
+    name: stepNextSteps
+    slots:
+      canvas:
+        - nodeID: 43461a71-9326-484d-b7cd-5b5672f605ca
+          orderKey: Zx
+        - nodeID: 50fc096f-3698-4f0a-b71c-16162146d649
+          orderKey: ZxV
+        - nodeID: 8b09f543-9b19-43d2-bbc7-e2dbc6eb5e97
+          orderKey: Zy
+    properties:
+      top: '56'
+      left: '3'
+      width: '8'
+      height: '18'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  5dcfe6b1-e943-48f1-b22a-ca0e9658cc12:
+    type: FUNCTION
+    name: testFunction1
+    properties:
+      action:
+        code: >-
+          console.log("Hi! I'm testFunction1!");
+
+          console.log("Let me give testFunction2 a call...")
+
+
+          // Note: We do not need the "double-curly" syntax here to call this
+          function since we're already in a TypeScript / JavaScript environment.
+
+          let response = await testFunction2()
+
+
+          console.log(`testFunction2 says: ${response}`)
+
+
+          return "Bye for now!"
+        targetNode:
+          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
+        actionType: CALL_CLIENT_FUNCTION
+  601de6dc-8e7d-4935-a2f1-11914abd9944:
+    type: INLINE_REACT
+    name: iconStepLetsGetStarted
+    properties:
+      top: '4'
+      left: '11'
+      width: '2'
+      height: '4'
+      styles: |-
+        .size {
+          width: 64px;
+          height: 64px;
+        }
+      componentSource: |-
+        return function Component() {
+          return <div className="size"><svg viewBox="0 0 16 16" focusable="false" className="chakra-icon" aria-hidden="true"><g fill="none" fill-rule="evenodd"><path fill="rgb(105, 103, 226)" d="M9.47749 0.579264C10.8282 0.910258 12.0504 1.63434 12.9895 2.65996C13.9287 3.68557 14.5426 4.96664 14.7537 6.34118C14.9648 7.71571 14.7636 9.12198 14.1754 10.3821C14.1038 10.5357 14.0274 10.685 13.9463 10.8301C13.8201 11.0562 13.5345 11.137 13.3085 11.0107C13.0825 10.8845 13.0016 10.5989 13.1279 10.3729C13.1976 10.2481 13.2636 10.1191 13.3259 9.98564C13.8356 8.89351 14.01 7.67474 13.8271 6.48348C13.6442 5.29221 13.1121 4.18195 12.2981 3.29309C11.4842 2.40422 10.4249 1.77668 9.25435 1.48982C8.08376 1.20296 6.85439 1.26966 5.72171 1.68149C4.58902 2.09332 3.60389 2.83179 2.8909 3.8035C2.17791 4.77521 1.76908 5.93652 1.7161 7.14059C1.66312 8.34465 1.96838 9.53739 2.59327 10.568C3.21816 11.5985 4.13463 12.4207 5.22676 12.9304C5.3598 12.9925 5.49226 13.0486 5.62913 13.1014C5.8706 13.1948 5.99071 13.4662 5.89739 13.7076C5.80407 13.9491 5.53266 14.0692 5.29118 13.9759C5.13588 13.9159 4.98381 13.8516 4.83027 13.7799C3.57011 13.1918 2.51266 12.2432 1.79163 11.054C1.0706 9.86492 0.718375 8.48868 0.779503 7.09938C0.840632 5.71007 1.31236 4.37009 2.13505 3.24889C2.95773 2.12768 4.09442 1.27561 5.40136 0.800423C6.7083 0.325234 8.12681 0.24827 9.47749 0.579264Z M8.01845 6.49404C8.19468 6.53797 8.35388 6.63328 8.47583 6.76787L8.48558 6.77898L13.5565 12.7432C13.563 12.7509 13.5692 12.7587 13.5752 12.7668C13.6807 12.9083 13.742 13.0779 13.7514 13.2542C13.7608 13.4304 13.718 13.6056 13.6282 13.7575C13.5384 13.9095 13.4057 14.0316 13.2467 14.1084C13.0918 14.1832 12.9186 14.2118 12.748 14.1909L10.1884 13.9629L8.37273 15.7811C8.25558 15.9068 8.10464 15.9962 7.93789 16.0385C7.76665 16.0819 7.5864 16.0737 7.41984 16.0148C7.25328 15.956 7.10785 15.8492 7.00189 15.7078C6.89592 15.5665 6.83415 15.3969 6.82436 15.2206C6.82381 15.2108 6.82358 15.201 6.82365 15.1911L6.88103 7.35995L7.34977 7.36338L6.88148 7.34275C6.88947 7.1613 6.95122 6.98632 7.05886 6.84004C7.1665 6.69375 7.3152 6.58276 7.48605 6.52115C7.65691 6.45955 7.84222 6.45011 8.01845 6.49404ZM7.81797 7.44108L7.76209 15.0659L9.67996 13.1453C9.77813 13.047 9.91486 12.9973 10.0532 13.0096L12.7572 13.2505L7.81797 7.44108Z M10.5324 4.18954C9.96493 3.70883 9.28051 3.38666 8.54845 3.25567C7.8164 3.12467 7.06273 3.18952 6.36381 3.44364C5.6649 3.69776 5.04557 4.13211 4.5686 4.70269C4.09163 5.27327 3.77396 5.95979 3.64778 6.69269C3.52161 7.42559 3.59141 8.17882 3.85012 8.87605C4.10883 9.57328 4.54724 10.1897 5.12094 10.6629C5.32065 10.8277 5.61609 10.7993 5.78082 10.5996C5.94555 10.3999 5.91719 10.1045 5.71748 9.93973C5.27127 9.57167 4.93028 9.09221 4.72906 8.54992C4.52785 8.00763 4.47356 7.42178 4.57169 6.85175C4.66983 6.28172 4.9169 5.74776 5.28788 5.30397C5.65886 4.86019 6.14056 4.52236 6.68416 4.32471C7.22776 4.12707 7.81395 4.07663 8.38332 4.17851C8.9527 4.28039 9.48502 4.53097 9.92636 4.90486C10.3677 5.27874 10.7024 5.76265 10.8964 6.30754C11.0905 6.85243 11.1371 7.43894 11.0315 8.00763C10.9842 8.26216 11.1522 8.50682 11.4067 8.5541C11.6613 8.60137 11.9059 8.43335 11.9532 8.17882C12.089 7.44765 12.0291 6.69357 11.7796 5.99299C11.5301 5.29242 11.0998 4.67026 10.5324 4.18954Z"></path></g></svg></div>
+        }
+  60655510-bd56-41d0-84f3-88905b0995a6:
+    type: BUTTON
+    name: buttonDynamicComponents
+    properties:
+      top: '13'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: What's Interpolation?
+      backgroundColor: purple.500
+      onClick:
+        function:
+          ref: f1fdad29-508b-460d-98c2-dfe0159f84cb
+  60b7d6f2-c790-40ee-a1ab-3e2085a7c2b0:
+    type: TEXT
+    name: textStepCustomCodeBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '10'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        We currently offer four custom code resources that allow you to write
+        arbitrary code in Dynaboard: TypeScript (JS) Client / Server, Python
+        Server, and Webhook Endpoint. 
+
+
+        &nbsp;
+
+
+        *Note: We won’t cover Webhook Endpoints in this getting started, but
+        they allow you to create Dynaboard apps that not only offer a UI but
+        that can respond to other applications (e.g. Stripe webhooks) as well.*
+      renderMode: markdown
+      verticalAlign: top
+  61cef891-64dd-4dfe-9c65-0d5bd79a2402:
+    type: DATA_TABLE
+    name: dataTableStepLoadingData
+    properties:
+      top: '10'
+      width: '12'
+      height: '28'
+      data: '{{getRandomExampleData.data.data}}'
+      autoColumns: true
+      columns:
+        - header: accountID
+          accessor: accountID
+          id: a38a63d3-568a-4983-aba9-2f554178b991
+          width: auto
+          widthUnit: '%'
+          minWidthUnit: '%'
+          minWidth: 15
+          isVisible: true
+          allowSortBy: '{{true}}'
+          renderAs: default
+          dateTimeFormat: MMMM dd, y 'at' ttt
+        - header: accountName
+          accessor: accountName
+          id: f9dcd253-c0c6-4552-8d45-effc188f9845
+          width: auto
+          widthUnit: '%'
+          minWidthUnit: '%'
+          minWidth: 15
+          isVisible: true
+          allowSortBy: '{{true}}'
+          renderAs: default
+          dateTimeFormat: MMMM dd, y 'at' ttt
+        - header: accountTotal
+          accessor: accountTotal
+          id: befcf09a-fa32-4a8a-b01a-e55baa11b23c
+          width: auto
+          widthUnit: '%'
+          minWidthUnit: '%'
+          minWidth: 15
+          isVisible: true
+          allowSortBy: '{{true}}'
+          renderAs: default
+          dateTimeFormat: MMMM dd, y 'at' ttt
+        - header: currencyName
+          accessor: currencyName
+          id: fc121056-0a0c-41d4-89a7-567871103377
+          width: auto
+          widthUnit: '%'
+          minWidthUnit: '%'
+          minWidth: 15
+          isVisible: true
+          allowSortBy: '{{true}}'
+          renderAs: default
+          dateTimeFormat: MMMM dd, y 'at' ttt
+        - header: currencyCode
+          accessor: currencyCode
+          id: 4d86d3a6-8366-4e86-a89b-5680cb21e2f1
+          width: auto
+          widthUnit: '%'
+          minWidthUnit: '%'
+          minWidth: 15
+          isVisible: true
+          allowSortBy: '{{true}}'
+          renderAs: default
+          dateTimeFormat: MMMM dd, y 'at' ttt
+        - header: currencySymbol
+          accessor: currencySymbol
+          id: df7998a9-88ca-4f00-b24e-c470b04313da
+          width: auto
+          widthUnit: '%'
+          minWidthUnit: '%'
+          minWidth: 15
+          isVisible: true
+          allowSortBy: '{{true}}'
+          renderAs: default
+          dateTimeFormat: MMMM dd, y 'at' ttt
+  61ecee0f-fcf5-422c-afea-557e6255eba7:
+    type: TEXT
+    name: textStepHotkeysBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '11'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Most common actions in Dynaboard also support hotkeys. If an action has
+        a hotkey, you can find it next to the title of the tooltip that appears
+        when you hover your mouse over the corresponding button.
+
+
+        &nbsp;
+
+
+        In the case of the `Select Tool` and `Interact Tool` you can swap
+        between them by pressing `V` to switch to the `Select Tool` or `CMD +
+        OPT / CTRL + ALT` to enable the `Interact Tool`.
+      renderMode: markdown
+      verticalAlign: top
+  652f196d-4253-4f9c-85b8-1f844f60937f:
+    type: CONTAINER
+    name: stepNextUp
+    slots:
+      canvas:
+        - nodeID: b64f391f-38be-4947-bf38-496abb546f3a
+          orderKey: Zy
+        - nodeID: 83ec7aea-9262-46aa-a18f-4badca4579e2
+          orderKey: Zz
+        - nodeID: f9f22903-fa56-4182-b327-af0acdec0d36
+          orderKey: a0
+    properties:
+      top: '103'
+      left: '3'
+      width: '8'
+      height: '14'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  67928af2-3260-404f-a10d-5b26c912b771:
+    type: TEXT
+    name: textStepInteractingWithComponentsHeader
+    properties:
+      width: '8'
+      height: '2'
+      value: 2) Interacting with Different Components
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  732b68e9-32e2-4acc-b3df-ddd0697bea68:
+    type: TEXT
+    name: textStepAddingNewComponentsHeader
+    properties:
+      width: '7'
+      height: '2'
+      value: 4) Adding New Components
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  73db1033-fbf3-4277-8ec1-b75de844859d:
+    type: TEXT
+    name: textHeader
+    properties:
+      top: '10'
+      left: '3'
+      width: '8'
+      height: '2'
+      value: Make Apps Dynamic with Interpolation
+      fontSize: 3xl
+      textAlign: center
+  73f149a8-d937-434d-8223-53d62a8771ab:
+    type: BUTTON
+    name: buttonStepAddingNewComponents
+    properties:
+      top: '11'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: Let's add Components!
+      backgroundColor: purple.500
+      onClick:
+        function:
+          ref: 8ad8f28e-5eed-499f-aac2-2194f052755d
+  74519676-1700-4342-b844-c744042131e1:
+    type: FUNCTION
+    name: nextPage
+    properties:
+      action:
+        path: /deployment
+        target: _self
+        targetNode:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+        actionType: NAVIGATE_TO_PAGE
+  76169d73-f4ef-4df8-99a4-0d46b3c50ab5:
+    type: TEXT
+    name: textStepLetsGetStartedBody
+    properties:
+      top: '4'
+      width: '10'
+      height: '7'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        To get started you're going to want to switch to the `Interact Tool` by
+        clicking the button on the left side of the toolbar at the top of this
+        page.
+
+
+        Once you have the interact tool selected, click on the "Getting Started"
+        button below to continue!
+      renderMode: markdown
+      verticalAlign: top
+  7818a6f7-3096-4a64-baf7-9fb2c3166de0:
+    type: RESOURCE/TYPESCRIPT_CLIENT
+    name: typescriptClient1
+  79508677-85ce-4288-825f-c22d219d7a4d:
+    type: TEXT
+    name: textStepLookAtResourcesHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 4) A Look at Resources
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  7970ae3b-8c41-4e13-8871-6d728f4ff828:
+    type: FUNCTION
+    name: nextPage
+    properties:
+      action:
+        path: /authentication
+        target: _self
+        targetNode:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+        actionType: NAVIGATE_TO_PAGE
+  7a34934a-47de-4bf0-a1a3-ce28bb912778:
+    type: BUTTON
+    name: buttonApiCall
+    properties:
+      top: '13'
+      left: '5'
+      width: '4'
+      height: '2'
+      onClick:
+        function:
+          ref: bebe98f6-5e26-46ab-b821-c17e3210586f
+      text: Make an API Call
+      backgroundColor: purple.500
+  7a41d532-ef17-4aad-bfff-940491b0472a:
+    type: CONTAINER
+    name: stepLookAtResources
+    slots:
+      canvas:
+        - nodeID: 79508677-85ce-4288-825f-c22d219d7a4d
+          orderKey: Zy
+        - nodeID: 284b9f04-b755-400e-8f44-d3d0b2d583b4
+          orderKey: Zz
+        - nodeID: e022cdad-89f7-4de8-be97-9e46a693095d
+          orderKey: a0
+    properties:
+      top: '87'
+      left: '3'
+      width: '8'
+      height: '13'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  7bec9869-c0f8-4f06-acd3-ddc0eaf21ece:
+    type: TEXT
+    name: textStepInteractingWithComponentsBody2
+    properties:
+      top: '16'
+      width: '12'
+      height: '10'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Whenever you interact with an input in the editor something called an
+        `Override` is created. If you switch back to the `Select Tool` and
+        select the input you'll see a yellow outline around the `.value`
+        property. This means it has been overridden. `Overrides` are only
+        temporary to help you test. They disappear when you refresh the editor
+        or if you clear them by selecting the overridden property and clicking
+        on the `Remove Override` button at the bottom of the pop-out window.
+      renderMode: markdown
+      verticalAlign: top
+  7e0ee4db-ca2e-4b47-8b08-e060969c486e:
+    type: TEXT
+    name: textStepAdvancedJSBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '5'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        So far we’ve only returned a basic string value inside of an
+        interpolation, however it’s possible to do much more. In the example
+        below, we’re mapping over and returning a JSON object to populate the
+        chart.
+      renderMode: markdown
+      verticalAlign: top
+  7f8e35f1-20f1-495a-a41c-e39e770b3797:
+    type: TEXT
+    name: textStepOverviewBody1
+    properties:
+      top: '4'
+      width: '12'
+      height: '4'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        h2, h3 {
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+      value: >-
+        In the following sections, we’ll cover all of the basics you need to
+        know to build an app from scratch or modify one of our templates.
+      renderMode: markdown
+  7f9ed033-f24f-40ec-8a8b-20882a600498:
+    type: TEXT
+    name: textStepSlugAndCustomDomainBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '13'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        All applications start with a randomly generated slug that can be found
+        in the `Settings` panel on the far left side of the screen or in your
+        URL bar before `.edit.dynaboard.app`. This slug forms the subdomain part
+        of each application’s base URL. However, this can be changed to any
+        currently available slug (e.g. `yoursite.dynaboard.app`).
+
+
+        &nbsp;
+
+
+        All paid workspaces also come with the ability to use one or more custom
+        sub-domains with your projects, so you can host your project on your own
+        URL (e.g. `app.yoursite.com`).
+      renderMode: markdown
+      verticalAlign: top
+  806566f5-d4f7-492e-a59e-2893112ecbc8:
+    type: PAGE
+    name: resources
+    slots:
+      canvas:
+        - nodeID: c8b719c9-cfdb-4bf2-9a68-5c4c3bdd5b27
+          orderKey: Zt
+        - nodeID: 3d7f92e2-3abb-44cc-828a-435a4a27ba49
+          orderKey: ZtV
+        - nodeID: 21523aaf-c7b5-46d2-8cd5-a140392b2be1
+          orderKey: Ztl
+        - nodeID: b718c974-7795-46fe-af3a-bbe137cf94e1
+          orderKey: Ztt
+        - nodeID: b44b1794-1556-4e59-a693-7493d1d1b2e0
+          orderKey: Zu
+        - nodeID: 2fae4be0-4bca-43c0-8e66-cb4d6f61204d
+          orderKey: Zv
+        - nodeID: 300b4537-1bb5-40ab-a16c-a2ce137ee97a
+          orderKey: Zw
+      functions:
+        - nodeID: 7970ae3b-8c41-4e13-8871-6d728f4ff828
+          orderKey: a0
+    properties:
+      minHeight: 1790px
+  81a8d0ab-81cf-46af-8b71-fc665649d3fc:
+    type: TEXT
+    name: textHeader
+    properties:
+      top: '10'
+      left: '3'
+      width: '8'
+      height: '2'
+      value: Deploying an Application
+      fontSize: 3xl
+      textAlign: center
+  8299ee52-1f0a-4fb6-8173-39a5d887b7a5:
+    type: TEXT
+    name: textStepAccessAndAuthBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '7'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        We’ll talk about these more on the next page, but in addition to
+        connecting to resources like databases we also allow you to connect your
+        application to third-party SSO providers (e.g. Google, GitHub,
+        Microsoft, or Okta) or use our own one-time PIN system to provide secure
+        user sign-in for your apps.
+      renderMode: markdown
+      verticalAlign: top
+  83ec7aea-9262-46aa-a18f-4badca4579e2:
+    type: TEXT
+    name: textStepNextUpBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Interpolation and functions go together hand-in-hand as a way to pass
+        data back and forth between the UI of your application and back-end
+        resources. We’ll dig a little bit deeper into functions on the next
+        page.
+      renderMode: markdown
+      verticalAlign: top
+  8505fbda-7a2a-4a2f-b2f1-3183e4e7d641:
+    type: CONTAINER
+    name: stepDeployApp
+    slots:
+      canvas:
+        - nodeID: 1f32aa32-e1be-4abc-ba78-50ac72fdf597
+          orderKey: Zx
+        - nodeID: d68caf6f-fefb-48c3-a550-ca7264fee00b
+          orderKey: ZxV
+        - nodeID: 0f205c05-28de-4e01-abd2-dc54ef32d44e
+          orderKey: Zy
+    properties:
+      top: '68'
+      left: '3'
+      width: '8'
+      height: '13'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  8535a55a-29cc-4c05-aebd-45d6c376caa9:
+    type: FUNCTION
+    name: getRandomExampleData
+    properties:
+      action:
+        path: '?size=30'
+        body: ''
+        headers: []
+        method: GET
+        bodyType: application/json
+        targetNode:
+          ref: c038db71-e096-4432-bf8d-3e8bad052f6a
+        actionType: PERFORM_REQUEST
+      runOnPageLoad: '{{true}}'
+  868a5c01-8e1f-4f23-a2bf-3e101925e94a:
+    type: SIGN-IN
+    name: signInExample
+    properties:
+      top: '11'
+      width: '12'
+      height: '14'
+      onSuccess:
+        function:
+          ref: d4fb0c4c-e2dd-48e7-a017-71c5fb9910ae
+  86be3c07-c257-4a81-ba5d-727e7f0b5fef:
+    type: TEXT
+    name: textStepBasicInterpolationBody2
+    properties:
+      top: '16'
+      width: '12'
+      height: '4'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        To see how it works select the header of this section and then look in
+        the `Value` field under the `Content` section in the properties panel on
+        the right side of the screen.
+      renderMode: markdown
+      verticalAlign: top
+  8ad8f28e-5eed-499f-aac2-2194f052755d:
+    type: FUNCTION
+    name: nextPage
+    properties:
+      action:
+        path: /components
+        target: _self
+        targetNode:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+        actionType: NAVIGATE_TO_PAGE
+  8af6fe5b-13e8-486e-9d93-3ad3a630dc28:
+    type: TEXT
+    name: textStepSelectingComponentsBody2
+    properties:
+      top: '16'
+      width: '12'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Now (once you have the button selected) take a look at the properties
+        panel on the right side of the editor, we'll come back to this later,
+        but this is where you'll be able to see and edit the properties of any
+        component, function, or resource.
+      renderMode: markdown
+      verticalAlign: top
+  8b09f543-9b19-43d2-bbc7-e2dbc6eb5e97:
+    type: BUTTON
+    name: buttonStartBuilding
+    properties:
+      top: '13'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: Start building!
+      backgroundColor: purple.500
+      onClick:
+        function:
+          ref: 431d3e3e-9514-453c-b9a3-0ab1a58eb9e9
+  8cba5efc-01ce-402f-832e-0ab517766f2d:
+    type: FUNCTION
+    name: nextPage
+    properties:
+      action:
+        path: /interactAndSelect
+        target: _self
+        targetNode:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+        actionType: NAVIGATE_TO_PAGE
+  8f34af83-c724-4818-a0a9-4cbac532cfd5:
+    type: RESOURCE/BROWSER
+    name: browser1
+  8fab4b0a-2de0-4e7f-97d4-c435700d8c90:
+    type: PAGE
+    name: deployment
+    slots:
+      canvas:
+        - nodeID: 81a8d0ab-81cf-46af-8b71-fc665649d3fc
+          orderKey: Zu
+        - nodeID: a9d86917-86fe-4bed-849e-817d9bd2af74
+          orderKey: ZuV
+        - nodeID: 39312066-5888-477f-839c-17b612478f26
+          orderKey: Zul
+        - nodeID: 5932b31a-027a-4b09-a9af-eaf159429d05
+          orderKey: Zut
+        - nodeID: 5bec42b7-20c4-4576-b0b3-d6c8a03c7822
+          orderKey: Zv
+      functions:
+        - nodeID: 431d3e3e-9514-453c-b9a3-0ab1a58eb9e9
+          orderKey: a0
+    properties:
+      minHeight: 1620px
+  8fb56e8b-33a2-4872-b236-654d3df09183:
+    type: TEXT
+    name: textStepSlugAndCustomDomainHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 1) Application Slugs & Custom Domains
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  902a6702-5915-42f2-8c6a-bb7b57d4d28e:
+    type: TEXT
+    name: textStepEventsBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '10'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        To run functions in response to user input you can set them to run on
+        events from either UI elements or other functions. Common events are `On
+        Click`, `On Hover`, `On Success`, and `On Failure`. For any component
+        you can see the available events by clicking on the component and then
+        looking for the `Events` tab at the top of the properties panel at the
+        top right of the screen.
+
+
+        &nbsp;
+
+
+        *Note: Each button on this page has a function attached to its `On
+        Click` event.*
+      renderMode: markdown
+      verticalAlign: top
+  905787e7-415d-48e3-9a8d-ade548bf72ee:
+    type: CONTAINER
+    name: stepHotkeys
+    slots:
+      canvas:
+        - nodeID: 07144acc-876b-43c9-b6f1-20d9b353151f
+          orderKey: Zy
+        - nodeID: 61ecee0f-fcf5-422c-afea-557e6255eba7
+          orderKey: Zz
+    properties:
+      top: '76'
+      left: '3'
+      width: '8'
+      height: '18'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  93ea36ca-7d9b-440a-b10f-0b42140a14f4:
+    type: PAGE
+    name: components
+    slots:
+      canvas:
+        - nodeID: f60f338f-ce39-4845-a30f-599e3ef7c36a
+          orderKey: Zw
+        - nodeID: edc8e4b3-2c69-452c-b09b-e94402d2e406
+          orderKey: ZwV
+        - nodeID: 1debd6f8-b87a-4532-b84e-dd2211949297
+          orderKey: Zx
+        - nodeID: 9de5e480-dc0e-4474-82d0-7622c40fc181
+          orderKey: ZxV
+        - nodeID: dede5bc2-34e7-4abf-9aa8-b076d8c34a4c
+          orderKey: Zy
+        - nodeID: ebce788e-071d-497c-a1c6-62b586a6e512
+          orderKey: Zz
+      functions:
+        - nodeID: f1fdad29-508b-460d-98c2-dfe0159f84cb
+          orderKey: Zz
+        - nodeID: 8535a55a-29cc-4c05-aebd-45d6c376caa9
+          orderKey: a0
+    properties:
+      minHeight: 2348px
+  961d6820-14c8-47dc-8a92-20fd69482e08:
+    type: PAGE
+    name: functionsAndEvents
+    slots:
+      functions:
+        - nodeID: bebe98f6-5e26-46ab-b821-c17e3210586f
+          orderKey: a0
+        - nodeID: c504c7a4-322c-4044-8b0d-4a2c3d0825c3
+          orderKey: a1
+        - nodeID: 5dcfe6b1-e943-48f1-b22a-ca0e9658cc12
+          orderKey: a2
+        - nodeID: b0624324-4a67-4e41-8414-9a8c04810dc3
+          orderKey: a3
+        - nodeID: 34c49a14-83e8-41ac-aa8c-cc26ab9a5b78
+          orderKey: a4
+      canvas:
+        - nodeID: c6e1a5e8-91ae-4006-aff3-c82dbae320d9
+          orderKey: Zw
+        - nodeID: b47045af-6839-4b39-805f-917d6e13e8cb
+          orderKey: ZwV
+        - nodeID: 1b48819d-8cbc-4859-ad53-689584fc9a59
+          orderKey: Zwl
+        - nodeID: e0f25c74-b3c4-4eca-b9de-aca742ff73ae
+          orderKey: Zwt
+        - nodeID: 47d9140b-938f-4379-b439-939b0d013776
+          orderKey: Zwx
+        - nodeID: 7a41d532-ef17-4aad-bfff-940491b0472a
+          orderKey: Zx
+    properties:
+      minHeight: 1822px
+  99230945-fa8f-4c1e-9d69-635c2a383aa3:
+    type: TEXT
+    name: textStepConfigAuthHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 2) Configuring Authentication Rules
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  99cb35af-7af9-490f-bdaf-3fd5d66600e6:
+    type: TEXT
+    name: textStepFunctionTypesBody2
+    properties:
+      top: '17'
+      width: '12'
+      height: '8'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Once you’ve clicked the button above, you can see the results using
+        Dynaboard’s built in `Console` which is available in the closed panel at
+        the bottom of the screen. It shows the output of both client and server
+        side functions. 
+
+        Click the button below to see the function `clientFunctionExample`
+        JavaScript / TypeScript function in action.
+      renderMode: markdown
+      verticalAlign: top
+  99ea5ef6-c815-4a73-aad9-16886214aa11:
+    type: TEXT
+    name: textHeader
+    properties:
+      top: '10'
+      left: '4'
+      width: '6'
+      height: '2'
+      value: Interaction and Selection
+      fontSize: 3xl
+      textAlign: center
+  9a8d82c6-efab-42c6-a742-e05e3f310737:
+    type: CONTAINER
+    name: stepAdvancedJS
+    slots:
+      canvas:
+        - nodeID: 51f3641d-40a2-427d-93b0-15de34669fc6
+          orderKey: Zw
+        - nodeID: 7e0ee4db-ca2e-4b47-8b08-e060969c486e
+          orderKey: ZwV
+        - nodeID: 326d90c8-eb46-4b88-943d-a9545ac28c63
+          orderKey: Zx
+        - nodeID: ae3a9824-13d0-4c6b-bc7a-1d2fb4dd8ba7
+          orderKey: Zz
+    properties:
+      top: '66'
+      left: '3'
+      width: '8'
+      height: '36'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  9dc69b01-d059-4500-ab0c-e2beff87463b:
+    type: TEXT
+    name: textStepLoadingDataHeader
+    properties:
+      width: '8'
+      height: '2'
+      value: 3) Loading Data Into A Component
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  9de5e480-dc0e-4474-82d0-7622c40fc181:
+    type: CONTAINER
+    name: stepFirstComponent
+    slots:
+      canvas:
+        - nodeID: 256cac47-94fe-4a58-897d-ad4a2c2b09ec
+          orderKey: Zy
+        - nodeID: 3b67f3b2-6205-486b-915c-f9bb681df868
+          orderKey: ZyV
+        - nodeID: c0d99a24-74d7-4869-9545-e2d477f524b9
+          orderKey: Zyl
+    properties:
+      top: '40'
+      left: '3'
+      width: '8'
+      height: '41'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  a58f0ad0-bc5d-417d-aace-8d94dffc2c7b:
+    type: PAGE
+    name: interpolation
+    slots:
+      canvas:
+        - nodeID: 73db1033-fbf3-4277-8ec1-b75de844859d
+          orderKey: Zw
+        - nodeID: d6ece88b-6cb6-48a8-b9d4-1cc58e027bd8
+          orderKey: ZwV
+        - nodeID: 55ff6f4e-a38f-4649-aada-3ce074dce023
+          orderKey: Zy
+        - nodeID: c78855dc-87d5-45ef-8dc0-5c933e7ef00a
+          orderKey: ZyG
+        - nodeID: 9a8d82c6-efab-42c6-a742-e05e3f310737
+          orderKey: ZyV
+        - nodeID: 652f196d-4253-4f9c-85b8-1f844f60937f
+          orderKey: Zz
+      functions:
+        - nodeID: 4298f146-c2ef-48a5-bebf-eca74cf71723
+          orderKey: Zy
+        - nodeID: abf20f79-e93b-4b3c-90dd-824d8e434e05
+          orderKey: Zz
+        - nodeID: 1e33b59d-d7b9-4230-bf59-6bd887aef34c
+          orderKey: a0
+    properties:
+      minHeight: 1964px
+  a9482ac7-ba31-4089-8182-46d043e80fd9:
+    type: TEXT
+    name: textStepFunctionTypesHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 1) Client & Server Functions
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  a9c92a59-ccd1-44fd-9754-04929855e061:
+    type: TEXT
+    name: textStepInterpolationInFunctionsBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '5'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Interpolation also works inside of functions that aren’t already
+        JavaScript (it is typically not necessary inside TypeScript functions).
+        The button below is attached to a function that opens a toast message.
+      renderMode: markdown
+      verticalAlign: top
+  a9d86917-86fe-4bed-849e-817d9bd2af74:
+    type: TEXT
+    name: textSubheader
+    properties:
+      top: '13'
+      left: '3'
+      width: '8'
+      height: '7'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        All Dynaboard applications are automatically saved as you build them,
+        but you’ll still need to explicitly deploy any changes.
+      renderMode: markdown
+      textAlign: center
+  ab48e725-55d2-44a1-9480-6b7e28d355b1:
+    type: TEXT
+    name: textStepEventsHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 3) Events
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  abf20f79-e93b-4b3c-90dd-824d8e434e05:
+    type: FUNCTION
+    name: getRandomExampleData
+    properties:
+      action:
+        path: '?size=20'
+        body: ''
+        headers: []
+        method: GET
+        bodyType: application/json
+        targetNode:
+          ref: c038db71-e096-4432-bf8d-3e8bad052f6a
+        actionType: PERFORM_REQUEST
+      runOnPageLoad: '{{true}}'
+  ae3a9824-13d0-4c6b-bc7a-1d2fb4dd8ba7:
+    type: TEXT
+    name: textStepAdvancedJSBody2
+    properties:
+      top: '30'
+      width: '12'
+      height: '4'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        You can see what the code looks like by selecting the chart and going to
+        the `Data Source` under the `Data` panel on the chart.
+      renderMode: markdown
+      verticalAlign: top
+  af585dea-6b97-4de3-a6fb-beaa16ab088f:
+    type: TEXT
+    name: textStepAPIAndDBHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 1) API Integrations & Databases Resources
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  b0624324-4a67-4e41-8414-9a8c04810dc3:
+    type: FUNCTION
+    name: testFunction2
+    properties:
+      action:
+        code: |-
+          console.log("Why is testFunction1 calling me again...?")
+
+          await $delay(2000)
+
+          return "Please try calling someone else..."
+        targetNode:
+          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
+        actionType: CALL_CLIENT_FUNCTION
+  b11673c7-240e-4365-a0c7-efa37315773e:
+    type: TEXT
+    name: textStepConfigAuthBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '13'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        We offer prebuilt auth rules that can be applied on an entire app basis
+        or page by page. Rules can authenticate user sign-ins based on email,
+        email domain, or even preexisting SSO groups with Google Workspace and
+        GitHub configured resources.
+
+
+        &nbsp;
+
+
+        If you’re interested in building an authenticated app we offer a
+        [`Private App
+        Boilerplate`](https://dynaboard.app/?new&path=/dynaboard/dynaboard--private-app-boilerplate)
+        that lets you get started in seconds and explains the ins and outs of
+        the authentication process.
+      renderMode: markdown
+      verticalAlign: top
+  b3235929-1257-4e2c-b50a-af7fb82269b4:
+    type: INLINE_REACT
+    name: iconStepSelectingComponents
+    properties:
+      top: '4'
+      left: '11'
+      width: '2'
+      height: '6'
+      styles: |-
+        .size {
+          width:64px;
+          height: 64px;
+        }
+      componentSource: |-
+        return function Component() {
+          return <div className="size"><svg viewBox="0 0 16 16" focusable="false" class="chakra-icon" aria-hidden="true"><g fill="none" fill-rule="evenodd"><path fill="rgb(105, 103, 226)" d="M8.08579 10.5H12.5858L5 2.91422V13.5858L8.08579 10.5ZM4.85355 15.1465L8.5 11.5H13.7929C14.2383 11.5 14.4614 10.9614 14.1464 10.6465L4.85355 1.35356C4.53857 1.03858 4 1.26167 4 1.70712V14.7929C4 15.2384 4.53857 15.4614 4.85355 15.1465Z"></path></g></svg></div>
+        }
+  b409246c-83ba-4e84-a5cf-15f2d55588b1:
+    type: TEXT
+    name: textStepComponentAndPINBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '7'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        The sign-in component you see below works out of the box with our
+        provided email based one-time PIN system and automatically adjusts when
+        adding your own providers. It can also be completely styled using custom
+        CSS.
+      renderMode: markdown
+      verticalAlign: top
+  b44b1794-1556-4e59-a693-7493d1d1b2e0:
+    type: CONTAINER
+    name: stepAccessAndAuth
+    slots:
+      canvas:
+        - nodeID: 031f6bed-61df-4ae0-aae3-fa147b8f459f
+          orderKey: Zz
+        - nodeID: 8299ee52-1f0a-4fb6-8173-39a5d887b7a5
+          orderKey: a0
+    properties:
+      top: '67'
+      left: '3'
+      width: '8'
+      height: '12'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  b47045af-6839-4b39-805f-917d6e13e8cb:
+    type: TEXT
+    name: textSubheader
+    properties:
+      top: '13'
+      left: '3'
+      width: '8'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        The two main ways of adding functionality to your application is through
+        the use of code written inside of the  "double-curly" `{{ "{\{ \}\}" }}`
+        (i.e. interpolation) or page / project functions that are attached to
+        resources.
+      renderMode: markdown
+      textAlign: center
+  b64f391f-38be-4947-bf38-496abb546f3a:
+    type: TEXT
+    name: textStepNextUpHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: "4) Next Up —\_Functions"
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  b718c974-7795-46fe-af3a-bbe137cf94e1:
+    type: CONTAINER
+    name: stepCustomCode
+    slots:
+      canvas:
+        - nodeID: 1c5460ce-7123-4c4e-a6cd-c9853dedcb0e
+          orderKey: Zz
+        - nodeID: 60b7d6f2-c790-40ee-a1ab-3e2085a7c2b0
+          orderKey: a0
+    properties:
+      top: '50'
+      left: '3'
+      width: '8'
+      height: '16'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  b9a6bd3f-d349-4e7d-9557-10a16e07407d:
+    type: CONTAINER
+    name: stepOverview
+    slots:
+      canvas:
+        - nodeID: 06968d9a-f186-46a8-a0d7-ae89887cd1a9
+          orderKey: Zw
+        - nodeID: 7f8e35f1-20f1-495a-a41c-e39e770b3797
+          orderKey: Zx
+        - nodeID: 515ea689-acba-4b65-b743-02e41e0a539c
+          orderKey: Zz
+    properties:
+      top: '22'
+      left: '3'
+      width: '8'
+      height: '28'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  bebe98f6-5e26-46ab-b821-c17e3210586f:
+    type: FUNCTION
+    name: restApiExample
+    properties:
+      action:
+        path: '?size=20'
+        body: ''
+        headers: []
+        method: GET
+        bodyType: application/json
+        targetNode:
+          ref: c038db71-e096-4432-bf8d-3e8bad052f6a
+        actionType: PERFORM_REQUEST
+      runOnPageLoad: '{{true}}'
+  c038db71-e096-4432-bf8d-3e8bad052f6a:
+    type: RESOURCE/HTTP
+    name: randomDataAPI
+    properties:
+      profiles:
+        - baseURL: https://random-dynaboard.vercel.app/api/finance
+          headers:
+            - key: Content-Type
+              value: application/json
+          environment: ''
+  c0d99a24-74d7-4869-9545-e2d477f524b9:
+    type: TEXT
+    name: textStepFirstComponentArea
+    properties:
+      top: '23'
+      left: '4'
+      width: '6'
+      height: '2'
+      value: Drag a Component Here!
+      fontSize: xl
+      textAlign: center
+      fontWeight: bold
+  c1af4bdd-aacf-4d28-bcb9-8bc7ccade3ec:
+    type: TEXT
+    name: textStepInterpolationInFunctionsBody2
+    properties:
+      top: '14'
+      width: '12'
+      height: '4'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        To see how it works select the function in the bottom left corner of the
+        screen under the `Page Functions` panel named
+        `exampleInterpolationFunction`.
+      renderMode: markdown
+      verticalAlign: top
+  c25085ba-7a61-4d43-9ef6-abec7e19ab6e:
+    type: TEXT
+    name: textStepDynamicComponentsHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 4) Making Your App Dynamic With Double Curlies
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  c504c7a4-322c-4044-8b0d-4a2c3d0825c3:
+    type: FUNCTION
+    name: clientFunctionExample
+    properties:
+      action:
+        code: >-
+          console.log("Hi! I'm a client side JS / TS function running in your
+          browser.")
+
+          console.log("I can do pretty much anything you're used to doing in
+          JavaScript.")
+
+
+          await $delay(2000)
+            
+          /* Note: We offer a few built in primitives that start with $
+          including:
+           * - $delay(ms): When awaited can be have as a sleep function defined in milliseconds.
+           * - $crypto: Can be used for hashing of things like emails.
+           * - $props: Avaiable inside custom components for passed through data when they're used inside things like dialogs, modals, or iterators.
+           * FOR AN UP TO DATE LIST OF BUILT IN PRIMITIVES USING THE $ PLEASE REFER TO THE DYNABOARD DOCS AT: https://dynaboard.com/docs
+           */
+
+          return "Thanks for running me! Bye for now."
+        targetNode:
+          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
+        actionType: CALL_CLIENT_FUNCTION
+  c6e1a5e8-91ae-4006-aff3-c82dbae320d9:
+    type: TEXT
+    name: textHeader
+    properties:
+      top: '10'
+      left: '3'
+      width: '8'
+      height: '2'
+      value: Functions and Events
+      fontSize: 3xl
+      textAlign: center
+  c71077df-99ec-4ceb-8fe9-740ef703feae:
+    type: TEXT
+    name: textStepComponentTypesBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '12'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Dynaboard offers prebuilt components to make building custom data driven
+        applications easy. You can find all of the currently supported
+        components in the middle of the toolbar at the top of the screen.
+
+
+        &nbsp;
+
+
+        Tables, form inputs, charts, and custom react code are just some of the
+        supported components. For a complete list, switch back to the `Select
+        Tool` and then click on the `+` button up above.
+      renderMode: markdown
+      verticalAlign: top
+  c78855dc-87d5-45ef-8dc0-5c933e7ef00a:
+    type: CONTAINER
+    name: stepInterpolationInFunctions
+    slots:
+      canvas:
+        - nodeID: 4503712d-3187-402a-a8b4-4d37c68d14d9
+          orderKey: Zy
+        - nodeID: a9c92a59-ccd1-44fd-9754-04929855e061
+          orderKey: ZzG
+        - nodeID: dfb50d60-c27d-49bd-8e40-63436a68d44d
+          orderKey: ZzK
+        - nodeID: c1af4bdd-aacf-4d28-bcb9-8bc7ccade3ec
+          orderKey: ZzO
+    properties:
+      top: '45'
+      left: '3'
+      width: '8'
+      height: '20'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  c8b719c9-cfdb-4bf2-9a68-5c4c3bdd5b27:
+    type: TEXT
+    name: textHeader
+    properties:
+      top: '10'
+      left: '3'
+      width: '8'
+      height: '2'
+      value: Adding Data with Resources
+      fontSize: 3xl
+      textAlign: center
+  cfc9bf90-3a37-4786-ba5c-22b75c233027:
+    type: CONTAINER
+    name: stepComponentAndPIN
+    slots:
+      canvas:
+        - nodeID: eaa20dce-a2f5-42c4-bb15-f6a67672af2c
+          orderKey: Zz
+        - nodeID: b409246c-83ba-4e84-a5cf-15f2d55588b1
+          orderKey: ZzG
+        - nodeID: 868a5c01-8e1f-4f23-a2bf-3e101925e94a
+          orderKey: ZzV
+    properties:
+      top: '20'
+      left: '3'
+      width: '8'
+      height: '28'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  d0d4161b-ad10-46a8-92ac-493b442caa22:
+    type: TEXT
+    name: textStepBasicInterpolationHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 1) A {{inputStepBasicInterpolation.value || "Basic"}} Example
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  d395d3e4-5736-4664-a86c-623a0f71d9c4:
+    type: TEXT
+    name: textStepCallingFunctionsBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '5'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        TypeScript and Python functions can call as many other functions as they
+        need and are great for orchestrating groups of other functions. Click on
+        the button below and open the console to see `testFunction1` and
+        `testFunction2` in action.
+      renderMode: markdown
+      verticalAlign: top
+  d68caf6f-fefb-48c3-a550-ca7264fee00b:
+    type: TEXT
+    name: textStepDeployAppBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '4'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        We won’t be adding any authentication to our Getting Started project
+        before deploying it, so once we deploy, you’ll be able to see it running
+        live.
+      renderMode: markdown
+      verticalAlign: top
+  d6ece88b-6cb6-48a8-b9d4-1cc58e027bd8:
+    type: TEXT
+    name: textSubheader
+    properties:
+      top: '13'
+      left: '3'
+      width: '8'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Interpolation using the "double-curly" syntax `{{ "{\{ code goes here
+        \}\}" }}` is a core feature of building interactive Dynaboard apps. At a
+        high level, interpolation lets you write JavaScript or TypeScript
+        snippets and include their dynamic output almost anywhere.
+      renderMode: markdown
+      textAlign: center
+  dd8100d4-6bb7-4e41-94e9-8dd01e651256:
+    type: TEXT
+    name: textStepDynamicComponentsBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        Our "double-curly" syntax `{{ "{\{ \}\}" }}` lets you write code nearly
+        anywhere you want (in nearly every property on both components and
+        resources). 
+
+
+        &nbsp;
+
+
+        We call this interpolation and we'll practice it in the next section, so
+        click on the button below to try it out.
+      renderMode: markdown
+      verticalAlign: top
+  ddd3e7c3-8473-41de-ae24-913de8c3b94a:
+    type: CONTAINER
+    name: stepConfigAuth
+    slots:
+      canvas:
+        - nodeID: 99230945-fa8f-4c1e-9d69-635c2a383aa3
+          orderKey: Zz
+        - nodeID: b11673c7-240e-4365-a0c7-efa37315773e
+          orderKey: a0
+    properties:
+      top: '49'
+      left: '3'
+      width: '8'
+      height: '18'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  deacc279-17c8-47c2-ba93-28fa0bc45e3e:
+    type: TEXT
+    name: textStepBasicInterpolationBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '7'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        One common use of interpolation is to have UI components update in
+        real-time in response to data either from functions, inputs or other
+        components. In this example we’ve wired the title of this section to the
+        text input below (and given it a default value). Try typing in the input
+        below:
+      renderMode: markdown
+      verticalAlign: top
+  dede5bc2-34e7-4abf-9aa8-b076d8c34a4c:
+    type: CONTAINER
+    name: stepLoadingData
+    slots:
+      canvas:
+        - nodeID: 9dc69b01-d059-4500-ab0c-e2beff87463b
+          orderKey: Zz
+        - nodeID: 400e871c-38dd-414b-8082-8b3c93d40faf
+          orderKey: Zz8
+        - nodeID: 61cef891-64dd-4dfe-9c65-0d5bd79a2402
+          orderKey: ZzG
+        - nodeID: 4068f097-33e2-4e41-a82c-b3a40fede933
+          orderKey: ZzV
+    properties:
+      top: '82'
+      left: '3'
+      width: '8'
+      height: '46'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  dfb50d60-c27d-49bd-8e40-63436a68d44d:
+    type: BUTTON
+    name: buttonPopExampleToast
+    properties:
+      top: '10'
+      left: '5'
+      width: '4'
+      height: '2'
+      onClick:
+        function:
+          ref: 1e33b59d-d7b9-4230-bf59-6bd887aef34c
+      text: Yum! Toast
+      backgroundColor: purple.500
+  e022cdad-89f7-4de8-be97-9e46a693095d:
+    type: BUTTON
+    name: buttonTakeALook
+    properties:
+      top: '8'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: Let's take a look!
+      backgroundColor: purple.500
+      onClick:
+        function:
+          ref: 34c49a14-83e8-41ac-aa8c-cc26ab9a5b78
+  e0f25c74-b3c4-4eca-b9de-aca742ff73ae:
+    type: CONTAINER
+    name: stepCallingFunctions
+    slots:
+      canvas:
+        - nodeID: 4b0b677a-e2c6-4d25-9a89-b9019d27a628
+          orderKey: Zw
+        - nodeID: d395d3e4-5736-4664-a86c-623a0f71d9c4
+          orderKey: ZwV
+        - nodeID: ea1e56e0-b11b-490e-8649-2354d7dbc1fb
+          orderKey: Zx
+    properties:
+      top: '53'
+      left: '3'
+      width: '8'
+      height: '15'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  e2d3c9e7-1e2d-4e00-9243-3d1916824812:
+    type: PAGE
+    name: authentication
+    slots:
+      canvas:
+        - nodeID: 29ec7a77-959e-4ed7-811d-911d2cc9e604
+          orderKey: Zv
+        - nodeID: 4ccb5f46-1497-4e44-85c9-2b6903249936
+          orderKey: ZvV
+        - nodeID: cfc9bf90-3a37-4786-ba5c-22b75c233027
+          orderKey: Zvl
+        - nodeID: ddd3e7c3-8473-41de-ae24-913de8c3b94a
+          orderKey: Zvt
+        - nodeID: 8505fbda-7a2a-4a2f-b2f1-3183e4e7d641
+          orderKey: Zw
+      functions:
+        - nodeID: 74519676-1700-4342-b844-c744042131e1
+          orderKey: a0
+    properties:
+      minHeight: 1570px
+      styles: |-
+        element.styles {
+
+        }
+  e2fd1996-b298-479f-9f6c-2010518396ba:
+    type: BUTTON
+    name: buttonStepSelectingComponents
+    properties:
+      top: '12'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: Select Me!
+      backgroundColor: purple.500
+      onHover:
+        function:
+          ref: 0ee61185-9f1a-4ea3-9b95-b8ffbc219204
+      onLeave:
+        function:
+          ref: 518557e3-7065-4fa3-bb80-671de06d1bab
+  e30418dc-f865-4cd7-add9-8be99dd00787:
+    type: TEXT
+    name: textStepAPIAndDBBody
+    properties:
+      top: '4'
+      width: '12'
+      height: '10'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        a {
+          color: #6968C3;
+          font-weight: 400;
+          text-decoration: underline;
+        }
+
+        h1, h2, h3 {
+          font-weight: 400;
+          margin-bottom: 5px;
+        }
+
+        h4, h5, h6 {
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+
+        ul {
+          margin-top: 10px;
+        }
+
+        li {
+          line-height: 1.6;
+        }
+
+        li em {
+          line-height: 1.6;
+        }
+
+        code {
+          padding: 0px 4px;
+          border-radius: 4px;
+        }
+      value: >-
+        These resources offer connections to common databases (e.g. Postgres,
+        MySQL, MongoDB), generic REST / GraphQL APIs, and many popular SaaS
+        services (e.g. Airtable, Google Sheets, BigQuery, Notion, etc.).
+
+
+        &nbsp;
+
+
+        Security Note: Typically when using an API or database resource you’ll
+        want to securely store any passwords or keys. This can be done using the
+        `Secrets` manager found at the top of the resources pane. Secrets can
+        then be used with secure server-side interpolation in the resource
+        properties with a modified “double-curly” `{{ "${\{ \}\}" }}` syntax
+        that includes a `$` character.
+      renderMode: markdown
+      verticalAlign: top
+  e47886a1-c3a4-4eb1-b2fd-3ec2b50a2664:
+    type: BUTTON
+    name: buttonStepLetsGetStarted
+    properties:
+      top: '13'
+      left: '5'
+      width: '4'
+      height: '2'
+      onClick:
+        function:
+          ref: 8cba5efc-01ce-402f-832e-0ab517766f2d
+      text: Get Started!
+      backgroundColor: purple.500
+  ea1e56e0-b11b-490e-8649-2354d7dbc1fb:
+    type: BUTTON
+    name: buttonMayFunctions
+    properties:
+      top: '10'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: Call Many Functions
+      backgroundColor: purple.500
+      onClick:
+        function:
+          ref: 5dcfe6b1-e943-48f1-b22a-ca0e9658cc12
+  eaa20dce-a2f5-42c4-bb15-f6a67672af2c:
+    type: TEXT
+    name: textStepComponentAndPINHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 1) Sign-in Component & One-Time PIN
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  eabd6207-2bbe-44bd-a312-9bdf2f0bc5c1:
+    type: CONTAINER
+    name: stepAddingNewComponents
+    slots:
+      canvas:
+        - nodeID: 732b68e9-32e2-4acc-b3df-ddd0697bea68
+          orderKey: Zy
+        - nodeID: 3abefd26-2678-4703-a97e-cffd09fc68aa
+          orderKey: Zz
+        - nodeID: 73f149a8-d937-434d-8223-53d62a8771ab
+          orderKey: a0
+    properties:
+      top: '95'
+      left: '3'
+      width: '8'
+      height: '16'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  ebce788e-071d-497c-a1c6-62b586a6e512:
+    type: CONTAINER
+    name: stepDynamicComponents
+    slots:
+      canvas:
+        - nodeID: c25085ba-7a61-4d43-9ef6-abec7e19ab6e
+          orderKey: Zy
+        - nodeID: dd8100d4-6bb7-4e41-94e9-8dd01e651256
+          orderKey: Zz
+        - nodeID: 60655510-bd56-41d0-84f3-88905b0995a6
+          orderKey: a0
+    properties:
+      top: '129'
+      left: '3'
+      width: '8'
+      height: '17'
+      styles: |-
+        element.styles {
+          border-width: 1px;
+          border-color: text.muted;
+        }
+      borderRadius: '5'
+  edc8e4b3-2c69-452c-b09b-e94402d2e406:
+    type: TEXT
+    name: textSubheader
+    properties:
+      top: '13'
+      left: '3'
+      width: '8'
+      height: '6'
+      styles: |-
+        :root {
+          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        }
+
+        h2, h3 {
+          margin-bottom: 5px;
+        }
+
+        p {
+          line-height: 1.8;
+        }
+
+        ol {
+          margin-top: 10px;
+        }
+      value: >-
+        Now that you've learned how to interact with components, let's try
+        adding some to a page!
+      renderMode: markdown
+      textAlign: center
+  f198ba12-ffde-4aa6-a5c6-5d15934b7fab:
+    type: TEXT
+    name: textStepLookAtAuthHeader
+    properties:
+      width: '9'
+      height: '2'
+      value: 5) A Quick Look At Authentication
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
+  f1fdad29-508b-460d-98c2-dfe0159f84cb:
+    type: FUNCTION
+    name: nextPage
+    properties:
+      action:
+        path: /interpolation
+        target: _self
+        targetNode:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+        actionType: NAVIGATE_TO_PAGE
+  f60f338f-ce39-4845-a30f-599e3ef7c36a:
+    type: TEXT
+    name: textHeader
+    properties:
+      top: '10'
+      left: '4'
+      width: '6'
+      height: '2'
+      value: UI Components
+      fontSize: 3xl
+      textAlign: center
+  f9f22903-fa56-4182-b327-af0acdec0d36:
+    type: BUTTON
+    name: buttonNextUp
+    properties:
+      top: '10'
+      left: '5'
+      width: '4'
+      height: '2'
+      text: Let's go!
+      backgroundColor: purple.500
+      onClick:
+        function:
+          ref: 4298f146-c2ef-48a5-bebf-eca74cf71723
+  fedeac1a-159b-4e19-af31-49aab150ab28:
+    type: TEXT
+    name: textStepLetsGetStartedHeader
+    properties:
+      width: '4'
+      height: '2'
+      value: Let's get started!
+      fontSize: xl
+      verticalAlign: bottom
+      fontWeight: bold
