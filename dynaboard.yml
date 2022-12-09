@@ -1,6 +1,6 @@
 runtimeVersion: 0.3.4
 name: Getting Started
-description: 'Getting Started with Dynaboard'
+description: ''
 type: com.dynaboard/project
 nodes:
   ROOT_NODE:
@@ -454,6 +454,7 @@ nodes:
         - nodeID: 8ad8f28e-5eed-499f-aac2-2194f052755d
           orderKey: a2
     properties:
+      minWidth: 960px
       minHeight: 1896px
   256cac47-94fe-4a58-897d-ad4a2c2b09ec:
     type: TEXT
@@ -1679,6 +1680,7 @@ nodes:
         element.styles {
 
         }
+      minWidth: 960px
   5bec42b7-20c4-4576-b0b3-d6c8a03c7822:
     type: CONTAINER
     name: stepNextSteps
@@ -2398,6 +2400,7 @@ nodes:
         - nodeID: 7970ae3b-8c41-4e13-8871-6d728f4ff828
           orderKey: a0
     properties:
+      minWidth: 960px
       minHeight: 1790px
   81a8d0ab-81cf-46af-8b71-fc665649d3fc:
     type: TEXT
@@ -2747,6 +2750,7 @@ nodes:
         - nodeID: 431d3e3e-9514-453c-b9a3-0ab1a58eb9e9
           orderKey: a0
     properties:
+      minWidth: 960px
       minHeight: 1620px
   8fb56e8b-33a2-4872-b236-654d3df09183:
     type: TEXT
@@ -2869,6 +2873,7 @@ nodes:
         - nodeID: 8535a55a-29cc-4c05-aebd-45d6c376caa9
           orderKey: a0
     properties:
+      minWidth: 960px
       minHeight: 2348px
   961d6820-14c8-47dc-8a92-20fd69482e08:
     type: PAGE
@@ -2899,6 +2904,7 @@ nodes:
         - nodeID: 7a41d532-ef17-4aad-bfff-940491b0472a
           orderKey: Zx
     properties:
+      minWidth: 960px
       minHeight: 1822px
   99230945-fa8f-4c1e-9d69-635c2a383aa3:
     type: TEXT
@@ -3064,6 +3070,7 @@ nodes:
         - nodeID: 1e33b59d-d7b9-4230-bf59-6bd887aef34c
           orderKey: a0
     properties:
+      minWidth: 960px
       minHeight: 1964px
   a9482ac7-ba31-4089-8182-46d043e80fd9:
     type: TEXT
@@ -4261,6 +4268,7 @@ nodes:
         - nodeID: 74519676-1700-4342-b844-c744042131e1
           orderKey: a0
     properties:
+      minWidth: 960px
       minHeight: 1570px
       styles: |-
         element.styles {
