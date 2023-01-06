@@ -2,7 +2,7 @@
 
 # Getting Started in Dynaboard
 
-[![Live Demo](https://img.shields.io/badge/live%20demo-view-green)](https://gettingstarted.dynaboard.app/) [![Fork Dynaboard Template](https://img.shields.io/badge/dynaboard-fork-purple)](https://dynaboard.new/dynaboard/dynaboard--getting-started)
+[![Live Demo](https://img.shields.io/badge/live%20demo-view-green)](https://gettingstarted.dynaboard.app/) [![Fork Dynaboard Template](https://img.shields.io/badge/dynaboard-fork-purple)](https://dynaboard.new/dynaboard/dynaboard--getting-started) ![Beginner Level](https://img.shields.io/badge/level-beginner-blue)
 
 Learn about Dynaboard in Dynaboard!
 
