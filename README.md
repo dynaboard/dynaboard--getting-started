@@ -1,4 +1,4 @@
-![Preview](getting-started.png)
+![Preview](getting-started.gif)
 
 # Getting Started in Dynaboard
 
