@@ -1,4 +1,4 @@
-# Getting Started Template
+# Getting Started in Dynaboard
 
 [![Live Demo](https://img.shields.io/badge/live%20demo-view-green)](https://gettingstarted.dynaboard.app/) [![Fork Dynaboard Template](https://img.shields.io/badge/dynaboard-fork-purple)](https://dynaboard.new/dynaboard/dynaboard--getting-started)
 
