@@ -18,4 +18,4 @@ Learn about Dynaboard in Dynaboard!
 
 ## License
 
-[MIT](LICENSE.txt)
+[MIT](LICENSE)
