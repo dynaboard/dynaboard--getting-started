@@ -1,6 +1,6 @@
 # Getting Started Template
 
-[![Live Demo](https://img.shields.io/badge/live%20demo-view-green)](https://gettingstarted.dynaboard.app/) [![Fork Dynaboard Template](https://img.shields.io/badge/dynaboard%20template-fork-purple)](https://dynaboard.new/dynaboard/dynaboard--getting-started)
+[![Live Demo](https://img.shields.io/badge/live%20demo-view-green)](https://gettingstarted.dynaboard.app/) [![Fork Dynaboard Template](https://img.shields.io/badge/dynaboard-fork-purple)](https://dynaboard.new/dynaboard/dynaboard--getting-started)
 
 Learn about Dynaboard in Dynaboard!
 
