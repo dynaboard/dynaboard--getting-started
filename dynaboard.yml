@@ -145,6 +145,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '25'
       borderRadius: '5'
   0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
     type: TEXT
@@ -178,7 +179,7 @@ nodes:
     type: BUTTON
     name: buttonLetsDeploy
     properties:
-      top: '9'
+      top: '8'
       left: '5'
       width: '4'
       height: '2'
@@ -365,6 +366,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '27'
       borderRadius: '5'
   1c5460ce-7123-4c4e-a6cd-c9853dedcb0e:
     type: TEXT
@@ -394,6 +396,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '15'
       borderRadius: '5'
   1e33b59d-d7b9-4230-bf59-6bd887aef34c:
     type: FUNCTION
@@ -440,6 +443,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '17'
       borderRadius: '5'
   231ad0b3-1f73-45d7-91a2-72f446597c62:
     type: PAGE
@@ -664,6 +668,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '8'
       borderRadius: '5'
   300b4537-1bb5-40ab-a16c-a2ce137ee97a:
     type: CONTAINER
@@ -685,6 +690,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '10'
       borderRadius: '5'
   326d90c8-eb46-4b88-943d-a9545ac28c63:
     type: CHART
@@ -751,6 +757,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '18'
       borderRadius: '5'
   3abefd26-2678-4703-a97e-cffd09fc68aa:
     type: TEXT
@@ -874,7 +881,7 @@ nodes:
     properties:
       top: '4'
       width: '12'
-      height: '6'
+      height: '5'
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -1181,6 +1188,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '14'
       borderRadius: '5'
   4b0b677a-e2c6-4d25-9a89-b9019d27a628:
     type: TEXT
@@ -1254,7 +1262,7 @@ nodes:
     type: BUTTON
     name: buttonTakeALook
     properties:
-      top: '9'
+      top: '8'
       left: '5'
       width: '4'
       height: '2'
@@ -1271,6 +1279,7 @@ nodes:
       left: '2'
       width: '10'
       height: '2'
+      labelStyle: left
       placeholder: Basic
   5003b15c-a4a4-44b3-a2bc-c76ef5cc432c:
     type: CONTAINER
@@ -1296,6 +1305,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '21'
       borderRadius: '5'
   50d5738c-31e9-4fe8-a00d-3cf1cc941f4d:
     type: TEXT
@@ -1425,7 +1435,7 @@ nodes:
     properties:
       top: '8'
       width: '12'
-      height: '17'
+      height: '18'
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -1564,10 +1574,11 @@ nodes:
     type: INPUT
     name: inputStepInteractingWithComponents
     properties:
-      top: '9'
+      top: '10'
       left: '3'
       width: '8'
       height: '2'
+      labelStyle: left
       placeholder: Type here!
   534b0b2e-3f07-4dbc-bccf-4aaf7eda5062:
     type: TEXT
@@ -1601,6 +1612,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '19'
       borderRadius: '5'
   56967eac-f86e-46b9-b5ff-5d9afe635432:
     type: CONTAINER
@@ -1624,6 +1636,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '15'
       borderRadius: '5'
   5932b31a-027a-4b09-a9af-eaf159429d05:
     type: CONTAINER
@@ -1645,6 +1658,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '9'
       borderRadius: '5'
   59bc1e2e-6551-484a-ba50-35f50283fda8:
     type: TEXT
@@ -1699,6 +1713,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '15'
       borderRadius: '5'
   5dcfe6b1-e943-48f1-b22a-ca0e9658cc12:
     type: FUNCTION
@@ -1761,7 +1776,7 @@ nodes:
     type: BUTTON
     name: buttonDynamicComponents
     properties:
-      top: '13'
+      top: '12'
       left: '5'
       width: '4'
       height: '2'
@@ -1998,6 +2013,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '11'
       borderRadius: '5'
   67928af2-3260-404f-a10d-5b26c912b771:
     type: TEXT
@@ -2057,7 +2073,7 @@ nodes:
     properties:
       top: '4'
       width: '10'
-      height: '7'
+      height: '6'
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -2169,6 +2185,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '10'
       borderRadius: '5'
   7bec9869-c0f8-4f06-acd3-ddc0eaf21ece:
     type: TEXT
@@ -2487,7 +2504,7 @@ nodes:
     properties:
       top: '4'
       width: '12'
-      height: '6'
+      height: '5'
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -2560,6 +2577,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '10'
       borderRadius: '5'
   8535a55a-29cc-4c05-aebd-45d6c376caa9:
     type: FUNCTION
@@ -2581,7 +2599,7 @@ nodes:
     properties:
       top: '11'
       width: '12'
-      height: '14'
+      height: '15'
       onSuccess:
         function:
           ref: d4fb0c4c-e2dd-48e7-a017-71c5fb9910ae
@@ -2716,7 +2734,7 @@ nodes:
     type: BUTTON
     name: buttonStartBuilding
     properties:
-      top: '13'
+      top: '12'
       left: '5'
       width: '4'
       height: '2'
@@ -2855,6 +2873,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '15'
       borderRadius: '5'
   93ea36ca-7d9b-440a-b10f-0b42140a14f4:
     type: PAGE
@@ -3015,6 +3034,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '33'
       borderRadius: '5'
   9dc69b01-d059-4500-ab0c-e2beff87463b:
     type: TEXT
@@ -3046,6 +3066,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '25'
       borderRadius: '5'
   a4b5183c-4d46-4544-9d3b-c275605803de:
     type: TEXT
@@ -3494,6 +3515,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '10'
       borderRadius: '5'
   b47045af-6839-4b39-805f-917d6e13e8cb:
     type: TEXT
@@ -3582,6 +3604,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '13'
       borderRadius: '5'
   b9a6bd3f-d349-4e7d-9557-10a16e07407d:
     type: CONTAINER
@@ -3603,6 +3626,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '25'
       borderRadius: '5'
   bebe98f6-5e26-46ab-b821-c17e3210586f:
     type: FUNCTION
@@ -3632,7 +3656,7 @@ nodes:
     type: TEXT
     name: textStepFirstComponentArea
     properties:
-      top: '17'
+      top: '15'
       left: '4'
       width: '6'
       height: '2'
@@ -3832,6 +3856,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '17'
       borderRadius: '5'
   c8b719c9-cfdb-4bf2-9a68-5c4c3bdd5b27:
     type: TEXT
@@ -3862,6 +3887,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '25'
       borderRadius: '5'
   d0d4161b-ad10-46a8-92ac-493b442caa22:
     type: TEXT
@@ -4215,6 +4241,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '43'
       borderRadius: '5'
   dfb50d60-c27d-49bd-8e40-63436a68d44d:
     type: BUTTON
@@ -4262,6 +4289,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '12'
       borderRadius: '5'
   e2d3c9e7-1e2d-4e00-9243-3d1916824812:
     type: PAGE
@@ -4377,7 +4405,7 @@ nodes:
     type: BUTTON
     name: buttonStepLetsGetStarted
     properties:
-      top: '13'
+      top: '12'
       left: '5'
       width: '4'
       height: '2'
@@ -4429,6 +4457,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '13'
       borderRadius: '5'
   ebce788e-071d-497c-a1c6-62b586a6e512:
     type: CONTAINER
@@ -4450,6 +4479,7 @@ nodes:
           border-width: 1px;
           border-color: text.muted;
         }
+      gridRows: '14'
       borderRadius: '5'
   edc8e4b3-2c69-452c-b09b-e94402d2e406:
     type: TEXT
@@ -4512,7 +4542,7 @@ nodes:
     type: BUTTON
     name: buttonNextUp
     properties:
-      top: '10'
+      top: '9'
       left: '5'
       width: '4'
       height: '2'
