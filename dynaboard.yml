@@ -1,4 +1,4 @@
-runtimeVersion: 0.3.4
+runtimeVersion: 0.3.5
 name: Getting Started
 description: ''
 type: com.dynaboard/project
@@ -7,23 +7,16 @@ nodes:
     type: ROOT_NODE
     name: ROOT_NODE
     slots:
+      components:
+        - nodeID: 61af232e-6b81-4544-8f00-c943e7c083a2
+          orderKey: a0
       pages:
         - nodeID: 5aeb3de9-5348-4253-9b66-8f1c9d57b6a6
           orderKey: a0
-        - nodeID: 231ad0b3-1f73-45d7-91a2-72f446597c62
-          orderKey: a1
-        - nodeID: 93ea36ca-7d9b-440a-b10f-0b42140a14f4
-          orderKey: a1V
         - nodeID: a58f0ad0-bc5d-417d-aace-8d94dffc2c7b
-          orderKey: a2
-        - nodeID: 961d6820-14c8-47dc-8a92-20fd69482e08
-          orderKey: a4
-        - nodeID: 806566f5-d4f7-492e-a59e-2893112ecbc8
-          orderKey: a5
-        - nodeID: e2d3c9e7-1e2d-4e00-9243-3d1916824812
-          orderKey: a6
-        - nodeID: 8fab4b0a-2de0-4e7f-97d4-c435700d8c90
-          orderKey: a7
+          orderKey: a0V
+        - nodeID: 04ad44ef-195b-47a0-b261-f8bcb73fb459
+          orderKey: a0l
       resources:
         - nodeID: 8f34af83-c724-4818-a0a9-4cbac532cfd5
           orderKey: a0
@@ -33,682 +26,120 @@ nodes:
           orderKey: a2
         - nodeID: 1f81be44-bd5c-4161-a6e9-bebf92ca8a46
           orderKey: a3
-  019ce151-e9ba-4201-89a9-2a83519831b7:
+  023e3997-1820-4356-8920-22a1e22776c1:
     type: TEXT
-    name: textStepOtherResourcesBody
+    name: textStepFirstComponentArea
     properties:
-      top: '4'
-      width: '12'
-      height: '5'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        We also include resources for things like taking actions in the user's
-        browser. E.g. all of the buttons for changing pages have been powered by
-        functions attached to a browser resource.
-      renderMode: markdown
-      verticalAlign: top
-  031f6bed-61df-4ae0-aae3-fa147b8f459f:
-    type: TEXT
-    name: textStepAccessAndAuthHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 3) Access & Authentication
       fontSize: xl
-      verticalAlign: bottom
       fontWeight: bold
-  06968d9a-f186-46a8-a0d7-ae89887cd1a9:
-    type: TEXT
-    name: textStepOverviewHeader
-    properties:
-      width: '12'
       height: '2'
-      value: Overview
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  07144acc-876b-43c9-b6f1-20d9b353151f:
-    type: TEXT
-    name: textStepHotkeysHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 3) Hotkeys
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  07960dcc-19e6-4b74-9010-9b32823a41ce:
-    type: CONTAINER
-    name: stepInteractingWithComponents
+      left: '4'
+      textAlign: center
+      top: '11'
+      value: Drag a Component Here!
+      width: '6'
+  04ad44ef-195b-47a0-b261-f8bcb73fb459:
+    type: PAGE
+    name: templates
     slots:
       canvas:
-        - nodeID: 67928af2-3260-404f-a10d-5b26c912b771
-          orderKey: Zy
-        - nodeID: 3cb35b3e-3938-4c56-9d35-7eb0a72d5056
-          orderKey: ZyV
-        - nodeID: 524760b9-0293-4d59-88e5-6eca634c481d
-          orderKey: Zz
-        - nodeID: a4b5183c-4d46-4544-9d3b-c275605803de
+        - nodeID: 3273257f-e1c9-4698-92c2-c8d49cf3ff30
           orderKey: a0
-        - nodeID: 7bec9869-c0f8-4f06-acd3-ddc0eaf21ece
-          orderKey: a1V
-    properties:
-      top: '33'
-      width: '12'
-      height: '28'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '25'
-      borderRadius: '5'
+        - nodeID: b46e2861-e155-4e98-94af-18fb160fe735
+          orderKey: Zz
   0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
     type: TEXT
     name: textHeader
     properties:
-      width: '12'
-      height: '4'
-      value: Welcome to Dynaboard!
       fontSize: 3xl
       fontWeight: bold
-  0b24d032-8017-42bc-a9e4-f44897612fa1:
-    type: TEXT
-    name: textStepOtherResourcesHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 4) Other Resources
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  0ee61185-9f1a-4ea3-9b95-b8ffbc219204:
-    type: FUNCTION
-    name: buttonIncorrectHover
-    properties:
-      action:
-        code: buttonStepSelectingComponents.text = "Select don't Click!"
-        targetNode:
-          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
-        actionType: CALL_CLIENT_FUNCTION
-  0f205c05-28de-4e01-abd2-dc54ef32d44e:
-    type: BUTTON
-    name: buttonLetsDeploy
-    properties:
-      top: '8'
-      left: '5'
-      width: '4'
-      height: '2'
-      text: Let's deploy!
-      backgroundColor: purple.500
-      onClick:
-        function:
-          ref: 74519676-1700-4342-b844-c744042131e1
-  11140a22-70f8-4b16-8c04-71a7bf1caa0a:
-    type: INLINE_REACT
-    name: iconStepDeployApp
-    properties:
-      top: '4'
-      left: '11'
-      width: '2'
-      height: '5'
-      styles: |-
-        .size {
-          width: 64px;
-          height: 64px;
-        }
-      componentSource: |-
-        return function Component() {
-          return (
-            <div className="size">
-              <svg
-                viewBox="0 0 16 16"
-                focusable="false"
-                className="chakra-icon"
-                aria-hidden="true"
-              >
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    fill="rgb(105, 103, 226)"
-                    d="M2.31651 7.08164L3.9256 7.76843C3.74417 8.2399 3.59945 8.72546 3.49281 9.22054L3.43177 9.50611L5.73859 11.882L6.01602 11.8206C6.49699 11.7109 6.96872 11.5619 7.42675 11.3752L8.09397 13.0314C8.1005 13.0479 8.1109 13.0623 8.12423 13.0736C8.13755 13.0849 8.15338 13.0925 8.1703 13.0959C8.18722 13.0993 8.20469 13.0983 8.22115 13.0931C8.2376 13.0878 8.25253 13.0784 8.26459 13.0657L9.27304 12.0277C9.43761 11.8583 9.56585 11.6553 9.64948 11.4317C9.7331 11.2081 9.77026 10.969 9.75854 10.7298L9.72247 10.063C11.5896 8.6437 13.4789 6.15497 13.9935 1.81149C14.0081 1.70259 13.9981 1.59169 13.9642 1.48744C13.9303 1.38318 13.8735 1.28839 13.7982 1.21045C13.7228 1.13251 13.6311 1.07353 13.53 1.03809C13.4289 1.00266 13.3212 0.991745 13.2153 1.00619C8.997 1.5402 6.57782 3.48634 5.19899 5.4025L4.55258 5.36824C4.32065 5.35525 4.08865 5.39236 3.87149 5.4772C3.65433 5.56204 3.45682 5.69272 3.29167 5.86084L2.28322 6.89888C2.26924 6.91111 2.25866 6.92692 2.25254 6.94471C2.24641 6.9625 2.24497 6.98165 2.24835 7.0002C2.25173 7.01876 2.25981 7.03606 2.27178 7.05036C2.28375 7.06466 2.29918 7.07545 2.31651 7.08164ZM8.78615 4.55151C8.96092 4.37224 9.18338 4.25029 9.42543 4.20107C9.66748 4.15185 9.91828 4.17756 10.1461 4.27495C10.374 4.37234 10.5687 4.53705 10.7057 4.74828C10.8427 4.95951 10.9158 5.20779 10.9158 5.46176C10.9158 5.71573 10.8427 5.964 10.7057 6.17523C10.5687 6.38646 10.374 6.55117 10.1461 6.64857C9.91828 6.74596 9.66748 6.77167 9.42543 6.72245C9.18338 6.67322 8.96092 6.55128 8.78615 6.37201C8.66976 6.25262 8.57742 6.11076 8.51441 5.95456C8.4514 5.79836 8.41896 5.63089 8.41896 5.46176C8.41896 5.29263 8.4514 5.12516 8.51441 4.96896C8.57742 4.81276 8.66976 4.6709 8.78615 4.55151ZM2.0155 12.0719C1.74848 11.9755 1.46173 11.9519 1.18321 12.0034C1.15846 12.0089 1.13275 12.0079 1.10849 12.0004C1.08423 11.9929 1.06221 11.9792 1.0445 11.9606C1.02253 11.938 1.00782 11.9091 1.00236 11.8777C0.996903 11.8463 1.00096 11.8139 1.01398 11.7849C1.30944 11.131 2.09318 9.81595 3.51223 10.8783C3.51964 10.8851 3.52557 10.8935 3.52963 10.9028C3.53369 10.9122 3.53579 10.9223 3.53579 10.9325C3.53579 10.9428 3.53369 10.9529 3.52963 10.9622C3.52557 10.9716 3.51964 10.9799 3.51223 10.9868C3.32224 11.1408 3.17014 11.3386 3.0682 11.5644C2.96627 11.7901 2.91737 12.0373 2.92546 12.2861C2.9265 12.3153 2.93823 12.343 2.9583 12.3637C2.97837 12.3843 3.0053 12.3964 3.03366 12.3975C3.27432 12.4074 3.51389 12.3592 3.73313 12.2565C3.95236 12.1538 4.14514 11.9996 4.29596 11.8064C4.3026 11.798 4.31096 11.7913 4.32043 11.7866C4.32991 11.782 4.34027 11.7796 4.35076 11.7796C4.36124 11.7796 4.3716 11.782 4.38108 11.7866C4.39055 11.7913 4.39891 11.798 4.40555 11.8064C4.60252 12.0477 5.1449 12.8358 4.54426 13.5969C4.28205 13.9213 3.90634 14.1264 3.49835 14.168C2.91575 14.2323 1.83933 14.4279 1.3996 14.9447C1.38195 14.9663 1.35896 14.9825 1.33307 14.9916C1.30717 15.0007 1.27936 15.0025 1.25259 14.9966C1.22583 14.9907 1.2011 14.9775 1.18107 14.9583C1.16103 14.9391 1.14643 14.9147 1.13882 14.8876C0.983461 14.3422 0.742098 13.1228 2.0155 12.0719Z"
-                  ></path>
-                </g>
-              </svg>
-            </div>
-          )
-        }
-  126dbaab-022a-4cda-aa92-7e6069488a54:
-    type: TEXT
-    name: textStepFunctionTypesBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '7'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Dynaboard functions can run on either the server (in this case
-        Dynaboard’s servers) or the client (the user’s browser). Unless
-        specified, most functions that make API or database calls run on the
-        server.
-
-        Clicking on the button below will make an API call to a random data REST
-        API using the `restApiExample` function found in the pages function
-        panel at the bottom left of the screen.
-      renderMode: markdown
-      verticalAlign: top
-  1ab1fb38-1f61-407d-8255-1ac682beee4b:
-    type: TEXT
-    name: textStepLookAtAuthBody
-    properties:
-      top: '4'
-      width: '12'
       height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Dynaboard applications can be publicly accessible, completely private,
-        or anything in between. We’ll take a quick look at what’s possible on
-        the next page.
-      renderMode: markdown
-      verticalAlign: top
-  1b48819d-8cbc-4859-ad53-689584fc9a59:
-    type: CONTAINER
-    name: stepFunctionTypes
-    slots:
-      canvas:
-        - nodeID: a9482ac7-ba31-4089-8182-46d043e80fd9
-          orderKey: Zu
-        - nodeID: 126dbaab-022a-4cda-aa92-7e6069488a54
-          orderKey: Zv
-        - nodeID: 7a34934a-47de-4bf0-a1a3-ce28bb912778
-          orderKey: ZvV
-        - nodeID: 99cb35af-7af9-490f-bdaf-3fd5d66600e6
-          orderKey: Zvl
-        - nodeID: 2b9d1cb6-3a9d-43d7-ae16-88d60e443fd0
-          orderKey: Zw
-    properties:
-      top: '9'
+      value: Welcome to Dynaboard!
       width: '12'
-      height: '30'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '27'
-      borderRadius: '5'
-  1c5460ce-7123-4c4e-a6cd-c9853dedcb0e:
-    type: TEXT
-    name: textStepCustomCodeHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 2) Custom Code
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  1debd6f8-b87a-4532-b84e-dd2211949297:
-    type: CONTAINER
-    name: stepComponentTypes
-    slots:
-      canvas:
-        - nodeID: 42f25b38-10d0-461e-b950-9bdb93b74a6a
-          orderKey: Zz
-        - nodeID: c71077df-99ec-4ceb-8fe9-740ef703feae
-          orderKey: a0
-    properties:
-      top: '8'
-      width: '12'
-      height: '17'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '15'
-      borderRadius: '5'
   1e33b59d-d7b9-4230-bf59-6bd887aef34c:
     type: FUNCTION
     name: exampleInterpolationFunction
     properties:
       action:
-        message: I'm a {{inputStepBasicInterpolation.value || "Basic"}} toast!
-        variant: primary
+        actionType: POP_TOAST
         dismissButton: Yum!
         duration: 5000
+        message: I'm a {{inputStepBasicInterpolation.value || "Basic"}} toast!
         path: ''
         target: _self
         targetNode:
           ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
-        actionType: POP_TOAST
-  1f32aa32-e1be-4abc-ba78-50ac72fdf597:
-    type: TEXT
-    name: textStepDeployAppHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 3) Deploying an Application
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
+        variant: primary
   1f81be44-bd5c-4161-a6e9-bebf92ca8a46:
     type: RESOURCE/ONE_TIME_PIN_AUTH
     name: oneTimePinAuth1
-  21523aaf-c7b5-46d2-8cd5-a140392b2be1:
-    type: CONTAINER
-    name: stepAPIAndDB
-    slots:
-      canvas:
-        - nodeID: af585dea-6b97-4de3-a6fb-beaa16ab088f
-          orderKey: Zz
-        - nodeID: e30418dc-f865-4cd7-add9-8be99dd00787
-          orderKey: a0
+  27b866cc-0a43-4095-a3ef-950a03367663:
+    type: TEXT
+    name: textStepInteractingWithComponentsHeader
     properties:
-      top: '16'
+      fontSize: xl
+      fontWeight: bold
+      height: '1'
+      value: 2) Interacting with Components
+      verticalAlign: bottom
       width: '12'
-      height: '20'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '17'
-      borderRadius: '5'
-  231ad0b3-1f73-45d7-91a2-72f446597c62:
-    type: PAGE
-    name: interactAndSelect
-    slots:
-      canvas:
-        - nodeID: 99ea5ef6-c815-4a73-aad9-16886214aa11
-          orderKey: Zu
-        - nodeID: 50d5738c-31e9-4fe8-a00d-3cf1cc941f4d
-          orderKey: ZuV
-        - nodeID: 5003b15c-a4a4-44b3-a2bc-c76ef5cc432c
-          orderKey: ZwV
-        - nodeID: 07960dcc-19e6-4b74-9010-9b32823a41ce
-          orderKey: Zx
-        - nodeID: 905787e7-415d-48e3-9a8d-ade548bf72ee
-          orderKey: ZxV
-        - nodeID: eabd6207-2bbe-44bd-a312-9bdf2f0bc5c1
-          orderKey: Zy
-      functions:
-        - nodeID: 0ee61185-9f1a-4ea3-9b95-b8ffbc219204
-          orderKey: a0
-        - nodeID: 518557e3-7065-4fa3-bb80-671de06d1bab
-          orderKey: a1
-        - nodeID: 8ad8f28e-5eed-499f-aac2-2194f052755d
-          orderKey: a2
-    properties:
-      minWidth: 960px
-      minHeight: 1896px
-  256cac47-94fe-4a58-897d-ad4a2c2b09ec:
+  27d01e5e-95d7-4024-a816-c382f8b1fc69:
     type: TEXT
     name: textStepFirstComponentHeader
     properties:
-      width: '12'
-      height: '2'
-      value: 2) Add Your First Component
       fontSize: xl
-      verticalAlign: bottom
       fontWeight: bold
-  284b9f04-b755-400e-8f44-d3d0b2d583b4:
-    type: TEXT
-    name: textStepLookAtResourcesBody
-    properties:
-      top: '4'
+      height: '1'
+      value: 3) Add Your First Component
+      verticalAlign: bottom
       width: '12'
-      height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Unlike interpolation, functions have to be attached to a specific
-        resource before they can be run. We’ll look at the different types of
-        available resources on the next page.
-      renderMode: markdown
-      verticalAlign: top
-  29613932-d73b-45f3-9d5e-9d3ac10bfecd:
-    type: TEXT
-    name: textStepDeployAppBody
-    properties:
-      top: '4'
-      width: '10'
-      height: '5'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        When you’re ready, deploying is easy! Deploy your app by clicking on the
-        “rocket ship” icon in the top right corner of the screen.
-      renderMode: markdown
-      verticalAlign: top
   29bd4661-e2aa-40e0-bb02-df08e21ad388:
     type: TEXT
     name: textSubheader
     properties:
-      top: '5'
-      width: '12'
       height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        h2, h3 {
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
+      renderMode: markdown
+      styles: ''
+      top: '5'
       value: >-
         This getting started guide is here to help you learn the in's and out's
         of Dynaboard in just a few minutes. Once you've learned the basics we
         have example apps, boilerplates, and additional documentation
         [additional documentation](https://dynaboard.com/docs) to help you start
         building!
-      renderMode: markdown
       verticalAlign: top
-  29ec7a77-959e-4ed7-811d-911d2cc9e604:
+      width: '12'
+  30d8badd-70d9-4414-97b6-e07287e59f0c:
     type: TEXT
-    name: textHeader
+    name: textStepAddingNewComponentsBody
     properties:
+      height: '6'
+      renderMode: markdown
+      styles: ''
+      top: '2'
+      value: >-
+        Now that you know how to interact with and select components, let's
+        learn more about how to make them dynamically respond to data! 
+
+
+        Our "double-curly" syntax `{{ "{\{ \}\}" }}` lets you write code nearly
+        anywhere you want (in nearly every property on both components and
+        resources). We call this interpolation, and we'll practice it in the
+        next section.
+      verticalAlign: top
       width: '12'
-      height: '4'
-      value: Authentication Overview
-      fontSize: 3xl
-      fontWeight: bold
-  2b9d1cb6-3a9d-43d7-ae16-88d60e443fd0:
-    type: BUTTON
-    name: buttonClientFunction
-    properties:
-      top: '25'
-      left: '5'
-      width: '4'
-      height: '2'
-      text: Call A Client Function
-      backgroundColor: purple.500
-      onClick:
-        function:
-          ref: c504c7a4-322c-4044-8b0d-4a2c3d0825c3
-  2fae4be0-4bca-43c0-8e66-cb4d6f61204d:
-    type: CONTAINER
-    name: stepOtherResources
-    slots:
-      canvas:
-        - nodeID: 0b24d032-8017-42bc-a9e4-f44897612fa1
-          orderKey: Zz
-        - nodeID: 019ce151-e9ba-4201-89a9-2a83519831b7
-          orderKey: a0
-    properties:
-      top: '64'
-      width: '12'
-      height: '11'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '8'
-      borderRadius: '5'
-  300b4537-1bb5-40ab-a16c-a2ce137ee97a:
-    type: CONTAINER
-    name: stepLookAtAuth
-    slots:
-      canvas:
-        - nodeID: f198ba12-ffde-4aa6-a5c6-5d15934b7fab
-          orderKey: Zz
-        - nodeID: 1ab1fb38-1f61-407d-8255-1ac682beee4b
-          orderKey: ZzG
-        - nodeID: 4d1c2620-2f2c-4a02-9f82-6c812390a0e7
-          orderKey: ZzV
-    properties:
-      top: '75'
-      width: '12'
-      height: '13'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '10'
-      borderRadius: '5'
   326d90c8-eb46-4b88-943d-a9545ac28c63:
     type: CHART
     name: chartAdvancedJS
     properties:
-      top: '10'
-      width: '12'
-      height: '19'
-      title: Number of Accounts by Type
-      isInteractive: 'false'
       dataSource: |-
         {{
           Object.entries(
             getRandomExampleData.data.data.reduce((accumulator, currentValue) => {
-              if (!accumulator[currentValue.accountName]) {
-                accumulator[currentValue.accountName] = 1
+              if (!accumulator[currentValue.accountType]) {
+                accumulator[currentValue.accountType] = 1
               } else {
-                accumulator[currentValue.accountName]++
+                accumulator[currentValue.accountType]++
               }
               return accumulator
             }, {})
@@ -717,879 +148,181 @@ nodes:
           })
         }}
       dimensions:
-        - key: Untitled Dimension 1
-          id: 410a976e-e589-4100-82b6-9b73aa074fe8
-          name: '# of Accounts'
-          side: left
-          yKey: accountCount
-          type: bar
-          mode: lines
+        - id: 410a976e-e589-4100-82b6-9b73aa074fe8
+          key: Untitled Dimension 1
           lineShape: spline
           markerColor: purple.500
-      xKey: accountType
+          mode: lines
+          name: '# of Accounts'
+          side: left
+          type: bar
+          yKey: accountCount
+      height: '20'
       horizontalAxisTitle: Account Type
+      isInteractive: 'false'
       leftVerticalAxisTitle: '# of Accounts'
-  34c49a14-83e8-41ac-aa8c-cc26ab9a5b78:
-    type: FUNCTION
-    name: nextPage
-    properties:
-      action:
-        path: /resources
-        target: _self
-        targetNode:
-          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
-        actionType: NAVIGATE_TO_PAGE
-  39312066-5888-477f-839c-17b612478f26:
-    type: CONTAINER
-    name: stepSlugAndCustomDomain
-    slots:
-      canvas:
-        - nodeID: 8fb56e8b-33a2-4872-b236-654d3df09183
-          orderKey: Zz
-        - nodeID: 7f9ed033-f24f-40ec-8a8b-20882a600498
-          orderKey: a0
-    properties:
-      top: '8'
+      title: Number of Accounts by Type
+      top: '6'
       width: '12'
-      height: '21'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '18'
-      borderRadius: '5'
-  3abefd26-2678-4703-a97e-cffd09fc68aa:
-    type: TEXT
-    name: textStepAddingNewComponentsBody
+      xKey: accountType
+  3273257f-e1c9-4698-92c2-c8d49cf3ff30:
+    type: ITERATOR
+    name: templateList
     properties:
-      top: '4'
+      component: COMPONENT/61af232e-6b81-4544-8f00-c943e7c083a2
+      data: |-
+        [
+          {
+            templateImageLinkDark:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersDark.af7c6ec5.png&w=640&q=75",
+            templateImageLinkLight:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersLight.d244dd42.png&w=640&q=75",
+            templateTitleText: "User Admin Panel",
+            templateDescText:
+              "See how to build a data driven UI in Dynaboard involving the data table.",
+            cardLink: "https://dynaboard.new/dynaboard/dynaboard--data-table",
+          },
+          {
+            templateImageLinkDark:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTDark.70117c38.png&w=640&q=75",
+            templateImageLinkLight:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75",
+            templateTitleText: "GPT-3 Playground",
+            templateDescText:
+              "Get a head start on building your own GPT-3 powered application with a pre-built UI and included prompt examples.",
+            cardLink: "https://dynaboard.new/dynaboard/dynaboard--gpt3-playground",
+          },
+          {
+            templateImageLinkDark:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosDark.6741eeba.png&w=640&q=75",
+            templateImageLinkLight:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosLight.5f70eaaa.png&w=640&q=75",
+            templateTitleText: "Lightning Demos",
+            templateDescText:
+              "Experince a complete application that leverages Dynaboard's built-in KV store for application storage.",
+            cardLink: "https://dynaboard.new/dynaboard/dynaboard--lightning-demos",
+          },
+          {
+            templateImageLinkDark:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateFeedDark.c7fcdde1.png&w=640&q=75",
+            templateImageLinkLight:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateFeedLight.d7415e49.png&w=640&q=75",
+            templateTitleText: "Hacker News Clone",
+            templateDescText:
+              "Explore the advanced styling capabilites of Dynaboard, and see an example of a UI involving custom components.",
+            cardLink: "https://dynaboard.new/dynaboard/dynaboard--hacker-news",
+          },
+          {
+            templateImageLinkDark:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateVizDark.893e4e60.png&w=640&q=75",
+            templateImageLinkLight:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateVizLight.da6eba1c.png&w=640&q=75",
+            templateTitleText: "Charts UI",
+            templateDescText:
+              "Dive into the charting capabilites of Dynaboard with a couple of different examples.",
+            cardLink: "https://dynaboard.new/dynaboard/dynaboard--charts",
+          },
+          {
+            templateImageLinkDark:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplatePrivateAppDark.d3daa24f.png&w=640&q=75",
+            templateImageLinkLight:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplatePrivateAppDark.d3daa24f.png&w=640&q=75",
+            templateTitleText: "Private App Boilerplate",
+            templateDescText:
+              "Learn how to build a private application in Dynaboard that requires authentication and how to secure it.",
+            cardLink:
+              "https://dynaboard.new/dynaboard/dynaboard--private-app-boilerplate",
+          },
+        ]
+      height: '73'
+      layoutStyle: HORIZONTAL_STACK
+      top: '6'
       width: '12'
-      height: '6'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Now that you know how to interact with and select components, let's try
-        adding some new ones to a page! We'll do that on the next page, so
-        select the Interact Tool again and click on the button below.
-      renderMode: markdown
-      verticalAlign: top
-  3b67f3b2-6205-486b-915c-f9bb681df868:
+      wrapContent: wrap
+  391855d8-83c4-421c-96ed-79d6be6f0d77:
     type: TEXT
     name: textStepFirstComponentBody
     properties:
-      top: '4'
-      width: '12'
       height: '6'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
+      renderMode: markdown
+      styles: ''
+      top: '2'
       value: >-
+        The data table, input, and dropdown are just a few of the UI components
+        available in Dynaboard, so let's try adding some more components to this
+        page. If you haven't already, switch back to the `Select Tool` and check
+        them out in the toolbar at the top of the screen.
+
+
         Once you've found a component you'd like to see, try dragging it into
         the container below. You can also delete the component by selecting it
         and pressing delete on your keyboard.
-      renderMode: markdown
       verticalAlign: top
-  3cb35b3e-3938-4c56-9d35-7eb0a72d5056:
-    type: TEXT
-    name: textStepInteractingWithComponentsBody
-    properties:
-      top: '4'
       width: '12'
-      height: '5'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Buttons aren't the only components you can interact with inside the
-        editor. Inputs, tables, and graphs support interactions as well. Try
-        switching back to the `Interact Tool` and typing something in the input
-        below.
-      renderMode: markdown
-      verticalAlign: top
-  3d7f92e2-3abb-44cc-828a-435a4a27ba49:
-    type: TEXT
-    name: textInitialInfo
+  3dac381d-0c42-4b83-b852-d399441bf6a0:
+    type: CONTAINER
+    name: containerComponent
+    slots:
+      canvas:
+        - nodeID: 023e3997-1820-4356-8920-22a1e22776c1
+          orderKey: a0
     properties:
-      top: '5'
+      backgroundColor: surface.200
+      gridRowHeight: '16'
+      gridRows: '0'
+      height: '18'
+      top: '9'
       width: '12'
-      height: '11'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Underlying all functions are resources. Resources can be many things
-        including TypeScript / JavaScript / Python execution environments,
-        database connections, API integrations, and authentication providers.
-
-
-        &nbsp;
-
-
-        To see the full list of existing and available resources click on the
-        `Resources` tab on the far left side of the page. Once you do, you’ll
-        see the left side panel change to show all resources that are currently
-        attached to this project. From there click on the `+` just to the right
-        of `Project Resources` to see the full list.
-      renderMode: markdown
-      verticalAlign: top
-  400e871c-38dd-414b-8082-8b3c93d40faf:
-    type: TEXT
-    name: textStepLoadingDataBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '6'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        All components have either a `.data` property or `.value` property that
-        becomes the displayed data. In the case of the table below we've
-        dynamically loaded data from a function. Try selecting it to see
-        properties or interacting with it to see how it behaves.
-      renderMode: markdown
-      verticalAlign: top
-  4068f097-33e2-4e41-a82c-b3a40fede933:
-    type: TEXT
-    name: textStepLoadingDataBody2
-    properties:
-      top: '39'
-      width: '12'
-      height: '5'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        If you checked out the `.data` property of the table above, you probably
-        noticed something interesting. That's our "double-curly" syntax! It lets
-        you write TypeScript / JavaScript in locations where it isn't normally
-        possible to load dynamic data.
-      renderMode: markdown
-      verticalAlign: top
   4298f146-c2ef-48a5-bebf-eca74cf71723:
     type: FUNCTION
     name: nextPage
     properties:
       action:
-        path: /functionsAndEvents
+        actionType: NAVIGATE_TO_PAGE
+        path: /templates
         target: _self
         targetNode:
           ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
-        actionType: NAVIGATE_TO_PAGE
-  42f25b38-10d0-461e-b950-9bdb93b74a6a:
-    type: TEXT
-    name: textStepComponentTypesHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 1) Exploring Different Types of Components
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  431d3e3e-9514-453c-b9a3-0ab1a58eb9e9:
-    type: FUNCTION
-    name: nextPage
-    properties:
-      action:
-        path: https://dynaboard.app
-        target: _self
-        targetNode:
-          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
-        actionType: NAVIGATE_TO_PAGE
-  43461a71-9326-484d-b7cd-5b5672f605ca:
-    type: TEXT
-    name: textStepNextStepsHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 3) Next Steps
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
   4503712d-3187-402a-a8b4-4d37c68d14d9:
     type: TEXT
     name: textStepInterpolationInFunctionsHeader
     properties:
-      width: '12'
-      height: '2'
+      fontSize: xl
+      fontWeight: bold
+      height: '1'
       value: 2) Interpolation Inside of Functions
-      fontSize: xl
       verticalAlign: bottom
-      fontWeight: bold
-  47d9140b-938f-4379-b439-939b0d013776:
-    type: CONTAINER
-    name: stepEvents
-    slots:
-      canvas:
-        - nodeID: ab48e725-55d2-44a1-9480-6b7e28d355b1
-          orderKey: Zz
-        - nodeID: 902a6702-5915-42f2-8c6a-bb7b57d4d28e
-          orderKey: a0
-    properties:
-      top: '54'
       width: '12'
-      height: '17'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '14'
-      borderRadius: '5'
-  4b0b677a-e2c6-4d25-9a89-b9019d27a628:
+  4bfa8df2-4df1-4a01-b8ea-3d6404038d18:
     type: TEXT
-    name: textStepCallingFunctionsHeader
+    name: descText
     properties:
-      width: '12'
-      height: '2'
-      value: 2) Calling Functions From Other Functions
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  4ccb5f46-1497-4e44-85c9-2b6903249936:
-    type: TEXT
-    name: textSubheader
-    properties:
-      top: '5'
-      width: '12'
-      height: '5'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Adding authentication to a Dynaboard only takes a minute with our
-        pre-built components and resources. You can also configure your own SSO
-        provider for even more control with only a few extra steps.
+      height: '3'
       renderMode: markdown
+      top: '14'
+      value: '{{ $props.templateDescText }}'
       verticalAlign: top
-  4d1c2620-2f2c-4a02-9f82-6c812390a0e7:
-    type: BUTTON
-    name: buttonTakeALook
-    properties:
-      top: '8'
-      left: '5'
-      width: '4'
-      height: '2'
-      text: Let's take a look!
-      backgroundColor: purple.500
-      onClick:
-        function:
-          ref: 7970ae3b-8c41-4e13-8871-6d728f4ff828
+      width: '12'
   4dc07e3e-403d-499d-ad85-d8276a8b3bb6:
     type: INPUT
     name: inputStepBasicInterpolation
     properties:
-      top: '12'
-      left: '2'
-      width: '10'
       height: '2'
       labelStyle: left
+      left: '2'
       placeholder: Basic
-  5003b15c-a4a4-44b3-a2bc-c76ef5cc432c:
-    type: CONTAINER
-    name: stepSelectingComponents
-    slots:
-      canvas:
-        - nodeID: 534b0b2e-3f07-4dbc-bccf-4aaf7eda5062
-          orderKey: Zy
-        - nodeID: 51a517c2-bc25-46fa-a3c6-6047c917a1eb
-          orderKey: Zz
-        - nodeID: b3235929-1257-4e2c-b50a-af7fb82269b4
-          orderKey: a0
-        - nodeID: e2fd1996-b298-479f-9f6c-2010518396ba
-          orderKey: a1
-        - nodeID: 8af6fe5b-13e8-486e-9d93-3ad3a630dc28
-          orderKey: a2V
-    properties:
-      top: '9'
-      width: '12'
-      height: '24'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '21'
-      borderRadius: '5'
-  50d5738c-31e9-4fe8-a00d-3cf1cc941f4d:
-    type: TEXT
-    name: textSubheader
-    properties:
-      top: '5'
-      width: '12'
-      height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Swapping between the `Select Tool` and the `Interact Tool` to work with
-        components is something you'll do frequently as you build and test your
-        applications.
-      renderMode: markdown
-      verticalAlign: top
-  50fc096f-3698-4f0a-b71c-16162146d649:
-    type: TEXT
-    name: textStepNextStepsBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '7'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        If you’re now looking at this in your deployed app, congratulations on
-        deploying your first dynaboard app! 🎉
-
-
-        &nbsp;
-
-
-        Click the button below to go back to the portal and start building your
-        next app with one of our templates.
-      renderMode: markdown
-      verticalAlign: top
-  515ea689-acba-4b65-b743-02e41e0a539c:
-    type: TEXT
-    name: textStepOverviewBody2
-    properties:
       top: '8'
-      width: '12'
-      height: '18'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: |-
-        1. Interaction & Selection
-        2. Adding UI Components
-        3. Making Applications Dynamic with Interpolation
-        4. Using Functions and Events
-        5. Loading Data with Resources
-        6. Securing Applications with Authentication
-        7. Deploying Applications
-      renderMode: markdown
-      fontSize: xl
-      verticalAlign: top
-      fontWeight: '600'
-  518557e3-7065-4fa3-bb80-671de06d1bab:
-    type: FUNCTION
-    name: buttonIncorrectLeave
-    properties:
-      action:
-        code: buttonStepSelectingComponents.text = "Select Me!"
-        targetNode:
-          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
-        actionType: CALL_CLIENT_FUNCTION
-  51a517c2-bc25-46fa-a3c6-6047c917a1eb:
-    type: TEXT
-    name: textStepSelectingComponentsBody
-    properties:
-      top: '4'
       width: '10'
-      height: '6'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        To edit components on a page you first need to select them, so if you
-        haven't already, switch back to the `Select Tool` by clicking the icon
-        above. Now select the button below.
-      renderMode: markdown
-      verticalAlign: top
   51f3641d-40a2-427d-93b0-15de34669fc6:
     type: TEXT
     name: textStepAdvancedJSHeader
     properties:
-      width: '12'
-      height: '2'
+      fontSize: xl
+      fontWeight: bold
+      height: '1'
       value: 3) Advanced JavaScript Example
-      fontSize: xl
       verticalAlign: bottom
-      fontWeight: bold
-  524760b9-0293-4d59-88e5-6eca634c481d:
-    type: INPUT
-    name: inputStepInteractingWithComponents
-    properties:
-      top: '10'
-      left: '3'
-      width: '8'
-      height: '2'
-      labelStyle: left
-      placeholder: Type here!
-  534b0b2e-3f07-4dbc-bccf-4aaf7eda5062:
-    type: TEXT
-    name: textStepSelectingComponentsHeader
-    properties:
       width: '12'
-      height: '2'
-      value: 1) Selecting Components
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
   55ff6f4e-a38f-4649-aada-3ce074dce023:
     type: CONTAINER
     name: stepBasicInterpolation
@@ -1604,16 +337,17 @@ nodes:
         - nodeID: 86be3c07-c257-4a81-ba5d-727e7f0b5fef
           orderKey: ZzV
     properties:
-      top: '9'
-      width: '12'
-      height: '22'
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
+      height: '23'
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      gridRows: '19'
-      borderRadius: '5'
+      top: '11'
+      width: '12'
   56967eac-f86e-46b9-b5ff-5d9afe635432:
     type: CONTAINER
     name: stepLetsGetStarted
@@ -1625,133 +359,74 @@ nodes:
           orderKey: Zz
         - nodeID: 601de6dc-8e7d-4935-a2f1-11914abd9944
           orderKey: ZzV
-        - nodeID: e47886a1-c3a4-4eb1-b2fd-3ec2b50a2664
-          orderKey: a0
     properties:
-      top: '9'
-      width: '12'
-      height: '18'
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
+      height: '13'
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      gridRows: '15'
-      borderRadius: '5'
-  5932b31a-027a-4b09-a9af-eaf159429d05:
+      top: '10'
+      width: '12'
+  590f0a9f-7b03-4cfc-a76c-79689c4a9e7c:
     type: CONTAINER
-    name: stepDeployApp
+    name: stepFirstComponent
     slots:
       canvas:
-        - nodeID: 59bc1e2e-6551-484a-ba50-35f50283fda8
-          orderKey: Zx
-        - nodeID: 29613932-d73b-45f3-9d5e-9d3ac10bfecd
-          orderKey: ZxV
-        - nodeID: 11140a22-70f8-4b16-8c04-71a7bf1caa0a
+        - nodeID: 391855d8-83c4-421c-96ed-79d6be6f0d77
+          orderKey: Zz
+        - nodeID: 27d01e5e-95d7-4024-a816-c382f8b1fc69
           orderKey: Zy
+        - nodeID: 3dac381d-0c42-4b83-b852-d399441bf6a0
+          orderKey: Zx
     properties:
-      top: '29'
-      width: '12'
-      height: '12'
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
+      height: '39'
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      gridRows: '9'
-      borderRadius: '5'
-  59bc1e2e-6551-484a-ba50-35f50283fda8:
-    type: TEXT
-    name: textStepDeployAppHeader
-    properties:
+      top: '80'
       width: '12'
-      height: '2'
-      value: 2) Deploying an App
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
   5aeb3de9-5348-4253-9b66-8f1c9d57b6a6:
     type: PAGE
     name: index
     slots:
       canvas:
         - nodeID: 0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3
-          orderKey: Zx
+          orderKey: Zr
         - nodeID: 29bd4661-e2aa-40e0-bb02-df08e21ad388
-          orderKey: Zy
-        - nodeID: b9a6bd3f-d349-4e7d-9557-10a16e07407d
-          orderKey: a0V
+          orderKey: Zs
         - nodeID: 56967eac-f86e-46b9-b5ff-5d9afe635432
-          orderKey: a1
+          orderKey: Zt
+        - nodeID: f1ba9371-abac-423d-9f17-00e6a54e1a3a
+          orderKey: Zw
+        - nodeID: 590f0a9f-7b03-4cfc-a76c-79689c4a9e7c
+          orderKey: Zv
+        - nodeID: d0bb41c4-ad04-4d6e-868e-eec0f4d13c8c
+          orderKey: Zu
       functions:
         - nodeID: 8cba5efc-01ce-402f-832e-0ab517766f2d
           orderKey: a0
+        - nodeID: 65bbb933-2f04-4796-afe7-506194721d32
+          orderKey: Zz
     properties:
       minHeight: 1280px
-      styles: |-
-        element.styles {
-
-        }
       minWidth: 960px
-  5bec42b7-20c4-4576-b0b3-d6c8a03c7822:
-    type: CONTAINER
-    name: stepNextSteps
-    slots:
-      canvas:
-        - nodeID: 43461a71-9326-484d-b7cd-5b5672f605ca
-          orderKey: Zx
-        - nodeID: 50fc096f-3698-4f0a-b71c-16162146d649
-          orderKey: ZxV
-        - nodeID: 8b09f543-9b19-43d2-bbc7-e2dbc6eb5e97
-          orderKey: Zy
-    properties:
-      top: '41'
-      width: '12'
-      height: '18'
       styles: |-
         element.styles {
-          border-width: 1px;
-          border-color: text.muted;
+
         }
-      gridRows: '15'
-      borderRadius: '5'
-  5dcfe6b1-e943-48f1-b22a-ca0e9658cc12:
-    type: FUNCTION
-    name: testFunction1
-    properties:
-      action:
-        code: >-
-          console.log("Hi! I'm testFunction1!");
-
-          console.log("Let me give testFunction2 a call...")
-
-
-          // Note: We do not need the "double-curly" syntax here to call this
-          function since we're already in a TypeScript / JavaScript environment.
-
-          let response = await testFunction2()
-
-
-          console.log(`testFunction2 says: ${response}`)
-
-
-          return "Bye for now!"
-        targetNode:
-          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
-        actionType: CALL_CLIENT_FUNCTION
   601de6dc-8e7d-4935-a2f1-11914abd9944:
     type: INLINE_REACT
     name: iconStepLetsGetStarted
     properties:
-      top: '4'
-      left: '11'
-      width: '2'
-      height: '5'
-      styles: |-
-        .size {
-          width: 64px;
-          height: 64px;
-        }
       componentSource: |-
         return function Component() {
           return (
@@ -1772,227 +447,40 @@ nodes:
             </div>
           )
         }
-  60655510-bd56-41d0-84f3-88905b0995a6:
-    type: BUTTON
-    name: buttonDynamicComponents
-    properties:
-      top: '12'
-      left: '5'
-      width: '4'
-      height: '2'
-      text: What's Interpolation?
-      backgroundColor: purple.500
-      onClick:
-        function:
-          ref: f1fdad29-508b-460d-98c2-dfe0159f84cb
-  60b7d6f2-c790-40ee-a1ab-3e2085a7c2b0:
-    type: TEXT
-    name: textStepCustomCodeBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '10'
+      height: '3'
+      left: '11'
       styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
+        .size {
+          width: 64px;
+          height: 64px;
         }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        We currently offer four custom code resources that allow you to write
-        arbitrary code in Dynaboard: TypeScript (JS) Client / Server, Python
-        Server, and Webhook Endpoint. 
-
-
-        &nbsp;
-
-
-        *Note: We won’t cover Webhook Endpoints in this getting started, but
-        they allow you to create Dynaboard apps that not only offer a UI but
-        that can respond to other applications (e.g. Stripe webhooks) as well.*
-      renderMode: markdown
-      verticalAlign: top
-  61cef891-64dd-4dfe-9c65-0d5bd79a2402:
-    type: DATA_TABLE
-    name: dataTableStepLoadingData
+      top: '3'
+      width: '1'
+  61af232e-6b81-4544-8f00-c943e7c083a2:
+    type: COMPONENT
+    name: templateCard
+    slots:
+      canvas:
+        - nodeID: fe6a3b00-f219-4206-84f0-43573e303287
+          orderKey: Zx
+      functions:
+        - nodeID: b42829d1-aa52-43c2-8ee4-9ea82493b792
+          orderKey: a0
     properties:
-      top: '10'
-      width: '12'
-      height: '28'
-      data: '{{getRandomExampleData.data.data}}'
-      autoColumns: true
-      columns:
-        - header: accountID
-          accessor: accountID
-          id: a38a63d3-568a-4983-aba9-2f554178b991
-          width: auto
-          widthUnit: '%'
-          minWidthUnit: '%'
-          minWidth: 15
-          isVisible: true
-          allowSortBy: '{{true}}'
-          renderAs: default
-          dateTimeFormat: MMMM dd, y 'at' ttt
-        - header: accountName
-          accessor: accountName
-          id: f9dcd253-c0c6-4552-8d45-effc188f9845
-          width: auto
-          widthUnit: '%'
-          minWidthUnit: '%'
-          minWidth: 15
-          isVisible: true
-          allowSortBy: '{{true}}'
-          renderAs: default
-          dateTimeFormat: MMMM dd, y 'at' ttt
-        - header: accountTotal
-          accessor: accountTotal
-          id: befcf09a-fa32-4a8a-b01a-e55baa11b23c
-          width: auto
-          widthUnit: '%'
-          minWidthUnit: '%'
-          minWidth: 15
-          isVisible: true
-          allowSortBy: '{{true}}'
-          renderAs: default
-          dateTimeFormat: MMMM dd, y 'at' ttt
-        - header: currencyName
-          accessor: currencyName
-          id: fc121056-0a0c-41d4-89a7-567871103377
-          width: auto
-          widthUnit: '%'
-          minWidthUnit: '%'
-          minWidth: 15
-          isVisible: true
-          allowSortBy: '{{true}}'
-          renderAs: default
-          dateTimeFormat: MMMM dd, y 'at' ttt
-        - header: currencyCode
-          accessor: currencyCode
-          id: 4d86d3a6-8366-4e86-a89b-5680cb21e2f1
-          width: auto
-          widthUnit: '%'
-          minWidthUnit: '%'
-          minWidth: 15
-          isVisible: true
-          allowSortBy: '{{true}}'
-          renderAs: default
-          dateTimeFormat: MMMM dd, y 'at' ttt
-        - header: currencySymbol
-          accessor: currencySymbol
-          id: df7998a9-88ca-4f00-b24e-c470b04313da
-          width: auto
-          widthUnit: '%'
-          minWidthUnit: '%'
-          minWidth: 15
-          isVisible: true
-          allowSortBy: '{{true}}'
-          renderAs: default
-          dateTimeFormat: MMMM dd, y 'at' ttt
-  61ecee0f-fcf5-422c-afea-557e6255eba7:
-    type: TEXT
-    name: textStepHotkeysBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '11'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Most common actions in Dynaboard also support hotkeys. If an action has
-        a hotkey, you can find it next to the title of the tooltip that appears
-        when you hover your mouse over the corresponding button.
-
-
-        &nbsp;
-
-
-        In the case of the `Select Tool` and `Interact Tool` you can swap
-        between them by pressing `V` to switch to the `Select Tool` or `CMD +
-        OPT / CTRL + ALT` to enable the `Interact Tool`.
-      renderMode: markdown
-      verticalAlign: top
+      $props: |2-
+          {
+            templateImageLinkDark:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTDark.70117c38.png&w=640&q=75",
+            templateImageLinkLight:
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75",
+            templateTitleText: "Example Template",
+            templateDescText:
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            cardLink: "https://dynaboard.new/",
+          }
+      height: 366px
+      mergeDefaultProps: false
+      width: 428px
   652f196d-4253-4f9c-85b8-1f844f60937f:
     type: CONTAINER
     name: stepNextUp
@@ -2005,257 +493,77 @@ nodes:
         - nodeID: f9f22903-fa56-4182-b327-af0acdec0d36
           orderKey: a0
     properties:
-      top: '87'
-      width: '12'
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: '14'
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      gridRows: '11'
-      borderRadius: '5'
-  67928af2-3260-404f-a10d-5b26c912b771:
-    type: TEXT
-    name: textStepInteractingWithComponentsHeader
-    properties:
+      top: '102'
       width: '12'
-      height: '2'
-      value: 2) Interacting with Different Components
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  732b68e9-32e2-4acc-b3df-ddd0697bea68:
-    type: TEXT
-    name: textStepAddingNewComponentsHeader
+  65bbb933-2f04-4796-afe7-506194721d32:
+    type: FUNCTION
+    name: getRandomExampleData
     properties:
-      width: '12'
-      height: '2'
-      value: 4) Adding New Components
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
+      action:
+        actionType: PERFORM_REQUEST
+        body: ''
+        bodyType: application/json
+        headers: []
+        method: GET
+        path: '?size=30'
+        targetNode:
+          ref: c038db71-e096-4432-bf8d-3e8bad052f6a
+      runOnPageLoad: '{{true}}'
   73db1033-fbf3-4277-8ec1-b75de844859d:
     type: TEXT
     name: textHeader
     properties:
-      width: '12'
-      height: '4'
-      value: Make Apps Dynamic with {{ "{{ Code Interpolation \}}" }}
       fontSize: 3xl
       fontWeight: bold
-  73f149a8-d937-434d-8223-53d62a8771ab:
-    type: BUTTON
-    name: buttonStepAddingNewComponents
-    properties:
-      top: '11'
-      left: '5'
-      width: '4'
-      height: '2'
-      text: Let's add Components!
-      backgroundColor: purple.500
-      onClick:
-        function:
-          ref: 8ad8f28e-5eed-499f-aac2-2194f052755d
-  74519676-1700-4342-b844-c744042131e1:
-    type: FUNCTION
-    name: nextPage
-    properties:
-      action:
-        path: /deployment
-        target: _self
-        targetNode:
-          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
-        actionType: NAVIGATE_TO_PAGE
+      height: '4'
+      value: Make Apps Dynamic with {{ "{{ Code Interpolation \}}" }}
+      width: '12'
   76169d73-f4ef-4df8-99a4-0d46b3c50ab5:
     type: TEXT
     name: textStepLetsGetStartedBody
     properties:
-      top: '4'
-      width: '10'
-      height: '6'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        To get started you're going to want to switch to the `Interact Tool` by
-        clicking the button on the left side of the toolbar at the top of this
-        page.
-
-
-        Once you have the interact tool selected, click on the "Getting Started"
-        button below to continue!
+      height: '11'
       renderMode: markdown
+      styles: ''
+      top: '2'
+      value: >-
+        In order to get started, switch to the `Interact Tool` by clicking the
+        button in the floating action bar at the bottom of the screen.
+
+
+        The `Interact Tool` lets you test and use UI components. Once you have
+        the interact tool selected, scroll down to the next section to see some
+        UI components in action.
       verticalAlign: top
+      width: '9'
   7818a6f7-3096-4a64-baf7-9fb2c3166de0:
     type: RESOURCE/TYPESCRIPT_CLIENT
     name: typescriptClient1
-  79508677-85ce-4288-825f-c22d219d7a4d:
+  781e9c93-ea0f-4707-a7d6-d9a76fc41f84:
     type: TEXT
-    name: textStepLookAtResourcesHeader
+    name: textStepAddingNewComponentsHeader
     properties:
-      width: '12'
-      height: '2'
-      value: 4) A Look at Resources
       fontSize: xl
-      verticalAlign: bottom
       fontWeight: bold
-  7970ae3b-8c41-4e13-8871-6d728f4ff828:
-    type: FUNCTION
-    name: nextPage
-    properties:
-      action:
-        path: /authentication
-        target: _self
-        targetNode:
-          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
-        actionType: NAVIGATE_TO_PAGE
-  7a34934a-47de-4bf0-a1a3-ce28bb912778:
-    type: BUTTON
-    name: buttonApiCall
-    properties:
-      top: '13'
-      left: '5'
-      width: '4'
-      height: '2'
-      onClick:
-        function:
-          ref: bebe98f6-5e26-46ab-b821-c17e3210586f
-      text: Make an API Call
-      backgroundColor: purple.500
-  7a41d532-ef17-4aad-bfff-940491b0472a:
-    type: CONTAINER
-    name: stepLookAtResources
-    slots:
-      canvas:
-        - nodeID: 79508677-85ce-4288-825f-c22d219d7a4d
-          orderKey: Zy
-        - nodeID: 284b9f04-b755-400e-8f44-d3d0b2d583b4
-          orderKey: Zz
-        - nodeID: e022cdad-89f7-4de8-be97-9e46a693095d
-          orderKey: a0
-    properties:
-      top: '71'
+      height: '1'
+      value: 4) Make Apps Dynamic with Interpolation
+      verticalAlign: bottom
       width: '12'
-      height: '13'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '10'
-      borderRadius: '5'
-  7bec9869-c0f8-4f06-acd3-ddc0eaf21ece:
-    type: TEXT
-    name: textStepInteractingWithComponentsBody2
-    properties:
-      top: '16'
-      width: '12'
-      height: '10'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Whenever you interact with an input in the editor something called an
-        `Override` is created. If you switch back to the `Select Tool` and
-        select the input you'll see a yellow outline around the `.value`
-        property. This means it has been overridden. `Overrides` are only
-        temporary to help you test. They disappear when you refresh the editor
-        or if you clear them by selecting the overridden property and clicking
-        on the `Remove Override` button at the bottom of the pop-out window.
-      renderMode: markdown
-      verticalAlign: top
   7e0ee4db-ca2e-4b47-8b08-e060969c486e:
     type: TEXT
     name: textStepAdvancedJSBody
     properties:
-      top: '4'
-      width: '12'
-      height: '5'
+      height: '3'
+      renderMode: markdown
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -2301,210 +609,20 @@ nodes:
           padding: 0px 4px;
           border-radius: 4px;
         }
+      top: '2'
       value: >-
         So far we’ve only returned a basic string value inside of an
         interpolation, however it’s possible to do much more. In the example
         below, we’re mapping over and returning a JSON object to populate the
         chart.
-      renderMode: markdown
       verticalAlign: top
-  7f8e35f1-20f1-495a-a41c-e39e770b3797:
-    type: TEXT
-    name: textStepOverviewBody1
-    properties:
-      top: '4'
       width: '12'
-      height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        h2, h3 {
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-      value: >-
-        In the following sections, we’ll cover all of the basics you need to
-        know to build an app from scratch or modify one of our templates.
-      renderMode: markdown
-      verticalAlign: top
-  7f9ed033-f24f-40ec-8a8b-20882a600498:
-    type: TEXT
-    name: textStepSlugAndCustomDomainBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '13'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        All applications start with a randomly generated slug that can be found
-        in the `Settings` panel on the far left side of the screen or in your
-        URL bar before `.edit.dynaboard.app`. This slug forms the subdomain part
-        of each application’s base URL. However, this can be changed to any
-        currently available slug (e.g. `yoursite.dynaboard.app`).
-
-
-        &nbsp;
-
-
-        All paid workspaces also come with the ability to use one or more custom
-        sub-domains with your projects, so you can host your project on your own
-        URL (e.g. `app.yoursite.com`).
-      renderMode: markdown
-      verticalAlign: top
-  806566f5-d4f7-492e-a59e-2893112ecbc8:
-    type: PAGE
-    name: resources
-    slots:
-      canvas:
-        - nodeID: c8b719c9-cfdb-4bf2-9a68-5c4c3bdd5b27
-          orderKey: Zt
-        - nodeID: 3d7f92e2-3abb-44cc-828a-435a4a27ba49
-          orderKey: ZtV
-        - nodeID: 21523aaf-c7b5-46d2-8cd5-a140392b2be1
-          orderKey: Ztl
-        - nodeID: b718c974-7795-46fe-af3a-bbe137cf94e1
-          orderKey: Ztt
-        - nodeID: b44b1794-1556-4e59-a693-7493d1d1b2e0
-          orderKey: Zu
-        - nodeID: 2fae4be0-4bca-43c0-8e66-cb4d6f61204d
-          orderKey: Zv
-        - nodeID: 300b4537-1bb5-40ab-a16c-a2ce137ee97a
-          orderKey: Zw
-      functions:
-        - nodeID: 7970ae3b-8c41-4e13-8871-6d728f4ff828
-          orderKey: a0
-    properties:
-      minWidth: 960px
-      minHeight: 1790px
-  81a8d0ab-81cf-46af-8b71-fc665649d3fc:
-    type: TEXT
-    name: textHeader
-    properties:
-      width: '12'
-      height: '4'
-      value: Deploying an Application
-      fontSize: 3xl
-      fontWeight: bold
-  8299ee52-1f0a-4fb6-8173-39a5d887b7a5:
-    type: TEXT
-    name: textStepAccessAndAuthBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '7'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        We’ll talk about these more on the next page, but in addition to
-        connecting to resources like databases we also allow you to connect your
-        application to third-party SSO providers (e.g. Google, GitHub,
-        Microsoft, or Okta) or use our own one-time PIN system to provide secure
-        user sign-in for your apps.
-      renderMode: markdown
-      verticalAlign: top
   83ec7aea-9262-46aa-a18f-4badca4579e2:
     type: TEXT
     name: textStepNextUpBody
     properties:
-      top: '4'
-      width: '12'
-      height: '5'
+      height: '3'
+      renderMode: markdown
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -2550,468 +668,75 @@ nodes:
           padding: 0px 4px;
           border-radius: 4px;
         }
+      top: '2'
       value: >-
         Interpolation and functions go together hand-in-hand as a way to pass
         data back and forth between the UI of your application and back-end
-        resources. We’ll dig a little bit deeper into functions on the next
-        page.
-      renderMode: markdown
+        resources. The templates on the next page provide different examples of
+        how this works in practice.
       verticalAlign: top
-  8505fbda-7a2a-4a2f-b2f1-3183e4e7d641:
-    type: CONTAINER
-    name: stepDeployApp
-    slots:
-      canvas:
-        - nodeID: 1f32aa32-e1be-4abc-ba78-50ac72fdf597
-          orderKey: Zx
-        - nodeID: d68caf6f-fefb-48c3-a550-ca7264fee00b
-          orderKey: ZxV
-        - nodeID: 0f205c05-28de-4e01-abd2-dc54ef32d44e
-          orderKey: Zy
-    properties:
-      top: '56'
       width: '12'
-      height: '13'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '10'
-      borderRadius: '5'
-  8535a55a-29cc-4c05-aebd-45d6c376caa9:
-    type: FUNCTION
-    name: getRandomExampleData
+  8463cf78-496e-4757-bfcc-af3ba1a79ae8:
+    type: TEXT
+    name: textStepInteractingWithComponentsBody
     properties:
-      action:
-        path: '?size=30'
-        body: ''
-        headers: []
-        method: GET
-        bodyType: application/json
-        targetNode:
-          ref: c038db71-e096-4432-bf8d-3e8bad052f6a
-        actionType: PERFORM_REQUEST
-      runOnPageLoad: '{{true}}'
-  868a5c01-8e1f-4f23-a2bf-3e101925e94a:
-    type: SIGN-IN
-    name: signInExample
-    properties:
-      top: '11'
+      height: '3'
+      renderMode: markdown
+      styles: ''
+      top: '2'
+      value: >-
+        Below we have a small user account management example that includes a
+        data table, text input, and dropdown. With the `Interact Tool` selected
+        choose an account type, search for an account owner or sort the data
+        table.
+      verticalAlign: top
       width: '12'
-      height: '15'
-      onSuccess:
-        function:
-          ref: d4fb0c4c-e2dd-48e7-a017-71c5fb9910ae
   86be3c07-c257-4a81-ba5d-727e7f0b5fef:
     type: TEXT
     name: textStepBasicInterpolationBody2
     properties:
-      top: '16'
-      width: '12'
       height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        To see how it works select the header of this section and then look in
-        the `Value` field under the `Content` section in the properties panel on
-        the right side of the screen.
       renderMode: markdown
-      verticalAlign: top
-  8ad8f28e-5eed-499f-aac2-2194f052755d:
-    type: FUNCTION
-    name: nextPage
-    properties:
-      action:
-        path: /components
-        target: _self
-        targetNode:
-          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
-        actionType: NAVIGATE_TO_PAGE
-  8af6fe5b-13e8-486e-9d93-3ad3a630dc28:
-    type: TEXT
-    name: textStepSelectingComponentsBody2
-    properties:
-      top: '16'
-      width: '12'
-      height: '6'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Now (once you have the button selected) take a look at the properties
-        panel on the right side of the editor, we'll come back to this later,
-        but this is where you'll be able to see and edit the properties of any
-        component, function, or resource.
-      renderMode: markdown
-      verticalAlign: top
-  8b09f543-9b19-43d2-bbc7-e2dbc6eb5e97:
-    type: BUTTON
-    name: buttonStartBuilding
-    properties:
+      styles: ''
       top: '12'
-      left: '5'
-      width: '4'
-      height: '2'
-      text: Start building!
-      backgroundColor: purple.500
-      onClick:
-        function:
-          ref: 431d3e3e-9514-453c-b9a3-0ab1a58eb9e9
+      value: >-
+        To see how it works select the header of this section. Once you've
+        selected it, look in the `Value` field under the `Content` section in
+        the properties panel on the right side of the screen.
+      verticalAlign: top
+      width: '12'
   8cba5efc-01ce-402f-832e-0ab517766f2d:
     type: FUNCTION
     name: nextPage
     properties:
       action:
-        path: /interactAndSelect
+        actionType: NAVIGATE_TO_PAGE
+        path: /interpolation
         target: _self
         targetNode:
           ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
-        actionType: NAVIGATE_TO_PAGE
   8f34af83-c724-4818-a0a9-4cbac532cfd5:
     type: RESOURCE/BROWSER
     name: browser1
-  8fab4b0a-2de0-4e7f-97d4-c435700d8c90:
-    type: PAGE
-    name: deployment
-    slots:
-      canvas:
-        - nodeID: 81a8d0ab-81cf-46af-8b71-fc665649d3fc
-          orderKey: Zu
-        - nodeID: a9d86917-86fe-4bed-849e-817d9bd2af74
-          orderKey: ZuV
-        - nodeID: 39312066-5888-477f-839c-17b612478f26
-          orderKey: Zul
-        - nodeID: 5932b31a-027a-4b09-a9af-eaf159429d05
-          orderKey: Zut
-        - nodeID: 5bec42b7-20c4-4576-b0b3-d6c8a03c7822
-          orderKey: Zv
-      functions:
-        - nodeID: 431d3e3e-9514-453c-b9a3-0ab1a58eb9e9
-          orderKey: a0
-    properties:
-      minWidth: 960px
-      minHeight: 1620px
-  8fb56e8b-33a2-4872-b236-654d3df09183:
+  968665fc-0536-405a-ab31-861ead1f98db:
     type: TEXT
-    name: textStepSlugAndCustomDomainHeader
+    name: titleText
     properties:
-      width: '12'
-      height: '2'
-      value: 1) Application Slugs & Custom Domains
       fontSize: xl
-      verticalAlign: bottom
       fontWeight: bold
-  902a6702-5915-42f2-8c6a-bb7b57d4d28e:
-    type: TEXT
-    name: textStepEventsBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '10'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        To run functions in response to user input you can set them to run on
-        events from either UI elements or other functions. Common events are `On
-        Click`, `On Hover`, `On Success`, and `On Failure`. For any component
-        you can see the available events by clicking on the component and then
-        looking for the `Events` tab at the top of the properties panel at the
-        top right of the screen.
-
-
-        &nbsp;
-
-
-        *Note: Each button on this page has a function attached to its `On
-        Click` event.*
-      renderMode: markdown
-      verticalAlign: top
-  905787e7-415d-48e3-9a8d-ade548bf72ee:
-    type: CONTAINER
-    name: stepHotkeys
-    slots:
-      canvas:
-        - nodeID: 07144acc-876b-43c9-b6f1-20d9b353151f
-          orderKey: Zy
-        - nodeID: 61ecee0f-fcf5-422c-afea-557e6255eba7
-          orderKey: Zz
-    properties:
-      top: '61'
-      width: '12'
-      height: '18'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '15'
-      borderRadius: '5'
-  93ea36ca-7d9b-440a-b10f-0b42140a14f4:
-    type: PAGE
-    name: components
-    slots:
-      canvas:
-        - nodeID: f60f338f-ce39-4845-a30f-599e3ef7c36a
-          orderKey: Zw
-        - nodeID: edc8e4b3-2c69-452c-b09b-e94402d2e406
-          orderKey: ZwV
-        - nodeID: 1debd6f8-b87a-4532-b84e-dd2211949297
-          orderKey: Zx
-        - nodeID: 9de5e480-dc0e-4474-82d0-7622c40fc181
-          orderKey: ZxV
-        - nodeID: dede5bc2-34e7-4abf-9aa8-b076d8c34a4c
-          orderKey: Zy
-        - nodeID: ebce788e-071d-497c-a1c6-62b586a6e512
-          orderKey: Zz
-      functions:
-        - nodeID: f1fdad29-508b-460d-98c2-dfe0159f84cb
-          orderKey: Zz
-        - nodeID: 8535a55a-29cc-4c05-aebd-45d6c376caa9
-          orderKey: a0
-    properties:
-      minWidth: 960px
-      minHeight: 2348px
-  961d6820-14c8-47dc-8a92-20fd69482e08:
-    type: PAGE
-    name: functionsAndEvents
-    slots:
-      functions:
-        - nodeID: bebe98f6-5e26-46ab-b821-c17e3210586f
-          orderKey: a0
-        - nodeID: c504c7a4-322c-4044-8b0d-4a2c3d0825c3
-          orderKey: a1
-        - nodeID: 5dcfe6b1-e943-48f1-b22a-ca0e9658cc12
-          orderKey: a2
-        - nodeID: b0624324-4a67-4e41-8414-9a8c04810dc3
-          orderKey: a3
-        - nodeID: 34c49a14-83e8-41ac-aa8c-cc26ab9a5b78
-          orderKey: a4
-      canvas:
-        - nodeID: c6e1a5e8-91ae-4006-aff3-c82dbae320d9
-          orderKey: Zw
-        - nodeID: b47045af-6839-4b39-805f-917d6e13e8cb
-          orderKey: ZwV
-        - nodeID: 1b48819d-8cbc-4859-ad53-689584fc9a59
-          orderKey: Zwl
-        - nodeID: e0f25c74-b3c4-4eca-b9de-aca742ff73ae
-          orderKey: Zwt
-        - nodeID: 47d9140b-938f-4379-b439-939b0d013776
-          orderKey: Zwx
-        - nodeID: 7a41d532-ef17-4aad-bfff-940491b0472a
-          orderKey: Zx
-    properties:
-      minWidth: 960px
-      minHeight: 1822px
-  99230945-fa8f-4c1e-9d69-635c2a383aa3:
-    type: TEXT
-    name: textStepConfigAuthHeader
-    properties:
-      width: '12'
       height: '2'
-      value: 2) Configuring Authentication Rules
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  99cb35af-7af9-490f-bdaf-3fd5d66600e6:
-    type: TEXT
-    name: textStepFunctionTypesBody2
-    properties:
-      top: '17'
+      top: '12'
+      value: '{{$props.templateTitleText}}'
       width: '12'
-      height: '8'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Once you’ve clicked the button above, you can see the results using
-        Dynaboard’s built in `Console` which is available in the closed panel at
-        the bottom of the screen. It shows the output of both client and server
-        side functions. 
-
-        Click the button below to see the function `clientFunctionExample`
-        JavaScript / TypeScript function in action.
-      renderMode: markdown
-      verticalAlign: top
-  99ea5ef6-c815-4a73-aad9-16886214aa11:
-    type: TEXT
-    name: textHeader
+  97c5eeb2-6924-4130-806f-eb8abd4c2a8f:
+    type: MEDIA
+    name: coverImage
     properties:
+      height: '11'
+      url: >-
+        {{ $app.colorMode === 'dark' ? $props.templateImageLinkDark :
+        $props.templateImageLinkLight }}
       width: '12'
-      height: '4'
-      value: Interaction and Selection
-      fontSize: 3xl
-      fontWeight: bold
   9a8d82c6-efab-42c6-a742-e05e3f310737:
     type: CONTAINER
     name: stepAdvancedJS
@@ -3026,59 +751,17 @@ nodes:
         - nodeID: ae3a9824-13d0-4c6b-bc7a-1d2fb4dd8ba7
           orderKey: Zz
     properties:
-      top: '51'
-      width: '12'
-      height: '36'
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
+      height: '43'
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      gridRows: '33'
-      borderRadius: '5'
-  9dc69b01-d059-4500-ab0c-e2beff87463b:
-    type: TEXT
-    name: textStepLoadingDataHeader
-    properties:
+      top: '58'
       width: '12'
-      height: '2'
-      value: 3) Loading Data Into A Component
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  9de5e480-dc0e-4474-82d0-7622c40fc181:
-    type: CONTAINER
-    name: stepFirstComponent
-    slots:
-      canvas:
-        - nodeID: 256cac47-94fe-4a58-897d-ad4a2c2b09ec
-          orderKey: Zy
-        - nodeID: 3b67f3b2-6205-486b-915c-f9bb681df868
-          orderKey: ZyV
-        - nodeID: c0d99a24-74d7-4869-9545-e2d477f524b9
-          orderKey: Zyl
-    properties:
-      top: '25'
-      width: '12'
-      height: '28'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '25'
-      borderRadius: '5'
-  a4b5183c-4d46-4544-9d3b-c275605803de:
-    type: TEXT
-    name: textStepInteractingWithComponentsInfo
-    properties:
-      isVisible: '{{inputStepInteractingWithComponents.value}}'
-      top: '12'
-      left: '3'
-      width: '8'
-      height: '2'
-      value: 'You typed: {{inputStepInteractingWithComponents.value}}'
-      textAlign: center
   a58f0ad0-bc5d-417d-aace-8d94dffc2c7b:
     type: PAGE
     name: interpolation
@@ -3104,164 +787,42 @@ nodes:
         - nodeID: 1e33b59d-d7b9-4230-bf59-6bd887aef34c
           orderKey: a0
     properties:
-      minWidth: 960px
       minHeight: 1964px
-  a9482ac7-ba31-4089-8182-46d043e80fd9:
-    type: TEXT
-    name: textStepFunctionTypesHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 1) Client & Server Functions
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
+      minWidth: 960px
   a9c92a59-ccd1-44fd-9754-04929855e061:
     type: TEXT
     name: textStepInterpolationInFunctionsBody
     properties:
-      top: '4'
-      width: '12'
-      height: '5'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
+      height: '3'
+      renderMode: markdown
+      styles: ''
+      top: '2'
       value: >-
         Interpolation also works inside of functions that aren’t already
         JavaScript (it is typically not necessary inside TypeScript functions).
         The button below is attached to a function that opens a toast message.
-      renderMode: markdown
       verticalAlign: top
-  a9d86917-86fe-4bed-849e-817d9bd2af74:
-    type: TEXT
-    name: textSubheader
-    properties:
-      top: '5'
       width: '12'
-      height: '3'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        All Dynaboard applications are automatically saved as you build them,
-        but you’ll still need to explicitly deploy any changes.
-      renderMode: markdown
-      verticalAlign: top
-  ab48e725-55d2-44a1-9480-6b7e28d355b1:
-    type: TEXT
-    name: textStepEventsHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 3) Events
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
   abf20f79-e93b-4b3c-90dd-824d8e434e05:
     type: FUNCTION
     name: getRandomExampleData
     properties:
       action:
-        path: '?size=20'
+        actionType: PERFORM_REQUEST
         body: ''
+        bodyType: application/json
         headers: []
         method: GET
-        bodyType: application/json
+        path: '?size=20'
         targetNode:
           ref: c038db71-e096-4432-bf8d-3e8bad052f6a
-        actionType: PERFORM_REQUEST
       runOnPageLoad: '{{true}}'
   ae3a9824-13d0-4c6b-bc7a-1d2fb4dd8ba7:
     type: TEXT
     name: textStepAdvancedJSBody2
     properties:
-      top: '30'
-      width: '12'
-      height: '4'
+      height: '3'
+      renderMode: markdown
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -3307,533 +868,233 @@ nodes:
           padding: 0px 4px;
           border-radius: 4px;
         }
+      top: '27'
       value: >-
         You can see what the code looks like by selecting the chart and going to
         the `Data Source` under the `Data` panel on the chart.
-      renderMode: markdown
       verticalAlign: top
-  af585dea-6b97-4de3-a6fb-beaa16ab088f:
-    type: TEXT
-    name: textStepAPIAndDBHeader
+      width: '12'
+  b1d8f4ab-d246-4c87-942a-3c4ee43d450c:
+    type: DATA_TABLE
+    name: dataTableStepLoadingData
     properties:
-      width: '9'
-      height: '2'
-      value: 1) API Integrations & Databases Resources
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  b0624324-4a67-4e41-8414-9a8c04810dc3:
+      autoColumns: false
+      columns:
+        - accessor: accountID
+          allowSortBy: 'true'
+          buttonText: Button
+          dateTimeFormat: MMMM dd, y 'at' ttt
+          header: accountID
+          id: a38a63d3-568a-4983-aba9-2f554178b991
+          isVisible: 'true'
+          linkTarget: _blank
+          minWidth: 15
+          minWidthUnit: '%'
+          onButtonClick: null
+          renderAs: default
+          width: 0
+          widthUnit: '%'
+        - accessor: accountOwner
+          allowSortBy: 'true'
+          buttonText: Button
+          dateTimeFormat: MMMM dd, y 'at' ttt
+          header: accountOwner
+          id: ff47e8c8-b5ec-4682-a768-0fc9775d7338
+          isVisible: 'true'
+          linkTarget: _blank
+          minWidth: 15
+          minWidthUnit: '%'
+          onButtonClick: null
+          renderAs: default
+          width: 0
+          widthUnit: '%'
+        - accessor: accountType
+          allowSortBy: 'true'
+          buttonText: Button
+          dateTimeFormat: MMMM dd, y 'at' ttt
+          header: accountType
+          id: 69c247b2-edd0-4216-92c6-3b663ae4da19
+          isVisible: 'true'
+          linkTarget: _blank
+          minWidth: 15
+          minWidthUnit: '%'
+          onButtonClick: null
+          renderAs: default
+          width: 19
+          widthUnit: '%'
+        - accessor: accountTotal
+          allowSortBy: 'true'
+          buttonText: Button
+          dateTimeFormat: MMMM dd, y 'at' ttt
+          header: accountTotal
+          id: befcf09a-fa32-4a8a-b01a-e55baa11b23c
+          isVisible: 'true'
+          linkTarget: _blank
+          minWidth: 15
+          minWidthUnit: '%'
+          onButtonClick: null
+          renderAs: default
+          width: 13
+          widthUnit: '%'
+        - accessor: currencyName
+          allowSortBy: 'true'
+          buttonText: Button
+          dateTimeFormat: MMMM dd, y 'at' ttt
+          header: currencyName
+          id: fc121056-0a0c-41d4-89a7-567871103377
+          isVisible: 'true'
+          linkTarget: _blank
+          minWidth: 15
+          minWidthUnit: '%'
+          onButtonClick: null
+          renderAs: default
+          width: 17
+          widthUnit: '%'
+        - accessor: currencyCode
+          allowSortBy: 'true'
+          buttonText: Button
+          dateTimeFormat: MMMM dd, y 'at' ttt
+          header: currencyCode
+          id: 4d86d3a6-8366-4e86-a89b-5680cb21e2f1
+          isVisible: 'true'
+          linkTarget: _blank
+          minWidth: 15
+          minWidthUnit: '%'
+          onButtonClick: null
+          renderAs: default
+          width: 0
+          widthUnit: '%'
+        - accessor: currencySymbol
+          allowSortBy: 'true'
+          buttonText: Button
+          dateTimeFormat: MMMM dd, y 'at' ttt
+          header: currencySymbol
+          id: df7998a9-88ca-4f00-b24e-c470b04313da
+          isVisible: 'false'
+          linkTarget: _blank
+          minWidth: 15
+          minWidthUnit: '%'
+          onButtonClick: null
+          renderAs: default
+          width: 0
+          widthUnit: '%'
+      data: >-
+        {{getRandomExampleData.data.data.filter((item) =>
+        dropdownAccountType.value ?item.accountType ===
+        dropdownAccountType.value : true).filter((item) =>
+        item.accountOwner.toLowerCase().includes(inputStepInteractingWithComponents.value.toLowerCase()))}}
+      height: '21'
+      top: '9'
+      width: '12'
+  b42829d1-aa52-43c2-8ee4-9ea82493b792:
     type: FUNCTION
-    name: testFunction2
+    name: navigateToLink
     properties:
       action:
-        code: |-
-          console.log("Why is testFunction1 calling me again...?")
-
-          await $delay(2000)
-
-          return "Please try calling someone else..."
+        actionType: NAVIGATE_TO_PAGE
+        path: '{{$props.cardLink}}'
+        target: _blank
         targetNode:
-          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
-        actionType: CALL_CLIENT_FUNCTION
-  b11673c7-240e-4365-a0c7-efa37315773e:
+          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+  b46e2861-e155-4e98-94af-18fb160fe735:
     type: TEXT
-    name: textStepConfigAuthBody
+    name: textHeader
     properties:
-      top: '4'
-      width: '12'
-      height: '13'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        We offer prebuilt auth rules that can be applied on an entire app basis
-        or page by page. Rules can authenticate user sign-ins based on email,
-        email domain, or even preexisting SSO groups with Google Workspace and
-        GitHub configured resources.
-
-
-        &nbsp;
-
-
-        If you’re interested in building an authenticated app we offer a
-        [`Private App
-        Boilerplate`](https://dynaboard.app/?new&path=/dynaboard/dynaboard--private-app-boilerplate)
-        that lets you get started in seconds and explains the ins and outs of
-        the authentication process.
-      renderMode: markdown
-      verticalAlign: top
-  b3235929-1257-4e2c-b50a-af7fb82269b4:
-    type: INLINE_REACT
-    name: iconStepSelectingComponents
-    properties:
-      top: '4'
-      left: '11'
-      width: '2'
-      height: '6'
-      styles: |-
-        .size {
-          width:64px;
-          height: 64px;
-        }
-      componentSource: |-
-        return function Component() {
-          return (
-            <div className="size">
-              <svg
-                viewBox="0 0 16 16"
-                focusable="false"
-                className="chakra-icon"
-                aria-hidden="true"
-              >
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    fill="rgb(105, 103, 226)"
-                    d="M8.08579 10.5H12.5858L5 2.91422V13.5858L8.08579 10.5ZM4.85355 15.1465L8.5 11.5H13.7929C14.2383 11.5 14.4614 10.9614 14.1464 10.6465L4.85355 1.35356C4.53857 1.03858 4 1.26167 4 1.70712V14.7929C4 15.2384 4.53857 15.4614 4.85355 15.1465Z"
-                  ></path>
-                </g>
-              </svg>
-            </div>
-          )
-        }
-  b409246c-83ba-4e84-a5cf-15f2d55588b1:
-    type: TEXT
-    name: textStepComponentAndPINBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '7'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        The sign-in component you see below works out of the box with our
-        provided email based one-time PIN system and automatically adjusts when
-        adding your own providers. It can also be completely styled using custom
-        CSS.
-      renderMode: markdown
-      verticalAlign: top
-  b44b1794-1556-4e59-a693-7493d1d1b2e0:
-    type: CONTAINER
-    name: stepAccessAndAuth
-    slots:
-      canvas:
-        - nodeID: 031f6bed-61df-4ae0-aae3-fa147b8f459f
-          orderKey: Zz
-        - nodeID: 8299ee52-1f0a-4fb6-8173-39a5d887b7a5
-          orderKey: a0
-    properties:
-      top: '52'
-      width: '12'
-      height: '12'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '10'
-      borderRadius: '5'
-  b47045af-6839-4b39-805f-917d6e13e8cb:
-    type: TEXT
-    name: textSubheader
-    properties:
-      top: '5'
-      width: '12'
+      fontSize: 3xl
+      fontWeight: bold
       height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        The two main ways of adding functionality to your application is through
-        the use of code written inside of the  "double-curly" `{{ "{\{ \}\}" }}`
-        (i.e. interpolation) or page / project functions that are attached to
-        resources.
+      value: Let's Explore Templates!
+      width: '12'
+  b4c6c983-f33a-490b-9f5d-90d5e3c900b9:
+    type: TEXT
+    name: cardLink
+    properties:
+      height: '16'
+      href: '{{$props.cardLink}}'
+      renderMode: link
+      target: _blank
+      textDecorationLine: underline
+      value: ''
+      width: '12'
+  b51f3f6c-56a1-496c-b5f2-f28b3a5137c0:
+    type: TEXT
+    name: textStepInteractingWithComponentsInfo
+    properties:
+      height: '8'
       renderMode: markdown
+      styles: ''
+      top: '31'
+      value: >-
+        All components have either a `.data` property or `.value` property that
+        becomes the displayed data. In the case of the table above we've
+        dynamically loaded data from a function. Try selecting it to see
+        properties.
+
+
+        If you checked out the `.data` property of the table above, you probably
+        noticed something interesting. That's our "double-curly" syntax! It lets
+        you write TypeScript / JavaScript in locations where it isn't normally
+        possible to load dynamic data.
+
+
+        _We'll cover how the data table reacts in real-time to input field
+        changes on the next page._
       verticalAlign: top
+      width: '12'
   b64f391f-38be-4947-bf38-496abb546f3a:
     type: TEXT
     name: textStepNextUpHeader
     properties:
-      width: '12'
-      height: '2'
-      value: "4) Next Up —\_Functions"
       fontSize: xl
-      verticalAlign: bottom
       fontWeight: bold
-  b718c974-7795-46fe-af3a-bbe137cf94e1:
-    type: CONTAINER
-    name: stepCustomCode
-    slots:
-      canvas:
-        - nodeID: 1c5460ce-7123-4c4e-a6cd-c9853dedcb0e
-          orderKey: Zz
-        - nodeID: 60b7d6f2-c790-40ee-a1ab-3e2085a7c2b0
-          orderKey: a0
-    properties:
-      top: '36'
+      height: '1'
+      value: 4) Get Started Quickly with Templates
+      verticalAlign: bottom
       width: '12'
-      height: '16'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '13'
-      borderRadius: '5'
-  b9a6bd3f-d349-4e7d-9557-10a16e07407d:
-    type: CONTAINER
-    name: stepOverview
-    slots:
-      canvas:
-        - nodeID: 06968d9a-f186-46a8-a0d7-ae89887cd1a9
-          orderKey: Zw
-        - nodeID: 7f8e35f1-20f1-495a-a41c-e39e770b3797
-          orderKey: Zx
-        - nodeID: 515ea689-acba-4b65-b743-02e41e0a539c
-          orderKey: Zz
+  b94b1e88-800f-483c-a759-12fc670b8020:
+    type: DROPDOWN
+    name: dropdownAccountType
     properties:
-      top: '27'
-      width: '12'
-      height: '28'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '25'
-      borderRadius: '5'
-  bebe98f6-5e26-46ab-b821-c17e3210586f:
-    type: FUNCTION
-    name: restApiExample
-    properties:
-      action:
-        path: '?size=20'
-        body: ''
-        headers: []
-        method: GET
-        bodyType: application/json
-        targetNode:
-          ref: c038db71-e096-4432-bf8d-3e8bad052f6a
-        actionType: PERFORM_REQUEST
-      runOnPageLoad: '{{true}}'
+      displayValues: ''
+      fontSize: sm
+      height: '2'
+      label: Account Type
+      labelStyle: left
+      left: '8'
+      top: '6'
+      values: |-
+        {{
+          [
+            ...getRandomExampleData.data.data.reduce((acc, current) => {
+              return acc.add(current.accountType)
+            }, new Set()),
+          ]
+        }}
+      width: '5'
   c038db71-e096-4432-bf8d-3e8bad052f6a:
     type: RESOURCE/HTTP
     name: randomDataAPI
     properties:
       profiles:
-        - baseURL: https://random-dynaboard.vercel.app/api/finance
+        - baseURL: https://random-dynaboard.vercel.app/api/v2/finance
+          environment: ''
           headers:
             - key: Content-Type
               value: application/json
-          environment: ''
-  c0d99a24-74d7-4869-9545-e2d477f524b9:
-    type: TEXT
-    name: textStepFirstComponentArea
-    properties:
-      top: '15'
-      left: '4'
-      width: '6'
-      height: '2'
-      value: Drag a Component Here!
-      fontSize: xl
-      textAlign: center
-      fontWeight: bold
   c1af4bdd-aacf-4d28-bcb9-8bc7ccade3ec:
     type: TEXT
     name: textStepInterpolationInFunctionsBody2
     properties:
-      top: '14'
-      width: '12'
       height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
+      renderMode: markdown
+      styles: ''
+      top: '11'
       value: >-
         To see how it works select the function in the bottom left corner of the
         screen under the `Page Functions` panel named
         `exampleInterpolationFunction`.
-      renderMode: markdown
       verticalAlign: top
-  c25085ba-7a61-4d43-9ef6-abec7e19ab6e:
-    type: TEXT
-    name: textStepDynamicComponentsHeader
-    properties:
       width: '12'
-      height: '2'
-      value: 4) Making Your App Dynamic With Double Curlies
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  c504c7a4-322c-4044-8b0d-4a2c3d0825c3:
-    type: FUNCTION
-    name: clientFunctionExample
-    properties:
-      action:
-        code: >-
-          console.log("Hi! I'm a client side JS / TS function running in your
-          browser.")
-
-          console.log("I can do pretty much anything you're used to doing in
-          JavaScript.")
-
-
-          await $delay(2000)
-            
-          /* Note: We offer a few built in primitives that start with $
-          including:
-           * - $delay(ms): When awaited can be have as a sleep function defined in milliseconds.
-           * - $crypto: Can be used for hashing of things like emails.
-           * - $props: Avaiable inside custom components for passed through data when they're used inside things like dialogs, modals, or iterators.
-           * FOR AN UP TO DATE LIST OF BUILT IN PRIMITIVES USING THE $ PLEASE REFER TO THE DYNABOARD DOCS AT: https://dynaboard.com/docs
-           */
-
-          return "Thanks for running me! Bye for now."
-        targetNode:
-          ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
-        actionType: CALL_CLIENT_FUNCTION
-  c6e1a5e8-91ae-4006-aff3-c82dbae320d9:
-    type: TEXT
-    name: textHeader
-    properties:
-      width: '12'
-      height: '4'
-      value: Functions and Events
-      fontSize: 3xl
-      fontWeight: bold
-  c71077df-99ec-4ceb-8fe9-740ef703feae:
-    type: TEXT
-    name: textStepComponentTypesBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '12'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Dynaboard offers prebuilt components to make building custom data driven
-        applications easy. You can find all of the currently supported
-        components in the middle of the toolbar at the top of the screen.
-
-
-        &nbsp;
-
-
-        Tables, form inputs, charts, and custom react code are just some of the
-        supported components. For a complete list, switch back to the `Select
-        Tool` and then click on the `+` button up above.
-      renderMode: markdown
-      verticalAlign: top
   c78855dc-87d5-45ef-8dc0-5c933e7ef00a:
     type: CONTAINER
     name: stepInterpolationInFunctions
@@ -3848,716 +1109,183 @@ nodes:
         - nodeID: c1af4bdd-aacf-4d28-bcb9-8bc7ccade3ec
           orderKey: ZzO
     properties:
-      top: '31'
-      width: '12'
-      height: '20'
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
+      height: '22'
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      gridRows: '17'
-      borderRadius: '5'
-  c8b719c9-cfdb-4bf2-9a68-5c4c3bdd5b27:
-    type: TEXT
-    name: textHeader
-    properties:
+      top: '35'
       width: '12'
-      height: '4'
-      value: Adding Data with Resources
-      fontSize: 3xl
-      fontWeight: bold
-  cfc9bf90-3a37-4786-ba5c-22b75c233027:
+  d0bb41c4-ad04-4d6e-868e-eec0f4d13c8c:
     type: CONTAINER
-    name: stepComponentAndPIN
+    name: stepAddingNewComponents
     slots:
       canvas:
-        - nodeID: eaa20dce-a2f5-42c4-bb15-f6a67672af2c
-          orderKey: Zz
-        - nodeID: b409246c-83ba-4e84-a5cf-15f2d55588b1
-          orderKey: ZzG
-        - nodeID: 868a5c01-8e1f-4f23-a2bf-3e101925e94a
-          orderKey: ZzV
-    properties:
-      top: '10'
-      width: '12'
-      height: '28'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '25'
-      borderRadius: '5'
-  d0d4161b-ad10-46a8-92ac-493b442caa22:
-    type: TEXT
-    name: textStepBasicInterpolationHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 1) A {{inputStepBasicInterpolation.value || "Basic"}} Example
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  d395d3e4-5736-4664-a86c-623a0f71d9c4:
-    type: TEXT
-    name: textStepCallingFunctionsBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '5'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        TypeScript and Python functions can call as many other functions as they
-        need and are great for orchestrating groups of other functions. Click on
-        the button below and open the console to see `testFunction1` and
-        `testFunction2` in action.
-      renderMode: markdown
-      verticalAlign: top
-  d68caf6f-fefb-48c3-a550-ca7264fee00b:
-    type: TEXT
-    name: textStepDeployAppBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        We won’t be adding any authentication to our Getting Started project
-        before deploying it, so once we deploy, you’ll be able to see it running
-        live.
-      renderMode: markdown
-      verticalAlign: top
-  d6ece88b-6cb6-48a8-b9d4-1cc58e027bd8:
-    type: TEXT
-    name: textSubheader
-    properties:
-      top: '5'
-      width: '12'
-      height: '4'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Interpolation using the "double-curly" syntax `{{ "{\{ code goes here
-        \}\}" }}` is a core feature of building interactive Dynaboard apps. At a
-        high level, interpolation lets you write JavaScript or TypeScript
-        snippets and include their dynamic output almost anywhere.
-      renderMode: markdown
-      verticalAlign: top
-  dd8100d4-6bb7-4e41-94e9-8dd01e651256:
-    type: TEXT
-    name: textStepDynamicComponentsBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '6'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        Our "double-curly" syntax `{{ "{\{ \}\}" }}` lets you write code nearly
-        anywhere you want (in nearly every property on both components and
-        resources). 
-
-
-        &nbsp;
-
-
-        We call this interpolation and we'll practice it in the next section, so
-        click on the button below to try it out.
-      renderMode: markdown
-      verticalAlign: top
-  ddd3e7c3-8473-41de-ae24-913de8c3b94a:
-    type: CONTAINER
-    name: stepConfigAuth
-    slots:
-      canvas:
-        - nodeID: 99230945-fa8f-4c1e-9d69-635c2a383aa3
-          orderKey: Zz
-        - nodeID: b11673c7-240e-4365-a0c7-efa37315773e
+        - nodeID: e45f1ae2-44eb-43e4-80eb-9b2978a3b080
           orderKey: a0
+        - nodeID: 30d8badd-70d9-4414-97b6-e07287e59f0c
+          orderKey: Zz
+        - nodeID: 781e9c93-ea0f-4707-a7d6-d9a76fc41f84
+          orderKey: Zy
     properties:
-      top: '38'
-      width: '12'
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: '18'
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      borderRadius: '5'
+      top: '120'
+      width: '12'
+  d0d4161b-ad10-46a8-92ac-493b442caa22:
+    type: TEXT
+    name: textStepBasicInterpolationHeader
+    properties:
+      fontSize: xl
+      fontWeight: bold
+      height: '1'
+      value: 1) A {{inputStepBasicInterpolation.value || "Basic"}} Example
+      verticalAlign: bottom
+      width: '12'
+  d6ece88b-6cb6-48a8-b9d4-1cc58e027bd8:
+    type: TEXT
+    name: textSubheader
+    properties:
+      height: '5'
+      renderMode: markdown
+      styles: ''
+      top: '5'
+      value: >-
+        Interpolation using the "double-curly" syntax `{{ "{\{ code goes here
+        \}\}" }}` is a core feature of building interactive Dynaboard apps. At a
+        high level, interpolation lets you write JavaScript or TypeScript
+        snippets and include their dynamic output almost anywhere.
+      verticalAlign: top
+      width: '12'
+  d8353231-00f6-46b7-a2fe-b4e8b7f9b616:
+    type: INPUT
+    name: inputStepInteractingWithComponents
+    properties:
+      height: '2'
+      labelStyle: left
+      placeholder: Owner Name Search
+      top: '6'
+      width: '6'
   deacc279-17c8-47c2-ba93-28fa0bc45e3e:
     type: TEXT
     name: textStepBasicInterpolationBody
     properties:
-      top: '4'
-      width: '12'
-      height: '7'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
+      height: '4'
+      renderMode: markdown
+      styles: ''
+      top: '2'
       value: >-
         One common use of interpolation is to have UI components update in
-        real-time in response to data either from functions, inputs or other
-        components. In this example we’ve wired the title of this section to the
-        text input below (and given it a default value). Try typing in the input
-        below:
-      renderMode: markdown
+        real-time in response to data from functions, inputs, or other
+        components. In this example we’ve connected the title of this section to
+        the text input below (and given it a default value). Try typing in the
+        input below:
       verticalAlign: top
-  dede5bc2-34e7-4abf-9aa8-b076d8c34a4c:
-    type: CONTAINER
-    name: stepLoadingData
-    slots:
-      canvas:
-        - nodeID: 9dc69b01-d059-4500-ab0c-e2beff87463b
-          orderKey: Zz
-        - nodeID: 400e871c-38dd-414b-8082-8b3c93d40faf
-          orderKey: Zz8
-        - nodeID: 61cef891-64dd-4dfe-9c65-0d5bd79a2402
-          orderKey: ZzG
-        - nodeID: 4068f097-33e2-4e41-a82c-b3a40fede933
-          orderKey: ZzV
-    properties:
-      top: '53'
       width: '12'
-      height: '46'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '43'
-      borderRadius: '5'
   dfb50d60-c27d-49bd-8e40-63436a68d44d:
     type: BUTTON
     name: buttonPopExampleToast
     properties:
-      top: '10'
-      left: '5'
-      width: '4'
+      backgroundColor: purple.500
       height: '2'
+      left: '5'
       onClick:
         function:
           ref: 1e33b59d-d7b9-4230-bf59-6bd887aef34c
       text: Yum! Toast
-      backgroundColor: purple.500
-  e022cdad-89f7-4de8-be97-9e46a693095d:
-    type: BUTTON
-    name: buttonTakeALook
-    properties:
-      top: '8'
-      left: '5'
+      top: '7'
       width: '4'
-      height: '2'
-      text: Let's take a look!
-      backgroundColor: purple.500
-      onClick:
-        function:
-          ref: 34c49a14-83e8-41ac-aa8c-cc26ab9a5b78
-  e0f25c74-b3c4-4eca-b9de-aca742ff73ae:
-    type: CONTAINER
-    name: stepCallingFunctions
-    slots:
-      canvas:
-        - nodeID: 4b0b677a-e2c6-4d25-9a89-b9019d27a628
-          orderKey: Zw
-        - nodeID: d395d3e4-5736-4664-a86c-623a0f71d9c4
-          orderKey: ZwV
-        - nodeID: ea1e56e0-b11b-490e-8649-2354d7dbc1fb
-          orderKey: Zx
-    properties:
-      top: '39'
-      width: '12'
-      height: '15'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '12'
-      borderRadius: '5'
-  e2d3c9e7-1e2d-4e00-9243-3d1916824812:
-    type: PAGE
-    name: authentication
-    slots:
-      canvas:
-        - nodeID: 29ec7a77-959e-4ed7-811d-911d2cc9e604
-          orderKey: Zv
-        - nodeID: 4ccb5f46-1497-4e44-85c9-2b6903249936
-          orderKey: ZvV
-        - nodeID: cfc9bf90-3a37-4786-ba5c-22b75c233027
-          orderKey: Zvl
-        - nodeID: ddd3e7c3-8473-41de-ae24-913de8c3b94a
-          orderKey: Zvt
-        - nodeID: 8505fbda-7a2a-4a2f-b2f1-3183e4e7d641
-          orderKey: Zw
-      functions:
-        - nodeID: 74519676-1700-4342-b844-c744042131e1
-          orderKey: a0
-    properties:
-      minWidth: 960px
-      minHeight: 1570px
-      styles: |-
-        element.styles {
-
-        }
-  e2fd1996-b298-479f-9f6c-2010518396ba:
+  e45f1ae2-44eb-43e4-80eb-9b2978a3b080:
     type: BUTTON
-    name: buttonStepSelectingComponents
+    name: buttonStepAddingNewComponents
     properties:
-      top: '11'
-      left: '5'
-      width: '4'
-      height: '2'
-      text: Select Me!
       backgroundColor: purple.500
-      onHover:
-        function:
-          ref: 0ee61185-9f1a-4ea3-9b95-b8ffbc219204
-      onLeave:
-        function:
-          ref: 518557e3-7065-4fa3-bb80-671de06d1bab
-  e30418dc-f865-4cd7-add9-8be99dd00787:
-    type: TEXT
-    name: textStepAPIAndDBBody
-    properties:
-      top: '4'
-      width: '12'
-      height: '10'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        a {
-          color: #6968C3;
-          font-weight: 400;
-          text-decoration: underline;
-        }
-
-        h1, h2, h3 {
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
-
-        h4, h5, h6 {
-          font-weight: 500;
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-
-        ul {
-          margin-top: 10px;
-        }
-
-        li {
-          line-height: 1.6;
-        }
-
-        li em {
-          line-height: 1.6;
-        }
-
-        code {
-          padding: 0px 4px;
-          border-radius: 4px;
-        }
-      value: >-
-        These resources offer connections to common databases (e.g. Postgres,
-        MySQL, MongoDB), generic REST / GraphQL APIs, and many popular SaaS
-        services (e.g. Airtable, Google Sheets, BigQuery, Notion, etc.).
-
-
-        &nbsp;
-
-
-        Security Note: Typically when using an API or database resource you’ll
-        want to securely store any passwords or keys. This can be done using the
-        `Secrets` manager found at the top of the resources pane. Secrets can
-        then be used with secure server-side interpolation in the resource
-        properties with a modified “double-curly” `{{ "${\{ \}\}" }}` syntax
-        that includes a `$` character.
-      renderMode: markdown
-      verticalAlign: top
-  e47886a1-c3a4-4eb1-b2fd-3ec2b50a2664:
-    type: BUTTON
-    name: buttonStepLetsGetStarted
-    properties:
-      top: '12'
-      left: '5'
-      width: '4'
       height: '2'
+      left: '5'
       onClick:
         function:
           ref: 8cba5efc-01ce-402f-832e-0ab517766f2d
-      text: Get Started!
-      backgroundColor: purple.500
-  ea1e56e0-b11b-490e-8649-2354d7dbc1fb:
-    type: BUTTON
-    name: buttonMayFunctions
-    properties:
-      top: '10'
-      left: '5'
+      text: Let's Make Things Dynamic!
+      top: '9'
       width: '4'
-      height: '2'
-      text: Call Many Functions
-      backgroundColor: purple.500
-      onClick:
-        function:
-          ref: 5dcfe6b1-e943-48f1-b22a-ca0e9658cc12
-  eaa20dce-a2f5-42c4-bb15-f6a67672af2c:
-    type: TEXT
-    name: textStepComponentAndPINHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 1) Sign-in Component & One-Time PIN
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  eabd6207-2bbe-44bd-a312-9bdf2f0bc5c1:
+  f1ba9371-abac-423d-9f17-00e6a54e1a3a:
     type: CONTAINER
-    name: stepAddingNewComponents
+    name: stepInteractingWithComponents
     slots:
       canvas:
-        - nodeID: 732b68e9-32e2-4acc-b3df-ddd0697bea68
+        - nodeID: d8353231-00f6-46b7-a2fe-b4e8b7f9b616
           orderKey: Zy
-        - nodeID: 3abefd26-2678-4703-a97e-cffd09fc68aa
-          orderKey: Zz
-        - nodeID: 73f149a8-d937-434d-8223-53d62a8771ab
-          orderKey: a0
+        - nodeID: 8463cf78-496e-4757-bfcc-af3ba1a79ae8
+          orderKey: ZwG
+        - nodeID: 27b866cc-0a43-4095-a3ef-950a03367663
+          orderKey: Zw
+        - nodeID: b1d8f4ab-d246-4c87-942a-3c4ee43d450c
+          orderKey: Zv
+        - nodeID: b94b1e88-800f-483c-a759-12fc670b8020
+          orderKey: Zu
+        - nodeID: b51f3f6c-56a1-496c-b5f2-f28b3a5137c0
+          orderKey: ZwV
     properties:
-      top: '79'
-      width: '12'
-      height: '16'
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
+      height: '55'
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      gridRows: '13'
-      borderRadius: '5'
-  ebce788e-071d-497c-a1c6-62b586a6e512:
-    type: CONTAINER
-    name: stepDynamicComponents
-    slots:
-      canvas:
-        - nodeID: c25085ba-7a61-4d43-9ef6-abec7e19ab6e
-          orderKey: Zy
-        - nodeID: dd8100d4-6bb7-4e41-94e9-8dd01e651256
-          orderKey: Zz
-        - nodeID: 60655510-bd56-41d0-84f3-88905b0995a6
-          orderKey: a0
-    properties:
-      top: '99'
+      top: '24'
       width: '12'
-      height: '17'
-      styles: |-
-        element.styles {
-          border-width: 1px;
-          border-color: text.muted;
-        }
-      gridRows: '14'
-      borderRadius: '5'
-  edc8e4b3-2c69-452c-b09b-e94402d2e406:
-    type: TEXT
-    name: textSubheader
-    properties:
-      top: '5'
-      width: '12'
-      height: '3'
-      styles: |-
-        :root {
-          /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
-        }
-
-        h2, h3 {
-          margin-bottom: 5px;
-        }
-
-        p {
-          line-height: 1.8;
-        }
-
-        ol {
-          margin-top: 10px;
-        }
-      value: >-
-        Now that you've learned how to interact with components, let's try
-        adding some to a page!
-      renderMode: markdown
-      verticalAlign: top
-  f198ba12-ffde-4aa6-a5c6-5d15934b7fab:
-    type: TEXT
-    name: textStepLookAtAuthHeader
-    properties:
-      width: '12'
-      height: '2'
-      value: 5) A Quick Look At Authentication
-      fontSize: xl
-      verticalAlign: bottom
-      fontWeight: bold
-  f1fdad29-508b-460d-98c2-dfe0159f84cb:
-    type: FUNCTION
-    name: nextPage
-    properties:
-      action:
-        path: /interpolation
-        target: _self
-        targetNode:
-          ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
-        actionType: NAVIGATE_TO_PAGE
-  f60f338f-ce39-4845-a30f-599e3ef7c36a:
-    type: TEXT
-    name: textHeader
-    properties:
-      width: '12'
-      height: '4'
-      value: UI Components
-      fontSize: 3xl
-      fontWeight: bold
   f9f22903-fa56-4182-b327-af0acdec0d36:
     type: BUTTON
     name: buttonNextUp
     properties:
-      top: '9'
-      left: '5'
-      width: '4'
-      height: '2'
-      text: Let's go!
       backgroundColor: purple.500
+      height: '2'
+      left: '5'
       onClick:
         function:
           ref: 4298f146-c2ef-48a5-bebf-eca74cf71723
+      text: Explore Templates
+      top: '6'
+      width: '4'
+  fe6a3b00-f219-4206-84f0-43573e303287:
+    type: CONTAINER
+    name: cardContainer
+    slots:
+      canvas:
+        - nodeID: 97c5eeb2-6924-4130-806f-eb8abd4c2a8f
+          orderKey: a0
+        - nodeID: 968665fc-0536-405a-ab31-861ead1f98db
+          orderKey: Zz
+        - nodeID: 4bfa8df2-4df1-4a01-b8ea-3d6404038d18
+          orderKey: ZzV
+        - nodeID: b4c6c983-f33a-490b-9f5d-90d5e3c900b9
+          orderKey: Zy
+    properties:
+      backgroundColor: surface.200
+      borderRadius: '6'
+      height: '16'
+      width: '12'
   fedeac1a-159b-4e19-af31-49aab150ab28:
     type: TEXT
     name: textStepLetsGetStartedHeader
     properties:
-      width: '12'
-      height: '2'
-      value: Let's get started!
       fontSize: xl
-      verticalAlign: bottom
       fontWeight: bold
+      height: '1'
+      value: Let's get started!
+      verticalAlign: bottom
+      width: '12'
