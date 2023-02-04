@@ -38,6 +38,15 @@ nodes:
       top: '11'
       value: Drag a Component Here!
       width: '6'
+  028529de-c8cf-4ea7-b57e-6e8467e32d35:
+    type: CONTAINER
+    name: spacer
+    properties:
+      top: NaN
+      left: NaN
+      width: fill
+      height: 112px
+      backgroundColor: ''
   04ad44ef-195b-47a0-b261-f8bcb73fb459:
     type: PAGE
     name: templates
@@ -47,15 +56,29 @@ nodes:
           orderKey: a0
         - nodeID: b46e2861-e155-4e98-94af-18fb160fe735
           orderKey: Zz
+        - nodeID: 065f5066-9fc8-4136-a27c-82fccbfd31b1
+          orderKey: a1
+    properties:
+      layoutStyle: VERTICAL_STACK
+      minWidth: 768px
+  065f5066-9fc8-4136-a27c-82fccbfd31b1:
+    type: CONTAINER
+    name: spacer
+    properties:
+      top: NaN
+      left: NaN
+      width: fill
+      height: 80px
+      backgroundColor: ''
   0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
     type: TEXT
     name: textHeader
     properties:
       fontSize: 3xl
       fontWeight: bold
-      height: '4'
+      height: 60px
       value: Welcome to Dynaboard!
-      width: '12'
+      width: fill
   1e33b59d-d7b9-4230-bf59-6bd887aef34c:
     type: FUNCTION
     name: exampleInterpolationFunction
@@ -97,7 +120,7 @@ nodes:
     type: TEXT
     name: textSubheader
     properties:
-      height: '4'
+      height: 60px
       renderMode: markdown
       styles: ''
       top: '5'
@@ -108,24 +131,24 @@ nodes:
         [additional documentation](https://dynaboard.com/docs) to help you start
         building!
       verticalAlign: top
-      width: '12'
+      width: fill
   30d8badd-70d9-4414-97b6-e07287e59f0c:
     type: TEXT
-    name: textStepAddingNewComponentsBody
+    name: textStepMakeThingsDynamicSubtitle
     properties:
       height: '6'
       renderMode: markdown
       styles: ''
       top: '2'
       value: >-
-        Now that you know how to interact with and select components, let's
-        learn more about how to make them dynamically respond to data! 
+        Now that you know how to interact with and select components to edit,
+        let's learn more about how to make them dynamically respond to data! 
 
 
         Our "double-curly" syntax `{{ "{\{ \}\}" }}` lets you write code nearly
         anywhere you want (in nearly every property on both components and
         resources). We call this interpolation, and we'll practice it in the
-        next section.
+        next section. Switch back to `Test` mode and click the button below.
       verticalAlign: top
       width: '12'
   326d90c8-eb46-4b88-943d-a9545ac28c63:
@@ -169,6 +192,7 @@ nodes:
     type: ITERATOR
     name: templateList
     properties:
+      alignContent: center
       component: COMPONENT/61af232e-6b81-4544-8f00-c943e7c083a2
       data: |-
         [
@@ -234,10 +258,11 @@ nodes:
               "https://dynaboard.new/dynaboard/dynaboard--private-app-boilerplate",
           },
         ]
-      height: '73'
+      distributeContent: center
+      height: 1164px
       layoutStyle: HORIZONTAL_STACK
       top: '6'
-      width: '12'
+      width: fill
       wrapContent: wrap
   391855d8-83c4-421c-96ed-79d6be6f0d77:
     type: TEXT
@@ -250,8 +275,8 @@ nodes:
       value: >-
         The data table, input, and dropdown are just a few of the UI components
         available in Dynaboard, so let's try adding some more components to this
-        page. If you haven't already, switch back to the `Select Tool` and check
-        them out in the toolbar at the top of the screen.
+        page. If you haven't already, switch back to `Edit` mode and check them
+        out in the toolbar at the top of the screen.
 
 
         Once you've found a component you'd like to see, try dragging it into
@@ -297,6 +322,7 @@ nodes:
     type: TEXT
     name: descText
     properties:
+      fontSize: sm
       height: '3'
       renderMode: markdown
       top: '14'
@@ -340,14 +366,14 @@ nodes:
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
-      height: '23'
+      height: 364px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
       top: '11'
-      width: '12'
+      width: fill
   56967eac-f86e-46b9-b5ff-5d9afe635432:
     type: CONTAINER
     name: stepLetsGetStarted
@@ -363,14 +389,14 @@ nodes:
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
-      height: '13'
+      height: fill
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
       top: '10'
-      width: '12'
+      width: fill
   590f0a9f-7b03-4cfc-a76c-79689c4a9e7c:
     type: CONTAINER
     name: stepFirstComponent
@@ -386,14 +412,14 @@ nodes:
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
-      height: '39'
+      height: 620px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
       top: '80'
-      width: '12'
+      width: fill
   5aeb3de9-5348-4253-9b66-8f1c9d57b6a6:
     type: PAGE
     name: index
@@ -406,19 +432,22 @@ nodes:
         - nodeID: 56967eac-f86e-46b9-b5ff-5d9afe635432
           orderKey: Zt
         - nodeID: f1ba9371-abac-423d-9f17-00e6a54e1a3a
-          orderKey: Zw
+          orderKey: Zu
         - nodeID: 590f0a9f-7b03-4cfc-a76c-79689c4a9e7c
           orderKey: Zv
         - nodeID: d0bb41c4-ad04-4d6e-868e-eec0f4d13c8c
-          orderKey: Zu
+          orderKey: Zx
+        - nodeID: 8b7ab47e-914b-4e6e-82d7-8330106fa4c5
+          orderKey: Zy
       functions:
         - nodeID: 8cba5efc-01ce-402f-832e-0ab517766f2d
           orderKey: a0
         - nodeID: 65bbb933-2f04-4796-afe7-506194721d32
           orderKey: Zz
     properties:
+      layoutStyle: VERTICAL_STACK
       minHeight: 1280px
-      minWidth: 960px
+      minWidth: 768px
       styles: |-
         element.styles {
 
@@ -431,19 +460,7 @@ nodes:
         return function Component() {
           return (
             <div className="size">
-              <svg
-                viewBox="0 0 16 16"
-                focusable="false"
-                className="chakra-icon"
-                aria-hidden="true"
-              >
-                <g fill="none" fill-rule="evenodd">
-                  <path
-                    fill="rgb(105, 103, 226)"
-                    d="M9.47749 0.579264C10.8282 0.910258 12.0504 1.63434 12.9895 2.65996C13.9287 3.68557 14.5426 4.96664 14.7537 6.34118C14.9648 7.71571 14.7636 9.12198 14.1754 10.3821C14.1038 10.5357 14.0274 10.685 13.9463 10.8301C13.8201 11.0562 13.5345 11.137 13.3085 11.0107C13.0825 10.8845 13.0016 10.5989 13.1279 10.3729C13.1976 10.2481 13.2636 10.1191 13.3259 9.98564C13.8356 8.89351 14.01 7.67474 13.8271 6.48348C13.6442 5.29221 13.1121 4.18195 12.2981 3.29309C11.4842 2.40422 10.4249 1.77668 9.25435 1.48982C8.08376 1.20296 6.85439 1.26966 5.72171 1.68149C4.58902 2.09332 3.60389 2.83179 2.8909 3.8035C2.17791 4.77521 1.76908 5.93652 1.7161 7.14059C1.66312 8.34465 1.96838 9.53739 2.59327 10.568C3.21816 11.5985 4.13463 12.4207 5.22676 12.9304C5.3598 12.9925 5.49226 13.0486 5.62913 13.1014C5.8706 13.1948 5.99071 13.4662 5.89739 13.7076C5.80407 13.9491 5.53266 14.0692 5.29118 13.9759C5.13588 13.9159 4.98381 13.8516 4.83027 13.7799C3.57011 13.1918 2.51266 12.2432 1.79163 11.054C1.0706 9.86492 0.718375 8.48868 0.779503 7.09938C0.840632 5.71007 1.31236 4.37009 2.13505 3.24889C2.95773 2.12768 4.09442 1.27561 5.40136 0.800423C6.7083 0.325234 8.12681 0.24827 9.47749 0.579264Z M8.01845 6.49404C8.19468 6.53797 8.35388 6.63328 8.47583 6.76787L8.48558 6.77898L13.5565 12.7432C13.563 12.7509 13.5692 12.7587 13.5752 12.7668C13.6807 12.9083 13.742 13.0779 13.7514 13.2542C13.7608 13.4304 13.718 13.6056 13.6282 13.7575C13.5384 13.9095 13.4057 14.0316 13.2467 14.1084C13.0918 14.1832 12.9186 14.2118 12.748 14.1909L10.1884 13.9629L8.37273 15.7811C8.25558 15.9068 8.10464 15.9962 7.93789 16.0385C7.76665 16.0819 7.5864 16.0737 7.41984 16.0148C7.25328 15.956 7.10785 15.8492 7.00189 15.7078C6.89592 15.5665 6.83415 15.3969 6.82436 15.2206C6.82381 15.2108 6.82358 15.201 6.82365 15.1911L6.88103 7.35995L7.34977 7.36338L6.88148 7.34275C6.88947 7.1613 6.95122 6.98632 7.05886 6.84004C7.1665 6.69375 7.3152 6.58276 7.48605 6.52115C7.65691 6.45955 7.84222 6.45011 8.01845 6.49404ZM7.81797 7.44108L7.76209 15.0659L9.67996 13.1453C9.77813 13.047 9.91486 12.9973 10.0532 13.0096L12.7572 13.2505L7.81797 7.44108Z M10.5324 4.18954C9.96493 3.70883 9.28051 3.38666 8.54845 3.25567C7.8164 3.12467 7.06273 3.18952 6.36381 3.44364C5.6649 3.69776 5.04557 4.13211 4.5686 4.70269C4.09163 5.27327 3.77396 5.95979 3.64778 6.69269C3.52161 7.42559 3.59141 8.17882 3.85012 8.87605C4.10883 9.57328 4.54724 10.1897 5.12094 10.6629C5.32065 10.8277 5.61609 10.7993 5.78082 10.5996C5.94555 10.3999 5.91719 10.1045 5.71748 9.93973C5.27127 9.57167 4.93028 9.09221 4.72906 8.54992C4.52785 8.00763 4.47356 7.42178 4.57169 6.85175C4.66983 6.28172 4.9169 5.74776 5.28788 5.30397C5.65886 4.86019 6.14056 4.52236 6.68416 4.32471C7.22776 4.12707 7.81395 4.07663 8.38332 4.17851C8.9527 4.28039 9.48502 4.53097 9.92636 4.90486C10.3677 5.27874 10.7024 5.76265 10.8964 6.30754C11.0905 6.85243 11.1371 7.43894 11.0315 8.00763C10.9842 8.26216 11.1522 8.50682 11.4067 8.5541C11.6613 8.60137 11.9059 8.43335 11.9532 8.17882C12.089 7.44765 12.0291 6.69357 11.7796 5.99299C11.5301 5.29242 11.0998 4.67026 10.5324 4.18954Z"
-                  ></path>
-                </g>
-              </svg>
+              <svg viewBox="0 0 16 16" focusable="false"><g fill="none" fill-rule="evenodd"><path fill="rgb(105, 103, 226)" d="M6.39694 0C5.51572 0 4.79694 0.718781 4.79694 1.6V8.95242L4.32073 8.47621C3.68578 7.84126 2.70809 7.84126 2.07315 8.47621C1.53992 9.00943 1.48033 9.85322 2.00651 10.6425C2.12544 10.8209 2.27822 11.0682 2.45695 11.3574L2.457 11.3575C2.87213 12.0293 3.4272 12.9276 4.02308 13.7157C4.45711 14.2897 4.94057 14.8459 5.45285 15.263C5.9572 15.6737 6.5512 16 7.19694 16H10.0769C11.252 16 12.3417 15.6326 13.1459 14.9366C13.9574 14.2344 14.4503 13.2201 14.4503 12V8C14.4503 7.11878 13.7315 6.4 12.8503 6.4C12.6303 6.4 12.4132 6.44623 12.2121 6.53067C12.0328 5.84327 11.4058 5.33335 10.6636 5.33335C10.4556 5.33335 10.2566 5.3734 10.074 5.44619C9.8886 4.76781 9.26606 4.2667 8.53027 4.2667C8.34342 4.2667 8.16388 4.29901 7.99694 4.35834V1.6C7.99694 0.718781 7.27816 0 6.39694 0ZM6.93027 5.86365C6.93027 5.86467 6.93027 5.86568 6.93027 5.8667L6.93027 8.53333C6.93027 8.82789 7.16905 9.06667 7.46361 9.06667C7.75816 9.06667 7.99694 8.82789 7.99694 8.53333V5.86495C7.9979 5.57362 8.23874 5.33336 8.53027 5.33336C8.82238 5.33336 9.0636 5.57458 9.0636 5.8667V6.9316L9.0636 6.93335V8.53335L9.0636 8.53336C9.0636 8.74213 9.18355 8.92288 9.35829 9.01046C9.43009 9.04644 9.51115 9.0667 9.59694 9.0667C9.78103 9.0667 9.94334 8.97342 10.0392 8.83156C10.0967 8.74644 10.1303 8.64382 10.1303 8.53336V8.53335V6.93335C10.1303 6.64124 10.3715 6.40002 10.6636 6.40002C10.9557 6.40002 11.1969 6.64124 11.1969 6.93335V8.53335C11.1969 8.82791 11.4357 9.06669 11.7303 9.06669C12.0248 9.06669 12.2636 8.82791 12.2636 8.53335L12.2636 8.53333V8C12.2636 7.74083 12.5241 7.46667 12.8503 7.46667C13.1424 7.46667 13.3836 7.70789 13.3836 8V12C13.3836 12.9133 13.0231 13.6323 12.4479 14.13C11.8655 14.6341 11.0352 14.9333 10.0769 14.9333H7.19694C6.90934 14.9333 6.55163 14.7821 6.12635 14.4358C5.70901 14.096 5.28491 13.6159 4.8739 13.0723C4.30692 12.3225 3.81624 11.5272 3.41222 10.8723L3.4122 10.8723C3.21937 10.5598 3.04627 10.2792 2.89403 10.0508C2.73854 9.81759 2.70253 9.63454 2.70811 9.51184C2.71364 9.39048 2.76036 9.29749 2.82739 9.23046C3.04578 9.01207 3.34809 9.01207 3.56648 9.23046L4.95315 10.6171C5.10568 10.7697 5.33507 10.8153 5.53437 10.7327C5.73366 10.6502 5.8636 10.4557 5.8636 10.24V1.6C5.8636 1.30789 6.10482 1.06667 6.39694 1.06667C6.68905 1.06667 6.93027 1.30789 6.93027 1.6V5.86365Z"></path></g></svg>
             </div>
           )
         }
@@ -478,9 +495,11 @@ nodes:
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             cardLink: "https://dynaboard.new/",
           }
-      height: 366px
+      height: 360px
+      maxWidth: 420px
       mergeDefaultProps: false
-      width: 428px
+      minWidth: 340px
+      width: '{{ $app.viewportWidth < 1024 ? ''340px'' : ''420px'' }}'
   652f196d-4253-4f9c-85b8-1f844f60937f:
     type: CONTAINER
     name: stepNextUp
@@ -496,14 +515,14 @@ nodes:
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
-      height: '14'
+      height: 220px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
       top: '102'
-      width: '12'
+      width: fill
   65bbb933-2f04-4796-afe7-506194721d32:
     type: FUNCTION
     name: getRandomExampleData
@@ -524,9 +543,9 @@ nodes:
     properties:
       fontSize: 3xl
       fontWeight: bold
-      height: '4'
+      height: 60px
       value: Make Apps Dynamic with {{ "{{ Code Interpolation \}}" }}
-      width: '12'
+      width: fill
   76169d73-f4ef-4df8-99a4-0d46b3c50ab5:
     type: TEXT
     name: textStepLetsGetStartedBody
@@ -536,13 +555,13 @@ nodes:
       styles: ''
       top: '2'
       value: >-
-        In order to get started, switch to the `Interact Tool` by clicking the
-        button in the floating action bar at the bottom of the screen.
+        In order to get started, switch to `Test` mode by clicking the button in
+        the floating action bar at the bottom of the screen.
 
 
-        The `Interact Tool` lets you test and use UI components. Once you have
-        the interact tool selected, scroll down to the next section to see some
-        UI components in action.
+        `Test` mode lets you test and use UI components. Once you have swapped
+        modes, scroll down to the next section to see some UI components in
+        action.
       verticalAlign: top
       width: '9'
   7818a6f7-3096-4a64-baf7-9fb2c3166de0:
@@ -550,7 +569,7 @@ nodes:
     name: typescriptClient1
   781e9c93-ea0f-4707-a7d6-d9a76fc41f84:
     type: TEXT
-    name: textStepAddingNewComponentsHeader
+    name: textStepMakeThingsDynamicTitle
     properties:
       fontSize: xl
       fontWeight: bold
@@ -686,9 +705,8 @@ nodes:
       top: '2'
       value: >-
         Below we have a small user account management example that includes a
-        data table, text input, and dropdown. With the `Interact Tool` selected
-        choose an account type, search for an account owner or sort the data
-        table.
+        data table, text input, and dropdown. With `Test` mode selected choose
+        an account type, search for an account owner or sort the data table.
       verticalAlign: top
       width: '12'
   86be3c07-c257-4a81-ba5d-727e7f0b5fef:
@@ -705,6 +723,16 @@ nodes:
         the properties panel on the right side of the screen.
       verticalAlign: top
       width: '12'
+  8b7ab47e-914b-4e6e-82d7-8330106fa4c5:
+    type: CONTAINER
+    name: spacer
+    properties:
+      top: NaN
+      left: NaN
+      width: fill
+      height: 192px
+      backgroundColor: ''
+      boxShadow: '0'
   8cba5efc-01ce-402f-832e-0ab517766f2d:
     type: FUNCTION
     name: nextPage
@@ -733,6 +761,8 @@ nodes:
     name: coverImage
     properties:
       height: '11'
+      objectFit: contain
+      type: image
       url: >-
         {{ $app.colorMode === 'dark' ? $props.templateImageLinkDark :
         $props.templateImageLinkLight }}
@@ -754,14 +784,14 @@ nodes:
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
-      height: '43'
+      height: 684px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
       top: '58'
-      width: '12'
+      width: fill
   a58f0ad0-bc5d-417d-aace-8d94dffc2c7b:
     type: PAGE
     name: interpolation
@@ -779,6 +809,8 @@ nodes:
           orderKey: ZyV
         - nodeID: 652f196d-4253-4f9c-85b8-1f844f60937f
           orderKey: Zz
+        - nodeID: 028529de-c8cf-4ea7-b57e-6e8467e32d35
+          orderKey: a0
       functions:
         - nodeID: 4298f146-c2ef-48a5-bebf-eca74cf71723
           orderKey: Zy
@@ -787,8 +819,9 @@ nodes:
         - nodeID: 1e33b59d-d7b9-4230-bf59-6bd887aef34c
           orderKey: a0
     properties:
+      layoutStyle: VERTICAL_STACK
       minHeight: 1964px
-      minWidth: 960px
+      minWidth: 768px
   a9c92a59-ccd1-44fd-9754-04929855e061:
     type: TEXT
     name: textStepInterpolationInFunctionsBody
@@ -1002,9 +1035,9 @@ nodes:
     properties:
       fontSize: 3xl
       fontWeight: bold
-      height: '4'
+      height: 60px
       value: Let's Explore Templates!
-      width: '12'
+      width: fill
   b4c6c983-f33a-490b-9f5d-90d5e3c900b9:
     type: TEXT
     name: cardLink
@@ -1020,15 +1053,15 @@ nodes:
     type: TEXT
     name: textStepInteractingWithComponentsInfo
     properties:
-      height: '8'
+      height: '9'
       renderMode: markdown
       styles: ''
       top: '31'
       value: >-
         All components have either a `.data` property or `.value` property that
         becomes the displayed data. In the case of the table above we've
-        dynamically loaded data from a function. Try selecting it to see
-        properties.
+        dynamically loaded data from a function. Try switching back to `Edit`
+        mode and selecting the table to see its properties.
 
 
         If you checked out the `.data` property of the table above, you probably
@@ -1112,17 +1145,17 @@ nodes:
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
-      height: '22'
+      height: 348px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
       top: '35'
-      width: '12'
+      width: fill
   d0bb41c4-ad04-4d6e-868e-eec0f4d13c8c:
     type: CONTAINER
-    name: stepAddingNewComponents
+    name: stepMakeThingsDynamic
     slots:
       canvas:
         - nodeID: e45f1ae2-44eb-43e4-80eb-9b2978a3b080
@@ -1135,14 +1168,15 @@ nodes:
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
-      height: '18'
+      height: 284px
+      left: NaN
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      top: '120'
-      width: '12'
+      top: NaN
+      width: fill
   d0d4161b-ad10-46a8-92ac-493b442caa22:
     type: TEXT
     name: textStepBasicInterpolationHeader
@@ -1157,7 +1191,7 @@ nodes:
     type: TEXT
     name: textSubheader
     properties:
-      height: '5'
+      height: 76px
       renderMode: markdown
       styles: ''
       top: '5'
@@ -1167,7 +1201,7 @@ nodes:
         high level, interpolation lets you write JavaScript or TypeScript
         snippets and include their dynamic output almost anywhere.
       verticalAlign: top
-      width: '12'
+      width: fill
   d8353231-00f6-46b7-a2fe-b4e8b7f9b616:
     type: INPUT
     name: inputStepInteractingWithComponents
@@ -1208,7 +1242,7 @@ nodes:
       width: '4'
   e45f1ae2-44eb-43e4-80eb-9b2978a3b080:
     type: BUTTON
-    name: buttonStepAddingNewComponents
+    name: buttonStepMakeThingsDynamic
     properties:
       backgroundColor: purple.500
       height: '2'
@@ -1240,14 +1274,14 @@ nodes:
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
-      height: '55'
+      height: 920px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
       top: '24'
-      width: '12'
+      width: fill
   f9f22903-fa56-4182-b327-af0acdec0d36:
     type: BUTTON
     name: buttonNextUp
@@ -1277,7 +1311,11 @@ nodes:
     properties:
       backgroundColor: surface.200
       borderRadius: '6'
+      gridColumnGap: ''
+      gridRowGap: ''
       height: '16'
+      overflow: hidden
+      padding: '8'
       width: '12'
   fedeac1a-159b-4e19-af31-49aab150ab28:
     type: TEXT
