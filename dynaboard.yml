@@ -56,8 +56,21 @@ nodes:
           orderKey: a0
         - nodeID: b46e2861-e155-4e98-94af-18fb160fe735
           orderKey: Zz
+        - nodeID: 065f5066-9fc8-4136-a27c-82fccbfd31b1
+          orderKey: a1
     properties:
+      layoutStyle: VERTICAL_STACK
       minWidth: 768px
+  065f5066-9fc8-4136-a27c-82fccbfd31b1:
+    type: CONTAINER
+    name: spacer
+    properties:
+      top: NaN
+      left: NaN
+      width: fill
+      height: 80px
+      backgroundColor: ''
+      boxShadow: '0'
   0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
     type: TEXT
     name: textHeader
@@ -66,7 +79,7 @@ nodes:
       fontWeight: bold
       height: 60px
       value: Welcome to Dynaboard!
-      width: 924px
+      width: fill
   1e33b59d-d7b9-4230-bf59-6bd887aef34c:
     type: FUNCTION
     name: exampleInterpolationFunction
@@ -119,7 +132,7 @@ nodes:
         [additional documentation](https://dynaboard.com/docs) to help you start
         building!
       verticalAlign: top
-      width: 924px
+      width: fill
   30d8badd-70d9-4414-97b6-e07287e59f0c:
     type: TEXT
     name: textStepMakeThingsDynamicSubtitle
@@ -247,10 +260,10 @@ nodes:
           },
         ]
       distributeContent: center
-      height: '73'
+      height: 1164px
       layoutStyle: HORIZONTAL_STACK
       top: '6'
-      width: '12'
+      width: fill
       wrapContent: wrap
   391855d8-83c4-421c-96ed-79d6be6f0d77:
     type: TEXT
@@ -533,7 +546,7 @@ nodes:
       fontWeight: bold
       height: 60px
       value: Make Apps Dynamic with {{ "{{ Code Interpolation \}}" }}
-      width: 924px
+      width: fill
   76169d73-f4ef-4df8-99a4-0d46b3c50ab5:
     type: TEXT
     name: textStepLetsGetStartedBody
@@ -1023,9 +1036,9 @@ nodes:
     properties:
       fontSize: 3xl
       fontWeight: bold
-      height: '4'
+      height: 60px
       value: Let's Explore Templates!
-      width: '12'
+      width: fill
   b4c6c983-f33a-490b-9f5d-90d5e3c900b9:
     type: TEXT
     name: cardLink
@@ -1189,7 +1202,7 @@ nodes:
         high level, interpolation lets you write JavaScript or TypeScript
         snippets and include their dynamic output almost anywhere.
       verticalAlign: top
-      width: 924px
+      width: fill
   d8353231-00f6-46b7-a2fe-b4e8b7f9b616:
     type: INPUT
     name: inputStepInteractingWithComponents
