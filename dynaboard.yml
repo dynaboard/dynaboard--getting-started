@@ -44,7 +44,7 @@ nodes:
     properties:
       top: NaN
       left: NaN
-      width: 928px
+      width: fill
       height: 112px
       backgroundColor: ''
   04ad44ef-195b-47a0-b261-f8bcb73fb459:
@@ -70,7 +70,6 @@ nodes:
       width: fill
       height: 80px
       backgroundColor: ''
-      boxShadow: '0'
   0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
     type: TEXT
     name: textHeader
@@ -730,7 +729,7 @@ nodes:
     properties:
       top: NaN
       left: NaN
-      width: 928px
+      width: fill
       height: 192px
       backgroundColor: ''
       boxShadow: '0'
