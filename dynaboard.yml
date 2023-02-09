@@ -155,8 +155,8 @@ nodes:
 
         Our "double-curly" syntax `{{ "{\{ \}\}" }}` lets you write code nearly
         anywhere you want (in nearly every property on both components and
-        resources). We call this interpolation, and we'll practice it in the
-        next section. Switch back to `Test` mode and click the button below.
+        resources). We call this data binding, and we'll practice it in the next
+        section. Switch back to `Test` mode and click the button below.
       verticalAlign: top
       width: '12'
   326d90c8-eb46-4b88-943d-a9545ac28c63:
