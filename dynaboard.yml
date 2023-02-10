@@ -78,6 +78,12 @@ nodes:
       width: fill
       height: 80px
       backgroundColor: ''
+  09c87566-4c69-4ec5-b1c0-038e8f5736f8:
+    type: FUNCTION
+    name: function1
+    properties:
+      draftAction:
+        targetNode: {}
   0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
     type: TEXT
     name: textHeader
@@ -465,6 +471,8 @@ nodes:
           orderKey: a0
         - nodeID: 65bbb933-2f04-4796-afe7-506194721d32
           orderKey: Zz
+        - nodeID: 09c87566-4c69-4ec5-b1c0-038e8f5736f8
+          orderKey: a1
     properties:
       layoutStyle: VERTICAL_STACK
       minHeight: 1280px
