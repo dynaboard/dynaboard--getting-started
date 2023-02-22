@@ -1,6 +1,6 @@
 runtimeVersion: 0.3.5
 name: Getting Started
-description: ""
+description: ''
 type: com.dynaboard/project
 nodes:
   ROOT_NODE:
@@ -30,19 +30,19 @@ nodes:
     type: LOCAL_VARIABLE
     name: isHovered
     properties:
-      value: "false"
+      value: 'false'
   023e3997-1820-4356-8920-22a1e22776c1:
     type: TEXT
     name: textStepFirstComponentArea
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "2"
-      left: "4"
+      height: '2'
+      left: '4'
       textAlign: center
-      top: "11"
+      top: '11'
       value: Drag a Component Here!
-      width: "6"
+      width: '6'
   028529de-c8cf-4ea7-b57e-6e8467e32d35:
     type: CONTAINER
     name: spacer
@@ -51,7 +51,7 @@ nodes:
       left: NaN
       width: fill
       height: 112px
-      backgroundColor: ""
+      backgroundColor: ''
   04ad44ef-195b-47a0-b261-f8bcb73fb459:
     type: PAGE
     name: templates
@@ -68,7 +68,7 @@ nodes:
     properties:
       layoutStyle: VERTICAL_STACK
       minWidth: 768px
-      spacing: "8"
+      spacing: '8'
   065f5066-9fc8-4136-a27c-82fccbfd31b1:
     type: CONTAINER
     name: spacer
@@ -77,7 +77,7 @@ nodes:
       left: NaN
       width: fill
       height: 80px
-      backgroundColor: ""
+      backgroundColor: ''
   0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
     type: TEXT
     name: textHeader
@@ -96,7 +96,7 @@ nodes:
         dismissButton: Yum!
         duration: 5000
         message: I'm a {{inputStepBasicDataBinding.value || "Basic"}} toast!
-        path: ""
+        path: ''
         target: _self
         targetNode:
           ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
@@ -110,28 +110,28 @@ nodes:
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "1"
+      height: '1'
       value: 2) Interacting with Components
       verticalAlign: bottom
-      width: "12"
+      width: '12'
   27d01e5e-95d7-4024-a816-c382f8b1fc69:
     type: TEXT
     name: textStepFirstComponentHeader
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "1"
+      height: '1'
       value: 3) Add Your First Component
       verticalAlign: bottom
-      width: "12"
+      width: '12'
   29bd4661-e2aa-40e0-bb02-df08e21ad388:
     type: TEXT
     name: textSubheader
     properties:
       height: 80px
       renderMode: markdown
-      styles: ""
-      top: "5"
+      styles: ''
+      top: '5'
       value: >-
         This getting started guide is here to help you learn the ins and outs
         of Dynaboard in just a few minutes. Once you've learned the basics, we
@@ -143,10 +143,10 @@ nodes:
     type: TEXT
     name: textStepMakeThingsDynamicSubtitle
     properties:
-      height: "7"
+      height: '7'
       renderMode: markdown
-      styles: ""
-      top: "2"
+      styles: ''
+      top: '2'
       value: >-
         Now that you know how to interact with and select components to edit,
         let's learn more about how to make them dynamically respond to data! 
@@ -157,7 +157,7 @@ nodes:
         resources). We call this data binding, and we'll practice it in the next
         section. Switch back to `Test` mode and click the button below.
       verticalAlign: top
-      width: "12"
+      width: '12'
   326d90c8-eb46-4b88-943d-a9545ac28c63:
     type: CHART
     name: chartAdvancedJS
@@ -183,17 +183,17 @@ nodes:
           lineShape: spline
           markerColor: purple.500
           mode: lines
-          name: "# of Accounts"
+          name: '# of Accounts'
           side: left
           type: bar
           yKey: accountCount
-      height: "20"
+      height: '20'
       horizontalAxisTitle: Account Type
-      isInteractive: "false"
-      leftVerticalAxisTitle: "# of Accounts"
+      isInteractive: 'false'
+      leftVerticalAxisTitle: '# of Accounts'
       title: Number of Accounts by Type
-      top: "6"
-      width: "12"
+      top: '6'
+      width: '12'
       xKey: accountType
   3273257f-e1c9-4698-92c2-c8d49cf3ff30:
     type: ITERATOR
@@ -268,17 +268,17 @@ nodes:
       distributeContent: around
       height: 1164px
       layoutStyle: HORIZONTAL_STACK
-      top: "6"
+      top: '6'
       width: fill
       wrapContent: wrap
   391855d8-83c4-421c-96ed-79d6be6f0d77:
     type: TEXT
     name: textStepFirstComponentBody
     properties:
-      height: "6"
+      height: '6'
       renderMode: markdown
-      styles: ""
-      top: "2"
+      styles: ''
+      top: '2'
       value: >-
         The data table, input, and dropdown are just a few of the UI components
         available in Dynaboard, so let's try adding some more components to this
@@ -290,7 +290,7 @@ nodes:
         the container below. You can also delete the component by selecting it
         and pressing delete on your keyboard.
       verticalAlign: top
-      width: "12"
+      width: '12'
   3dac381d-0c42-4b83-b852-d399441bf6a0:
     type: CONTAINER
     name: containerComponent
@@ -300,11 +300,11 @@ nodes:
           orderKey: a0
     properties:
       backgroundColor: surface.200
-      gridRowHeight: "16"
-      gridRows: "0"
-      height: "18"
-      top: "9"
-      width: "12"
+      gridRowHeight: '16'
+      gridRows: '0'
+      height: '18'
+      top: '9'
+      width: '12'
   4298f146-c2ef-48a5-bebf-eca74cf71723:
     type: FUNCTION
     name: nextPage
@@ -321,10 +321,10 @@ nodes:
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "1"
+      height: '1'
       value: 2) Dynamic Behavior Inside of Functions
       verticalAlign: bottom
-      width: "12"
+      width: '12'
   48d9fd9c-86a9-421f-9c3a-b7d595524ed1:
     type: TEXT
     name: textSubheader
@@ -339,36 +339,36 @@ nodes:
     name: descText
     properties:
       fontSize: sm
-      height: "4"
+      height: '4'
       renderMode: markdown
       styles: |-
         element.styles {
           padding-x: 8px;
         }
-      top: "13"
-      value: "{{ $props.templateDescText }}"
+      top: '13'
+      value: '{{ $props.templateDescText }}'
       verticalAlign: top
-      width: "12"
+      width: '12'
   4dc07e3e-403d-499d-ad85-d8276a8b3bb6:
     type: INPUT
     name: inputStepBasicDataBinding
     properties:
-      height: "2"
-      label: ""
-      left: "2"
+      height: '2'
+      label: ''
+      left: '2'
       placeholder: Basic
-      top: "8"
-      width: "10"
+      top: '8'
+      width: '10'
   51f3641d-40a2-427d-93b0-15de34669fc6:
     type: TEXT
     name: textStepAdvancedJSHeader
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "1"
+      height: '1'
       value: 3) Advanced JavaScript Example
       verticalAlign: bottom
-      width: "12"
+      width: '12'
   55ff6f4e-a38f-4649-aada-3ce074dce023:
     type: CONTAINER
     name: stepBasicDataBinding
@@ -383,16 +383,16 @@ nodes:
         - nodeID: 86be3c07-c257-4a81-ba5d-727e7f0b5fef
           orderKey: ZzV
     properties:
-      borderRadius: "5"
-      gridRowHeight: "22"
-      gridRows: "0"
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: 364px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      top: "11"
+      top: '11'
       width: fill
   56967eac-f86e-46b9-b5ff-5d9afe635432:
     type: CONTAINER
@@ -406,16 +406,16 @@ nodes:
         - nodeID: 601de6dc-8e7d-4935-a2f1-11914abd9944
           orderKey: ZzV
     properties:
-      borderRadius: "5"
-      gridRowHeight: "22"
-      gridRows: "0"
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: fill
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      top: "10"
+      top: '10'
       width: fill
   590f0a9f-7b03-4cfc-a76c-79689c4a9e7c:
     type: CONTAINER
@@ -429,16 +429,16 @@ nodes:
         - nodeID: 3dac381d-0c42-4b83-b852-d399441bf6a0
           orderKey: Zx
     properties:
-      borderRadius: "5"
-      gridRowHeight: "22"
-      gridRows: "0"
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: 620px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      top: "80"
+      top: '80'
       width: fill
   5aeb3de9-5348-4253-9b66-8f1c9d57b6a6:
     type: PAGE
@@ -472,7 +472,7 @@ nodes:
         element.styles {
 
         }
-      spacing: "8"
+      spacing: '8'
   601de6dc-8e7d-4935-a2f1-11914abd9944:
     type: INLINE_REACT
     name: iconStepLetsGetStarted
@@ -485,15 +485,15 @@ nodes:
             </div>
           )
         }
-      height: "3"
-      left: "11"
+      height: '3'
+      left: '11'
       styles: |-
         .size {
           width: 64px;
           height: 64px;
         }
-      top: "3"
-      width: "1"
+      top: '3'
+      width: '1'
   61af232e-6b81-4544-8f00-c943e7c083a2:
     type: COMPONENT
     name: templateCard
@@ -541,16 +541,16 @@ nodes:
         - nodeID: f9f22903-fa56-4182-b327-af0acdec0d36
           orderKey: a0
     properties:
-      borderRadius: "5"
-      gridRowHeight: "22"
-      gridRows: "0"
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: 220px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      top: "102"
+      top: '102'
       width: fill
   65bbb933-2f04-4796-afe7-506194721d32:
     type: FUNCTION
@@ -558,11 +558,11 @@ nodes:
     properties:
       action:
         actionType: PERFORM_REQUEST
-        body: ""
+        body: ''
         bodyType: application/json
         headers: []
         method: GET
-        path: "?size=30"
+        path: '?size=30'
         targetNode:
           ref: c038db71-e096-4432-bf8d-3e8bad052f6a
       runOnPageLoad: true
@@ -579,10 +579,10 @@ nodes:
     type: TEXT
     name: textStepLetsGetStartedBody
     properties:
-      height: "11"
+      height: '11'
       renderMode: markdown
-      styles: ""
-      top: "2"
+      styles: ''
+      top: '2'
       value: >-
         In order to get started, switch to `Test` mode by clicking the button in
         the floating action bar at the bottom of the screen.
@@ -592,7 +592,7 @@ nodes:
         modes, scroll down to the next section to see some UI components in
         action.
       verticalAlign: top
-      width: "9"
+      width: '9'
   7818a6f7-3096-4a64-baf7-9fb2c3166de0:
     type: RESOURCE/TYPESCRIPT_CLIENT
     name: typescriptClient1
@@ -602,15 +602,15 @@ nodes:
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "1"
+      height: '1'
       value: '4) Next: Make Apps Dynamic with {{ "{{ Code \}}" }}'
       verticalAlign: bottom
-      width: "12"
+      width: '12'
   7e0ee4db-ca2e-4b47-8b08-e060969c486e:
     type: TEXT
     name: textStepAdvancedJSBody
     properties:
-      height: "3"
+      height: '3'
       renderMode: markdown
       styles: |-
         :root {
@@ -657,18 +657,18 @@ nodes:
           padding: 0px 4px;
           border-radius: 4px;
         }
-      top: "2"
+      top: '2'
       value: >-
         So far, we’ve only returned a basic string value inside of a data
         binding. However, it’s possible to do much more. In the example below,
         we’re mapping over and returning a JSON object to populate the chart.
       verticalAlign: top
-      width: "12"
+      width: '12'
   83ec7aea-9262-46aa-a18f-4badca4579e2:
     type: TEXT
     name: textStepNextUpBody
     properties:
-      height: "3"
+      height: '3'
       renderMode: markdown
       styles: |-
         :root {
@@ -715,42 +715,42 @@ nodes:
           padding: 0px 4px;
           border-radius: 4px;
         }
-      top: "2"
+      top: '2'
       value: >-
         Data binding and functions go together hand-in-hand as a way to pass
         data back and forth between the UI of your application and back-end
         resources. The templates on the next page provide different examples of
         how this works in practice.
       verticalAlign: top
-      width: "12"
+      width: '12'
   8463cf78-496e-4757-bfcc-af3ba1a79ae8:
     type: TEXT
     name: textStepInteractingWithComponentsBody
     properties:
-      height: "3"
+      height: '3'
       renderMode: markdown
-      styles: ""
-      top: "2"
+      styles: ''
+      top: '2'
       value: >-
         Below we have a small user account management example that includes a
         data table, text input, and dropdown. With `Test` mode selected, choose
         an account type, search for an account owner, or sort the data table.
       verticalAlign: top
-      width: "12"
+      width: '12'
   86be3c07-c257-4a81-ba5d-727e7f0b5fef:
     type: TEXT
     name: textStepBasicDataBindingBody2
     properties:
-      height: "4"
+      height: '4'
       renderMode: markdown
-      styles: ""
-      top: "12"
+      styles: ''
+      top: '12'
       value: >-
         To see how it works, select the header of this section. Once you've
         selected it, look in the `Value` field under the `Content` section in
         the properties panel on the right side of the screen.
       verticalAlign: top
-      width: "12"
+      width: '12'
   8b7ab47e-914b-4e6e-82d7-8330106fa4c5:
     type: CONTAINER
     name: spacer
@@ -759,8 +759,8 @@ nodes:
       left: NaN
       width: fill
       height: 192px
-      backgroundColor: ""
-      boxShadow: "0"
+      backgroundColor: ''
+      boxShadow: '0'
   8cba5efc-01ce-402f-832e-0ab517766f2d:
     type: FUNCTION
     name: nextPage
@@ -789,20 +789,20 @@ nodes:
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "2"
+      height: '2'
       styles: |-
         element.styles {
           padding-x: 8px;
         }
-      top: "11"
-      value: "{{$props.templateTitleText}}"
+      top: '11'
+      value: '{{$props.templateTitleText}}'
       verticalAlign: bottom
-      width: "12"
+      width: '12'
   97c5eeb2-6924-4130-806f-eb8abd4c2a8f:
     type: MEDIA
     name: coverImage
     properties:
-      height: "10"
+      height: '10'
       styles: |-
         element.styles {
           border-radius: 2px;
@@ -812,7 +812,7 @@ nodes:
       url: >-
         {{ $app.colorMode === 'dark' ? $props.templateImageLinkDark :
         $props.templateImageLinkLight }}
-      width: "12"
+      width: '12'
   9a8d82c6-efab-42c6-a742-e05e3f310737:
     type: CONTAINER
     name: stepAdvancedJS
@@ -827,16 +827,16 @@ nodes:
         - nodeID: ae3a9824-13d0-4c6b-bc7a-1d2fb4dd8ba7
           orderKey: Zz
     properties:
-      borderRadius: "5"
-      gridRowHeight: "22"
-      gridRows: "0"
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: 684px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      top: "58"
+      top: '58'
       width: fill
   9f82d272-1437-45d7-9c81-75a56afce5fb:
     type: FUNCTION
@@ -877,40 +877,40 @@ nodes:
       layoutStyle: VERTICAL_STACK
       minHeight: 1964px
       minWidth: 768px
-      spacing: "8"
+      spacing: '8'
   a9c92a59-ccd1-44fd-9754-04929855e061:
     type: TEXT
     name: textStepDataBindingInFunctionsBody
     properties:
-      height: "3"
+      height: '3'
       renderMode: markdown
-      styles: ""
-      top: "2"
+      styles: ''
+      top: '2'
       value: >-
         Data binding also works inside of functions that aren’t already
         JavaScript (it is typically not necessary inside TypeScript functions).
         The button below is attached to a function that opens a toast message.
       verticalAlign: top
-      width: "12"
+      width: '12'
   abf20f79-e93b-4b3c-90dd-824d8e434e05:
     type: FUNCTION
     name: getRandomExampleData
     properties:
       action:
         actionType: PERFORM_REQUEST
-        body: ""
+        body: ''
         bodyType: application/json
         headers: []
         method: GET
-        path: "?size=20"
+        path: '?size=20'
         targetNode:
           ref: c038db71-e096-4432-bf8d-3e8bad052f6a
-      runOnPageLoad: "{{true}}"
+      runOnPageLoad: '{{true}}'
   ae3a9824-13d0-4c6b-bc7a-1d2fb4dd8ba7:
     type: TEXT
     name: textStepAdvancedJSBody2
     properties:
-      height: "3"
+      height: '3'
       renderMode: markdown
       styles: |-
         :root {
@@ -957,12 +957,12 @@ nodes:
           padding: 0px 4px;
           border-radius: 4px;
         }
-      top: "27"
+      top: '27'
       value: >-
         You can see what the code looks like by selecting the chart and going to
         the `Data Source` under the `Data` panel on the chart.
       verticalAlign: top
-      width: "12"
+      width: '12'
   b1d8f4ab-d246-4c87-942a-3c4ee43d450c:
     type: DATA_TABLE
     name: dataTableStepLoadingData
@@ -976,10 +976,10 @@ nodes:
           minWidth: 15
           renderAs: default
           dateTimeFormat: MMMM dd, y 'at' ttt
-          widthUnit: "%"
-          minWidthUnit: "%"
-          isVisible: "true"
-          allowSortBy: "true"
+          widthUnit: '%'
+          minWidthUnit: '%'
+          isVisible: 'true'
+          allowSortBy: 'true'
           linkTarget: _blank
           buttonText: Button
           onButtonClick: null
@@ -990,10 +990,10 @@ nodes:
           minWidth: 15
           renderAs: default
           dateTimeFormat: MMMM dd, y 'at' ttt
-          widthUnit: "%"
-          minWidthUnit: "%"
-          isVisible: "true"
-          allowSortBy: "true"
+          widthUnit: '%'
+          minWidthUnit: '%'
+          isVisible: 'true'
+          allowSortBy: 'true'
           linkTarget: _blank
           buttonText: Button
           onButtonClick: null
@@ -1004,10 +1004,10 @@ nodes:
           minWidth: 15
           renderAs: default
           dateTimeFormat: MMMM dd, y 'at' ttt
-          widthUnit: "%"
-          minWidthUnit: "%"
-          isVisible: "true"
-          allowSortBy: "true"
+          widthUnit: '%'
+          minWidthUnit: '%'
+          isVisible: 'true'
+          allowSortBy: 'true'
           linkTarget: _blank
           buttonText: Button
           onButtonClick: null
@@ -1018,10 +1018,10 @@ nodes:
           minWidth: 15
           renderAs: default
           dateTimeFormat: MMMM dd, y 'at' ttt
-          widthUnit: "%"
-          minWidthUnit: "%"
-          isVisible: "true"
-          allowSortBy: "true"
+          widthUnit: '%'
+          minWidthUnit: '%'
+          isVisible: 'true'
+          allowSortBy: 'true'
           linkTarget: _blank
           buttonText: Button
           onButtonClick: null
@@ -1032,10 +1032,10 @@ nodes:
           minWidth: 15
           renderAs: default
           dateTimeFormat: MMMM dd, y 'at' ttt
-          widthUnit: "%"
-          minWidthUnit: "%"
-          isVisible: "true"
-          allowSortBy: "true"
+          widthUnit: '%'
+          minWidthUnit: '%'
+          isVisible: 'true'
+          allowSortBy: 'true'
           linkTarget: _blank
           buttonText: Button
           onButtonClick: null
@@ -1046,10 +1046,10 @@ nodes:
           minWidth: 15
           renderAs: default
           dateTimeFormat: MMMM dd, y 'at' ttt
-          widthUnit: "%"
-          minWidthUnit: "%"
-          isVisible: "true"
-          allowSortBy: "true"
+          widthUnit: '%'
+          minWidthUnit: '%'
+          isVisible: 'true'
+          allowSortBy: 'true'
           linkTarget: _blank
           buttonText: Button
           onButtonClick: null
@@ -1060,10 +1060,10 @@ nodes:
           minWidth: 15
           renderAs: default
           dateTimeFormat: MMMM dd, y 'at' ttt
-          widthUnit: "%"
-          minWidthUnit: "%"
-          isVisible: "false"
-          allowSortBy: "true"
+          widthUnit: '%'
+          minWidthUnit: '%'
+          isVisible: 'false'
+          allowSortBy: 'true'
           linkTarget: _blank
           buttonText: Button
           onButtonClick: null
@@ -1081,16 +1081,16 @@ nodes:
                 .includes(inputStepInteractingWithComponents.value.toLowerCase())
             })
         }}
-      height: "21"
-      top: "9"
-      width: "12"
+      height: '21'
+      top: '9'
+      width: '12'
   b42829d1-aa52-43c2-8ee4-9ea82493b792:
     type: FUNCTION
     name: navigateToLink
     properties:
       action:
         actionType: NAVIGATE_TO_PAGE
-        path: "{{$props.cardLink}}"
+        path: '{{$props.cardLink}}'
         target: _blank
         targetNode:
           ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
@@ -1107,14 +1107,14 @@ nodes:
     type: TEXT
     name: cardLink
     properties:
-      height: "16"
-      href: "{{$props.cardLink}}"
+      height: '16'
+      href: '{{$props.cardLink}}'
       isVisible: true
       renderMode: link
       target: _blank
       textDecorationLine: underline
-      value: ""
-      width: "12"
+      value: ''
+      width: '12'
       onHover:
         function:
           ref: 9418e4db-0967-4db8-9668-306a872d2f98
@@ -1125,10 +1125,10 @@ nodes:
     type: TEXT
     name: textStepInteractingWithComponentsInfo
     properties:
-      height: "9"
+      height: '9'
       renderMode: markdown
-      styles: ""
-      top: "31"
+      styles: ''
+      top: '31'
       value: >-
         All components have either a `.data` property or `.value` property that
         becomes the displayed data. In the case of the table above we've
@@ -1145,25 +1145,25 @@ nodes:
         _We'll cover how the data table reacts in real-time to input field
         changes on the next page._
       verticalAlign: top
-      width: "12"
+      width: '12'
   b64f391f-38be-4947-bf38-496abb546f3a:
     type: TEXT
     name: textStepNextUpHeader
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "1"
-      value: "4) Next: Get Started Quickly with Templates"
+      height: '1'
+      value: '4) Next: Get Started Quickly with Templates'
       verticalAlign: bottom
-      width: "12"
+      width: '12'
   b94b1e88-800f-483c-a759-12fc670b8020:
     type: DROPDOWN
     name: dropdownAccountType
     properties:
-      height: "2"
+      height: '2'
       label: Account Type
-      left: "7"
-      top: "7"
+      left: '7'
+      top: '7'
       values: |-
         {{
           [
@@ -1172,14 +1172,14 @@ nodes:
             }, new Set()),
           ]
         }}
-      width: "6"
+      width: '6'
   c038db71-e096-4432-bf8d-3e8bad052f6a:
     type: RESOURCE/HTTP
     name: randomDataAPI
     properties:
       profiles:
         - baseURL: https://random-dynaboard.vercel.app/api/v2/finance
-          environment: ""
+          environment: ''
           headers:
             - key: Content-Type
               value: application/json
@@ -1187,16 +1187,16 @@ nodes:
     type: TEXT
     name: textStepDataBindingInFunctionsBody2
     properties:
-      height: "4"
+      height: '4'
       renderMode: markdown
-      styles: ""
-      top: "11"
+      styles: ''
+      top: '11'
       value: >-
         To see how it works, select the function in the bottom left corner of the
         screen under the `Page Functions` panel named
         `exampleDataBindingFunction`.
       verticalAlign: top
-      width: "12"
+      width: '12'
   c78855dc-87d5-45ef-8dc0-5c933e7ef00a:
     type: CONTAINER
     name: stepDataBindingInFunctions
@@ -1211,16 +1211,16 @@ nodes:
         - nodeID: c1af4bdd-aacf-4d28-bcb9-8bc7ccade3ec
           orderKey: ZzO
     properties:
-      borderRadius: "5"
-      gridRowHeight: "22"
-      gridRows: "0"
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: 348px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      top: "35"
+      top: '35'
       width: fill
   d0bb41c4-ad04-4d6e-868e-eec0f4d13c8c:
     type: CONTAINER
@@ -1234,9 +1234,9 @@ nodes:
         - nodeID: 781e9c93-ea0f-4707-a7d6-d9a76fc41f84
           orderKey: Zy
     properties:
-      borderRadius: "5"
-      gridRowHeight: "22"
-      gridRows: "0"
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: 284px
       left: NaN
       styles: |-
@@ -1252,18 +1252,18 @@ nodes:
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "1"
+      height: '1'
       value: 1) A {{inputStepBasicDataBinding.value || "Basic"}} Example
       verticalAlign: bottom
-      width: "12"
+      width: '12'
   d6ece88b-6cb6-48a8-b9d4-1cc58e027bd8:
     type: TEXT
     name: textSubheader
     properties:
       height: 96px
       renderMode: markdown
-      styles: ""
-      top: "5"
+      styles: ''
+      top: '5'
       value: >-
         Dynamic data binding using the "double-curly" syntax `{{ "{\{ code goes
         here \}\}" }}` is a core feature of building interactive Dynaboard apps.
@@ -1275,21 +1275,21 @@ nodes:
     type: INPUT
     name: inputStepInteractingWithComponents
     properties:
-      height: "2"
+      height: '2'
       label: Search
       placeholder: Owner Name
-      top: "7"
-      width: "6"
+      top: '7'
+      width: '6'
       accessoryLeft: icon
       accessoryLeftIcon: MagnifyingGlassIcon
   deacc279-17c8-47c2-ba93-28fa0bc45e3e:
     type: TEXT
     name: textStepBasicDataBindingBody
     properties:
-      height: "4"
+      height: '4'
       renderMode: markdown
-      styles: ""
-      top: "2"
+      styles: ''
+      top: '2'
       value: >-
         One common use of data binding is to have UI components update in
         real-time in response to data from functions, inputs, or other
@@ -1297,33 +1297,33 @@ nodes:
         the text input below (and given it a default value). Try typing in the
         input below:
       verticalAlign: top
-      width: "12"
+      width: '12'
   dfb50d60-c27d-49bd-8e40-63436a68d44d:
     type: BUTTON
     name: buttonPopExampleToast
     properties:
       backgroundColor: purple.500
-      height: "2"
-      left: "5"
+      height: '2'
+      left: '5'
       onClick:
         function:
           ref: 1e33b59d-d7b9-4230-bf59-6bd887aef34c
       text: Yum! Toast
-      top: "7"
-      width: "4"
+      top: '7'
+      width: '4'
   e45f1ae2-44eb-43e4-80eb-9b2978a3b080:
     type: BUTTON
     name: buttonStepMakeThingsDynamic
     properties:
       backgroundColor: purple.500
-      height: "2"
-      left: "5"
+      height: '2'
+      left: '5'
       onClick:
         function:
           ref: 8cba5efc-01ce-402f-832e-0ab517766f2d
       text: Let's Make Things Dynamic!
-      top: "9"
-      width: "4"
+      top: '9'
+      width: '4'
   f1ba9371-abac-423d-9f17-00e6a54e1a3a:
     type: CONTAINER
     name: stepInteractingWithComponents
@@ -1342,25 +1342,25 @@ nodes:
         - nodeID: b51f3f6c-56a1-496c-b5f2-f28b3a5137c0
           orderKey: ZwV
     properties:
-      borderRadius: "5"
-      gridRowHeight: "22"
-      gridRows: "0"
+      borderRadius: '5'
+      gridRowHeight: '22'
+      gridRows: '0'
       height: 920px
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      top: "24"
+      top: '24'
       width: fill
   f9d9207d-1b57-4bed-bd20-85144cfa8339:
     type: TEXT
     name: forkText
     properties:
-      top: "11"
-      left: "9"
-      width: "4"
-      height: "2"
+      top: '11'
+      left: '9'
+      width: '4'
+      height: '2'
       styles: |-
         element.styles {
           padding-x: 8px;
@@ -1376,14 +1376,14 @@ nodes:
     name: buttonNextUp
     properties:
       backgroundColor: purple.500
-      height: "2"
-      left: "5"
+      height: '2'
+      left: '5'
       onClick:
         function:
           ref: 4298f146-c2ef-48a5-bebf-eca74cf71723
       text: Explore Templates
-      top: "6"
-      width: "4"
+      top: '6'
+      width: '4'
   fe6a3b00-f219-4206-84f0-43573e303287:
     type: CONTAINER
     name: cardContainer
@@ -1405,19 +1405,19 @@ nodes:
       boxShadow: >-
         0 0 0 1px {{$app.colorMode === 'dark' ? 'rgba(255, 255, 255, 0.2)' :
         'rgba(0, 0, 0, 0.2)' }}, 0 2px 4px rgba(0, 0, 0, 0.4)
-      gridColumnGap: ""
-      gridRowGap: ""
-      height: "16"
+      gridColumnGap: ''
+      gridRowGap: ''
+      height: '16'
       overflow: hidden
-      padding: "8"
-      width: "12"
+      padding: '8'
+      width: '12'
   fedeac1a-159b-4e19-af31-49aab150ab28:
     type: TEXT
     name: textStepLetsGetStartedHeader
     properties:
       fontSize: xl
       fontWeight: bold
-      height: "1"
+      height: '1'
       value: Let's get started!
       verticalAlign: bottom
-      width: "12"
+      width: '12'
