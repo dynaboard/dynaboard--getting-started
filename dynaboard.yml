@@ -1,4 +1,4 @@
-runtimeVersion: 0.3.5
+runtimeVersion: 0.4.0
 name: Getting Started
 description: ''
 type: com.dynaboard/project
@@ -38,7 +38,10 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '2'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       left: '4'
+      showExternalIndicator: '{{false}}'
       textAlign: center
       top: '11'
       value: Drag a Component Here!
@@ -47,11 +50,14 @@ nodes:
     type: CONTAINER
     name: spacer
     properties:
+      isVisible: '{{true}}'
+      isEnabled: '{{true}}'
       top: NaN
       left: NaN
       width: fill
       height: 112px
       backgroundColor: ''
+      borderRadius: '0'
   04ad44ef-195b-47a0-b261-f8bcb73fb459:
     type: PAGE
     name: templates
@@ -66,18 +72,31 @@ nodes:
         - nodeID: 48d9fd9c-86a9-421f-9c3a-b7d595524ed1
           orderKey: ZzV
     properties:
+      footerProps:
+        element: ''
+      headerProps:
+        element: ''
+      includeInSitemap: '{{true}}'
       layoutStyle: VERTICAL_STACK
-      minWidth: 768px
+      leftSidebarOpen: '{{true}}'
+      leftSidebarProps:
+        element: ''
+      rightSidebarOpen: '{{true}}'
+      rightSidebarProps:
+        element: ''
       spacing: '8'
   065f5066-9fc8-4136-a27c-82fccbfd31b1:
     type: CONTAINER
     name: spacer
     properties:
+      isVisible: '{{true}}'
+      isEnabled: '{{true}}'
       top: NaN
       left: NaN
       width: fill
       height: 80px
       backgroundColor: ''
+      borderRadius: '0'
   0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
     type: TEXT
     name: textHeader
@@ -85,6 +104,9 @@ nodes:
       fontSize: 3xl
       fontWeight: bold
       height: 60px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: Welcome to Dynaboard!
       width: fill
   1e33b59d-d7b9-4230-bf59-6bd887aef34c:
@@ -101,9 +123,16 @@ nodes:
         targetNode:
           ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
         variant: primary
+      isEnabled: '{{true}}'
+      loading: '{{false}}'
+      runOnPageLoad: '{{false}}'
   1f81be44-bd5c-4161-a6e9-bebf92ca8a46:
     type: RESOURCE/ONE_TIME_PIN_AUTH
     name: oneTimePinAuth1
+    properties:
+      profiles:
+        - environment: ''
+          isSignInProvider: '{{true}}'
   27b866cc-0a43-4095-a3ef-950a03367663:
     type: TEXT
     name: textStepInteractingWithComponentsHeader
@@ -111,6 +140,9 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '1'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: 2) Interacting with Components
       verticalAlign: bottom
       width: '12'
@@ -121,6 +153,9 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '1'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: 3) Add Your First Component
       verticalAlign: bottom
       width: '12'
@@ -129,14 +164,17 @@ nodes:
     name: textSubheader
     properties:
       height: 80px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '5'
       value: >-
-        This getting started guide is here to help you learn the ins and outs
-        of Dynaboard in just a few minutes. Once you've learned the basics, we
-        have example apps, boilerplates, and [additional documentation](https://dynaboard.com/docs)
-        to help you start building!
+        This getting started guide is here to help you learn the in's and out's
+        of Dynaboard in just a few minutes. Once you've learned the basics we
+        have example apps, boilerplates, and [additional
+        documentation](https://dynaboard.com/docs) to help you start building!
       verticalAlign: top
       width: fill
   30d8badd-70d9-4414-97b6-e07287e59f0c:
@@ -144,7 +182,10 @@ nodes:
     name: textStepMakeThingsDynamicSubtitle
     properties:
       height: '7'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '2'
       value: >-
@@ -162,6 +203,7 @@ nodes:
     type: CHART
     name: chartAdvancedJS
     properties:
+      allowLegend: '{{false}}'
       dataSource: |-
         {{
           Object.entries(
@@ -189,7 +231,9 @@ nodes:
           yKey: accountCount
       height: '20'
       horizontalAxisTitle: Account Type
+      isEnabled: '{{true}}'
       isInteractive: 'false'
+      isVisible: '{{true}}'
       leftVerticalAxisTitle: '# of Accounts'
       title: Number of Accounts by Type
       top: '6'
@@ -210,7 +254,7 @@ nodes:
               "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersLight.d244dd42.png&w=640&q=75",
             templateTitleText: "User Admin Panel",
             templateDescText:
-              "See how to build a data-driven UI in Dynaboard involving the data table.",
+              "See how to build a data driven UI in Dynaboard involving the data table.",
             cardLink: "https://dynaboard.new/dynaboard/dynaboard--data-table",
           },
           {
@@ -220,7 +264,7 @@ nodes:
               "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75",
             templateTitleText: "GPT-3 Playground",
             templateDescText:
-              "Get a head start on building your own GPT-3-powered application with a pre-built UI and included prompt examples.",
+              "Get a head start on building your own GPT-3 powered application with a pre-built UI and included prompt examples.",
             cardLink: "https://dynaboard.new/dynaboard/dynaboard--gpt3-playground",
           },
           {
@@ -230,7 +274,7 @@ nodes:
               "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosLight.5f70eaaa.png&w=640&q=75",
             templateTitleText: "Lightning Demos",
             templateDescText:
-              "Experience a complete application that leverages Dynaboard's built-in KV store for application storage.",
+              "Experince a complete application that leverages Dynaboard's built-in KV store for application storage.",
             cardLink: "https://dynaboard.new/dynaboard/dynaboard--lightning-demos",
           },
           {
@@ -266,7 +310,9 @@ nodes:
           },
         ]
       distributeContent: around
-      height: 1164px
+      height: fill
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       layoutStyle: HORIZONTAL_STACK
       top: '6'
       width: fill
@@ -276,7 +322,10 @@ nodes:
     name: textStepFirstComponentBody
     properties:
       height: '6'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '2'
       value: >-
@@ -300,9 +349,12 @@ nodes:
           orderKey: a0
     properties:
       backgroundColor: surface.200
+      borderRadius: '0'
       gridRowHeight: '16'
       gridRows: '0'
       height: '18'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       top: '9'
       width: '12'
   4298f146-c2ef-48a5-bebf-eca74cf71723:
@@ -315,6 +367,9 @@ nodes:
         target: _self
         targetNode:
           ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+      isEnabled: '{{true}}'
+      loading: '{{false}}'
+      runOnPageLoad: '{{false}}'
   4503712d-3187-402a-a8b4-4d37c68d14d9:
     type: TEXT
     name: textStepDataBindingInFunctionsHeader
@@ -322,6 +377,9 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '1'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: 2) Dynamic Behavior Inside of Functions
       verticalAlign: bottom
       width: '12'
@@ -329,10 +387,13 @@ nodes:
     type: TEXT
     name: textSubheader
     properties:
+      isVisible: '{{true}}'
+      isEnabled: '{{true}}'
       top: NaN
       left: NaN
       width: fill
       value: Click on a template to explore further.
+      showExternalIndicator: '{{false}}'
       fontStyle: italic
   4bfa8df2-4df1-4a01-b8ea-3d6404038d18:
     type: TEXT
@@ -340,7 +401,10 @@ nodes:
     properties:
       fontSize: sm
       height: '4'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: |-
         element.styles {
           padding-x: 8px;
@@ -354,6 +418,10 @@ nodes:
     name: inputStepBasicDataBinding
     properties:
       height: '2'
+      isClearable: '{{false}}'
+      isEnabled: '{{true}}'
+      isRequired: '{{false}}'
+      isVisible: '{{true}}'
       label: ''
       left: '2'
       placeholder: Basic
@@ -366,6 +434,9 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '1'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: 3) Advanced JavaScript Example
       verticalAlign: bottom
       width: '12'
@@ -383,10 +454,13 @@ nodes:
         - nodeID: 86be3c07-c257-4a81-ba5d-727e7f0b5fef
           orderKey: ZzV
     properties:
+      backgroundColor: surface.100
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
       height: 364px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       styles: |-
         element.styles {
           border-width: 1px;
@@ -406,16 +480,20 @@ nodes:
         - nodeID: 601de6dc-8e7d-4935-a2f1-11914abd9944
           orderKey: ZzV
     properties:
+      backgroundColor: surface.100
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
       height: fill
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      left: NaN
       styles: |-
         element.styles {
           border-width: 1px;
           border-color: text.muted;
         }
-      top: '10'
+      top: NaN
       width: fill
   590f0a9f-7b03-4cfc-a76c-79689c4a9e7c:
     type: CONTAINER
@@ -429,10 +507,13 @@ nodes:
         - nodeID: 3dac381d-0c42-4b83-b852-d399441bf6a0
           orderKey: Zx
     properties:
+      backgroundColor: surface.100
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
       height: 620px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       styles: |-
         element.styles {
           border-width: 1px;
@@ -473,6 +554,10 @@ nodes:
 
         }
       spacing: '8'
+      headerProps: {}
+      leftSidebarProps: {}
+      rightSidebarProps: {}
+      footerProps: {}
   601de6dc-8e7d-4935-a2f1-11914abd9944:
     type: INLINE_REACT
     name: iconStepLetsGetStarted
@@ -486,6 +571,8 @@ nodes:
           )
         }
       height: '3'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       left: '11'
       styles: |-
         .size {
@@ -512,23 +599,45 @@ nodes:
         - nodeID: 012aa7b7-a9d6-4e4b-a955-34295e508f10
           orderKey: a0
     properties:
-      $props: |2-
-          {
-            templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTDark.70117c38.png&w=640&q=75",
-            templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75",
-            templateTitleText: "Example Template",
-            templateDescText:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            cardLink: "https://dynaboard.new/",
-          }
       height: 338px
       maxWidth: 420px
-      mergeDefaultProps: false
       minWidth: 340px
       overflow: visible
-      width: "{{ $app.viewportWidth < 1024 ? '340px' : '420px' }}"
+      width: '{{ $app.viewportWidth < 1024 ? ''340px'' : ''420px'' }}'
+      props:
+        - id: a7f3279e-01e7-4743-adb1-a2631c4743c0
+          key: templateImageLinkDark
+          displayName: ''
+          description: ''
+          propType: string
+          defaultValue: >-
+            https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTDark.70117c38.png&w=640&q=75
+        - id: ae03d5ff-200e-4df5-8533-de4012932243
+          key: templateImageLinkLight
+          description: ''
+          propType: string
+          defaultValue: >-
+            https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75
+        - id: 25b7aa4b-d5d2-4f97-8dfd-6567560c78b7
+          key: templateTitleText
+          displayName: Template Title
+          description: ''
+          propType: string
+          defaultValue: Example Template
+        - id: 5b1ce7b8-352d-49e1-9bd6-21d09982ece6
+          key: templateDescText
+          displayName: Template Description
+          description: ''
+          propType: string
+          defaultValue: >-
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        - id: faa65410-677a-4307-b04b-a4a9ae7f2fb4
+          key: cardLink
+          displayName: link
+          description: ''
+          propType: string
+          defaultValue: https://dynaboard.new/
   652f196d-4253-4f9c-85b8-1f844f60937f:
     type: CONTAINER
     name: stepNextUp
@@ -541,10 +650,13 @@ nodes:
         - nodeID: f9f22903-fa56-4182-b327-af0acdec0d36
           orderKey: a0
     properties:
+      backgroundColor: surface.100
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
       height: 220px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       styles: |-
         element.styles {
           border-width: 1px;
@@ -565,6 +677,8 @@ nodes:
         path: '?size=30'
         targetNode:
           ref: c038db71-e096-4432-bf8d-3e8bad052f6a
+      isEnabled: '{{true}}'
+      loading: '{{false}}'
       runOnPageLoad: true
   73db1033-fbf3-4277-8ec1-b75de844859d:
     type: TEXT
@@ -573,6 +687,9 @@ nodes:
       fontSize: 3xl
       fontWeight: bold
       height: 60px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: Make Apps Dynamic with {{ "{{ Code \}}" }}
       width: fill
   76169d73-f4ef-4df8-99a4-0d46b3c50ab5:
@@ -580,7 +697,10 @@ nodes:
     name: textStepLetsGetStartedBody
     properties:
       height: '11'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '2'
       value: >-
@@ -603,6 +723,9 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '1'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: '4) Next: Make Apps Dynamic with {{ "{{ Code \}}" }}'
       verticalAlign: bottom
       width: '12'
@@ -611,7 +734,10 @@ nodes:
     name: textStepAdvancedJSBody
     properties:
       height: '3'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -659,8 +785,8 @@ nodes:
         }
       top: '2'
       value: >-
-        So far, we’ve only returned a basic string value inside of a data
-        binding. However, it’s possible to do much more. In the example below,
+        So far we’ve only returned a basic string value inside of an data
+        binding, however it’s possible to do much more. In the example below,
         we’re mapping over and returning a JSON object to populate the chart.
       verticalAlign: top
       width: '12'
@@ -669,7 +795,10 @@ nodes:
     name: textStepNextUpBody
     properties:
       height: '3'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -727,14 +856,17 @@ nodes:
     type: TEXT
     name: textStepInteractingWithComponentsBody
     properties:
-      height: '3'
+      height: '5'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '2'
       value: >-
         Below we have a small user account management example that includes a
-        data table, text input, and dropdown. With `Test` mode selected, choose
-        an account type, search for an account owner, or sort the data table.
+        data table, text input, and dropdown. With `Test` mode selected choose
+        an account type, search for an account owner or sort the data table.
       verticalAlign: top
       width: '12'
   86be3c07-c257-4a81-ba5d-727e7f0b5fef:
@@ -742,11 +874,14 @@ nodes:
     name: textStepBasicDataBindingBody2
     properties:
       height: '4'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '12'
       value: >-
-        To see how it works, select the header of this section. Once you've
+        To see how it works select the header of this section. Once you've
         selected it, look in the `Value` field under the `Content` section in
         the properties panel on the right side of the screen.
       verticalAlign: top
@@ -755,12 +890,15 @@ nodes:
     type: CONTAINER
     name: spacer
     properties:
+      isVisible: '{{true}}'
+      isEnabled: '{{true}}'
       top: NaN
       left: NaN
       width: fill
       height: 192px
       backgroundColor: ''
       boxShadow: '0'
+      borderRadius: '0'
   8cba5efc-01ce-402f-832e-0ab517766f2d:
     type: FUNCTION
     name: nextPage
@@ -771,6 +909,9 @@ nodes:
         target: _self
         targetNode:
           ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+      isEnabled: '{{true}}'
+      loading: '{{false}}'
+      runOnPageLoad: '{{false}}'
   8f34af83-c724-4818-a0a9-4cbac532cfd5:
     type: RESOURCE/BROWSER
     name: browser1
@@ -778,11 +919,14 @@ nodes:
     type: FUNCTION
     name: onHover
     properties:
+      isEnabled: '{{true}}'
+      loading: '{{false}}'
       action:
         code: isHovered.value = true
         targetNode:
           ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
         actionType: CALL_CLIENT_FUNCTION
+      runOnPageLoad: '{{false}}'
   968665fc-0536-405a-ab31-861ead1f98db:
     type: TEXT
     name: titleText
@@ -790,6 +934,9 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '2'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       styles: |-
         element.styles {
           padding-x: 8px;
@@ -803,6 +950,9 @@ nodes:
     name: coverImage
     properties:
       height: '10'
+      isDisabled: '{{false}}'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       styles: |-
         element.styles {
           border-radius: 2px;
@@ -827,10 +977,13 @@ nodes:
         - nodeID: ae3a9824-13d0-4c6b-bc7a-1d2fb4dd8ba7
           orderKey: Zz
     properties:
+      backgroundColor: surface.100
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
       height: 684px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       styles: |-
         element.styles {
           border-width: 1px;
@@ -842,11 +995,14 @@ nodes:
     type: FUNCTION
     name: onLeave
     properties:
+      isEnabled: '{{true}}'
+      loading: '{{false}}'
       action:
         code: isHovered.value = false
         targetNode:
           ref: 7818a6f7-3096-4a64-baf7-9fb2c3166de0
         actionType: CALL_CLIENT_FUNCTION
+      runOnPageLoad: '{{false}}'
   a58f0ad0-bc5d-417d-aace-8d94dffc2c7b:
     type: PAGE
     name: dynamic
@@ -874,16 +1030,24 @@ nodes:
         - nodeID: 1e33b59d-d7b9-4230-bf59-6bd887aef34c
           orderKey: a0
     properties:
+      includeInSitemap: '{{true}}'
       layoutStyle: VERTICAL_STACK
       minHeight: 1964px
       minWidth: 768px
       spacing: '8'
+      headerProps: {}
+      leftSidebarProps: {}
+      rightSidebarProps: {}
+      footerProps: {}
   a9c92a59-ccd1-44fd-9754-04929855e061:
     type: TEXT
     name: textStepDataBindingInFunctionsBody
     properties:
       height: '3'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '2'
       value: >-
@@ -905,13 +1069,18 @@ nodes:
         path: '?size=20'
         targetNode:
           ref: c038db71-e096-4432-bf8d-3e8bad052f6a
+      isEnabled: '{{true}}'
+      loading: '{{false}}'
       runOnPageLoad: '{{true}}'
   ae3a9824-13d0-4c6b-bc7a-1d2fb4dd8ba7:
     type: TEXT
     name: textStepAdvancedJSBody2
     properties:
       height: '3'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: |-
         :root {
           /* https://developer.mozilla.org/en-US/docs/Web/CSS/:root */
@@ -968,6 +1137,7 @@ nodes:
     name: dataTableStepLoadingData
     properties:
       autoColumns: false
+      autoselectFirstRow: '{{false}}'
       columns:
         - header: accountID
           accessor: accountID
@@ -1081,7 +1251,11 @@ nodes:
                 .includes(inputStepInteractingWithComponents.value.toLowerCase())
             })
         }}
+      flatten: '{{false}}'
       height: '21'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      paginationEnabled: '{{false}}'
       top: '9'
       width: '12'
   b42829d1-aa52-43c2-8ee4-9ea82493b792:
@@ -1094,6 +1268,9 @@ nodes:
         target: _blank
         targetNode:
           ref: 8f34af83-c724-4818-a0a9-4cbac532cfd5
+      isEnabled: '{{true}}'
+      loading: '{{false}}'
+      runOnPageLoad: '{{false}}'
   b46e2861-e155-4e98-94af-18fb160fe735:
     type: TEXT
     name: textHeader
@@ -1101,6 +1278,9 @@ nodes:
       fontSize: 3xl
       fontWeight: bold
       height: 60px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: 🔍 Let's Explore Templates!
       width: fill
   b4c6c983-f33a-490b-9f5d-90d5e3c900b9:
@@ -1109,8 +1289,9 @@ nodes:
     properties:
       height: '16'
       href: '{{$props.cardLink}}'
-      isVisible: true
+      isEnabled: '{{true}}'
       renderMode: link
+      showExternalIndicator: '{{false}}'
       target: _blank
       textDecorationLine: underline
       value: ''
@@ -1126,7 +1307,10 @@ nodes:
     name: textStepInteractingWithComponentsInfo
     properties:
       height: '9'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '31'
       value: >-
@@ -1153,6 +1337,9 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '1'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: '4) Next: Get Started Quickly with Templates'
       verticalAlign: bottom
       width: '12'
@@ -1160,7 +1347,14 @@ nodes:
     type: DROPDOWN
     name: dropdownAccountType
     properties:
+      allowClearing: '{{true}}'
+      caseSensitiveMatching: '{{false}}'
+      enableFilter: '{{false}}'
+      fuzzyMatching: '{{true}}'
       height: '2'
+      isEnabled: '{{true}}'
+      isRequired: '{{false}}'
+      isVisible: '{{true}}'
       label: Account Type
       left: '7'
       top: '7'
@@ -1188,11 +1382,14 @@ nodes:
     name: textStepDataBindingInFunctionsBody2
     properties:
       height: '4'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '11'
       value: >-
-        To see how it works, select the function in the bottom left corner of the
+        To see how it works select the function in the bottom left corner of the
         screen under the `Page Functions` panel named
         `exampleDataBindingFunction`.
       verticalAlign: top
@@ -1211,10 +1408,13 @@ nodes:
         - nodeID: c1af4bdd-aacf-4d28-bcb9-8bc7ccade3ec
           orderKey: ZzO
     properties:
+      backgroundColor: surface.100
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
       height: 348px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       styles: |-
         element.styles {
           border-width: 1px;
@@ -1234,10 +1434,13 @@ nodes:
         - nodeID: 781e9c93-ea0f-4707-a7d6-d9a76fc41f84
           orderKey: Zy
     properties:
+      backgroundColor: surface.100
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
       height: 284px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       left: NaN
       styles: |-
         element.styles {
@@ -1253,6 +1456,9 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '1'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: 1) A {{inputStepBasicDataBinding.value || "Basic"}} Example
       verticalAlign: bottom
       width: '12'
@@ -1261,7 +1467,10 @@ nodes:
     name: textSubheader
     properties:
       height: 96px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '5'
       value: >-
@@ -1276,6 +1485,10 @@ nodes:
     name: inputStepInteractingWithComponents
     properties:
       height: '2'
+      isClearable: '{{false}}'
+      isEnabled: '{{true}}'
+      isRequired: '{{false}}'
+      isVisible: '{{true}}'
       label: Search
       placeholder: Owner Name
       top: '7'
@@ -1287,7 +1500,10 @@ nodes:
     name: textStepBasicDataBindingBody
     properties:
       height: '4'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       renderMode: markdown
+      showExternalIndicator: '{{false}}'
       styles: ''
       top: '2'
       value: >-
@@ -1304,6 +1520,9 @@ nodes:
     properties:
       backgroundColor: purple.500
       height: '2'
+      isEnabled: '{{true}}'
+      isLoading: '{{false}}'
+      isVisible: '{{true}}'
       left: '5'
       onClick:
         function:
@@ -1317,6 +1536,9 @@ nodes:
     properties:
       backgroundColor: purple.500
       height: '2'
+      isEnabled: '{{true}}'
+      isLoading: '{{false}}'
+      isVisible: '{{true}}'
       left: '5'
       onClick:
         function:
@@ -1342,10 +1564,13 @@ nodes:
         - nodeID: b51f3f6c-56a1-496c-b5f2-f28b3a5137c0
           orderKey: ZwV
     properties:
+      backgroundColor: surface.100
       borderRadius: '5'
       gridRowHeight: '22'
       gridRows: '0'
       height: 920px
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       styles: |-
         element.styles {
           border-width: 1px;
@@ -1357,6 +1582,8 @@ nodes:
     type: TEXT
     name: forkText
     properties:
+      isVisible: '{{true}}'
+      isEnabled: '{{true}}'
       top: '11'
       left: '9'
       width: '4'
@@ -1366,17 +1593,21 @@ nodes:
           padding-x: 8px;
         }
       value: Fork →
+      showExternalIndicator: '{{false}}'
       fontSize: sm
       textAlign: right
       verticalAlign: bottom
       fontWeight: bold
-      color: "{{isHovered.value ? 'text.primary' : 'text.muted'}}"
+      color: '{{isHovered.value ? ''text.primary'' : ''text.muted''}}'
   f9f22903-fa56-4182-b327-af0acdec0d36:
     type: BUTTON
     name: buttonNextUp
     properties:
       backgroundColor: purple.500
       height: '2'
+      isEnabled: '{{true}}'
+      isLoading: '{{false}}'
+      isVisible: '{{true}}'
       left: '5'
       onClick:
         function:
@@ -1408,6 +1639,8 @@ nodes:
       gridColumnGap: ''
       gridRowGap: ''
       height: '16'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
       overflow: hidden
       padding: '8'
       width: '12'
@@ -1418,6 +1651,9 @@ nodes:
       fontSize: xl
       fontWeight: bold
       height: '1'
+      isEnabled: '{{true}}'
+      isVisible: '{{true}}'
+      showExternalIndicator: '{{false}}'
       value: Let's get started!
       verticalAlign: bottom
       width: '12'
