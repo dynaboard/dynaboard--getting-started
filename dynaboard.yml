@@ -866,7 +866,7 @@ nodes:
       top: '2'
       value: >-
         Below we have a small user account management example that includes a
-        data table, text input, and dropdown. With `Test` mode selected choose
+        data table, text input, and dropdown. With `Test` mode selected, choose
         an account type, search for an account owner, or sort the data table.
       verticalAlign: top
       width: '12'
