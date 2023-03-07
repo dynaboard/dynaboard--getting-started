@@ -81,6 +81,7 @@ nodes:
       leftSidebarOpen: '{{true}}'
       leftSidebarProps:
         element: ''
+      minWidth: 768px
       rightSidebarOpen: '{{true}}'
       rightSidebarProps:
         element: ''
@@ -171,9 +172,9 @@ nodes:
       styles: ''
       top: '5'
       value: >-
-        This getting started guide is here to help you learn the in's and out's
-        of Dynaboard in just a few minutes. Once you've learned the basics we
-        have example apps, boilerplates, and [additional
+        This getting started guide is here to help you learn the ins and outs of
+        Dynaboard in just a few minutes. Once you've learned the basics we have
+        example apps, boilerplates, and [additional
         documentation](https://dynaboard.com/docs) to help you start building!
       verticalAlign: top
       width: fill
@@ -254,7 +255,7 @@ nodes:
               "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersLight.d244dd42.png&w=640&q=75",
             templateTitleText: "User Admin Panel",
             templateDescText:
-              "See how to build a data driven UI in Dynaboard involving the data table.",
+              "See how to build a data-driven UI in Dynaboard involving the data table.",
             cardLink: "https://dynaboard.new/dynaboard/dynaboard--data-table",
           },
           {
@@ -264,7 +265,7 @@ nodes:
               "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75",
             templateTitleText: "GPT-3 Playground",
             templateDescText:
-              "Get a head start on building your own GPT-3 powered application with a pre-built UI and included prompt examples.",
+              "Get a head start on building your own GPT-3-powered application with a pre-built UI and included prompt examples.",
             cardLink: "https://dynaboard.new/dynaboard/dynaboard--gpt3-playground",
           },
           {
@@ -274,7 +275,7 @@ nodes:
               "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosLight.5f70eaaa.png&w=640&q=75",
             templateTitleText: "Lightning Demos",
             templateDescText:
-              "Experince a complete application that leverages Dynaboard's built-in KV store for application storage.",
+              "Experience a complete application that leverages Dynaboard's built-in KV store for application storage.",
             cardLink: "https://dynaboard.new/dynaboard/dynaboard--lightning-demos",
           },
           {
@@ -785,8 +786,8 @@ nodes:
         }
       top: '2'
       value: >-
-        So far we’ve only returned a basic string value inside of an data
-        binding, however it’s possible to do much more. In the example below,
+        So far, we’ve only returned a basic string value inside of a data
+        binding. However, it’s possible to do much more. In the example below,
         we’re mapping over and returning a JSON object to populate the chart.
       verticalAlign: top
       width: '12'
@@ -866,7 +867,7 @@ nodes:
       value: >-
         Below we have a small user account management example that includes a
         data table, text input, and dropdown. With `Test` mode selected choose
-        an account type, search for an account owner or sort the data table.
+        an account type, search for an account owner, or sort the data table.
       verticalAlign: top
       width: '12'
   86be3c07-c257-4a81-ba5d-727e7f0b5fef:
@@ -1389,8 +1390,8 @@ nodes:
       styles: ''
       top: '11'
       value: >-
-        To see how it works select the function in the bottom left corner of the
-        screen under the `Page Functions` panel named
+        To see how it works, select the function in the bottom left corner of
+        the screen under the `Page Functions` panel named
         `exampleDataBindingFunction`.
       verticalAlign: top
       width: '12'
@@ -1598,7 +1599,7 @@ nodes:
       textAlign: right
       verticalAlign: bottom
       fontWeight: bold
-      color: '{{isHovered.value ? ''text.primary'' : ''text.muted''}}'
+      color: "{{isHovered.value ? 'text.primary' : 'text.muted'}}"
   f9f22903-fa56-4182-b327-af0acdec0d36:
     type: BUTTON
     name: buttonNextUp
