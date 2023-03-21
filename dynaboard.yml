@@ -1,4 +1,4 @@
-runtimeVersion: 0.4.0
+runtimeVersion: 0.4.1
 name: Getting Started
 description: ''
 type: com.dynaboard/project
@@ -41,6 +41,10 @@ nodes:
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
       left: '4'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       textAlign: center
       top: '11'
@@ -55,7 +59,11 @@ nodes:
       top: NaN
       left: NaN
       width: fill
+      minWidth: none
+      maxWidth: none
       height: 112px
+      minHeight: none
+      maxHeight: none
       backgroundColor: ''
       borderRadius: '0'
   04ad44ef-195b-47a0-b261-f8bcb73fb459:
@@ -95,7 +103,11 @@ nodes:
       top: NaN
       left: NaN
       width: fill
+      minWidth: none
+      maxWidth: none
       height: 80px
+      minHeight: none
+      maxHeight: none
       backgroundColor: ''
       borderRadius: '0'
   0a2f59fc-e7d1-4178-ac3d-09cb4c0e04f3:
@@ -107,6 +119,10 @@ nodes:
       height: 60px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: Welcome to Dynaboard!
       width: fill
@@ -143,6 +159,10 @@ nodes:
       height: '1'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: 2) Interacting with Components
       verticalAlign: bottom
@@ -156,6 +176,10 @@ nodes:
       height: '1'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: 3) Add Your First Component
       verticalAlign: bottom
@@ -167,6 +191,10 @@ nodes:
       height: 80px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -185,6 +213,10 @@ nodes:
       height: '7'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -236,6 +268,10 @@ nodes:
       isInteractive: 'false'
       isVisible: '{{true}}'
       leftVerticalAxisTitle: '# of Accounts'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       title: Number of Accounts by Type
       top: '6'
       width: '12'
@@ -250,9 +286,9 @@ nodes:
         [
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersDark.af7c6ec5.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersDark.af7c6ec5.png&w=640&q=75",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersLight.d244dd42.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersLight.d244dd42.png&w=640&q=75",
             templateTitleText: "User Admin Panel",
             templateDescText:
               "See how to build a data-driven UI in Dynaboard involving the data table.",
@@ -260,9 +296,9 @@ nodes:
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTDark.70117c38.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTDark.70117c38.png&w=640&q=75",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75",
             templateTitleText: "GPT-3 Playground",
             templateDescText:
               "Get a head start on building your own GPT-3-powered application with a pre-built UI and included prompt examples.",
@@ -270,9 +306,9 @@ nodes:
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosDark.6741eeba.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosDark.6741eeba.png&w=640&q=75",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosLight.5f70eaaa.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosLight.5f70eaaa.png&w=640&q=75",
             templateTitleText: "Lightning Demos",
             templateDescText:
               "Experience a complete application that leverages Dynaboard's built-in KV store for application storage.",
@@ -280,29 +316,29 @@ nodes:
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateFeedDark.c7fcdde1.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateFeedDark.c7fcdde1.png&w=640&q=75",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateFeedLight.d7415e49.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateFeedLight.d7415e49.png&w=640&q=75",
             templateTitleText: "Hacker News Clone",
             templateDescText:
-              "Explore the advanced styling capabilites of Dynaboard, and see an example of a UI involving custom components.",
+              "Explore the advanced styling capabilities of Dynaboard, and see an example of a UI involving custom components.",
             cardLink: "https://dynaboard.new/dynaboard/dynaboard--hacker-news",
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateVizDark.893e4e60.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateVizDark.893e4e60.png&w=640&q=75",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateVizLight.da6eba1c.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateVizLight.da6eba1c.png&w=640&q=75",
             templateTitleText: "Charts UI",
             templateDescText:
-              "Dive into the charting capabilites of Dynaboard with a couple of different examples.",
+              "Dive into the charting capabilities of Dynaboard with a couple of different examples.",
             cardLink: "https://dynaboard.new/dynaboard/dynaboard--charts",
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplatePrivateAppDark.d3daa24f.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplatePrivateAppDark.d3daa24f.png&w=640&q=75",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplatePrivateAppDark.d3daa24f.png&w=640&q=75",
+              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplatePrivateAppLight.76309634.png&w=640&q=75",
             templateTitleText: "Private App Boilerplate",
             templateDescText:
               "Learn how to build a private application in Dynaboard that requires authentication and how to secure it.",
@@ -315,6 +351,10 @@ nodes:
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
       layoutStyle: HORIZONTAL_STACK
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       top: '6'
       width: fill
       wrapContent: wrap
@@ -325,6 +365,10 @@ nodes:
       height: '6'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -356,6 +400,10 @@ nodes:
       height: '18'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       top: '9'
       width: '12'
   4298f146-c2ef-48a5-bebf-eca74cf71723:
@@ -380,6 +428,10 @@ nodes:
       height: '1'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: 2) Dynamic Behavior Inside of Functions
       verticalAlign: bottom
@@ -393,6 +445,10 @@ nodes:
       top: NaN
       left: NaN
       width: fill
+      minWidth: none
+      maxWidth: none
+      minHeight: none
+      maxHeight: none
       value: Click on a template to explore further.
       showExternalIndicator: '{{false}}'
       fontStyle: italic
@@ -404,6 +460,10 @@ nodes:
       height: '4'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: |-
@@ -425,6 +485,10 @@ nodes:
       isVisible: '{{true}}'
       label: ''
       left: '2'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       placeholder: Basic
       top: '8'
       width: '10'
@@ -437,6 +501,10 @@ nodes:
       height: '1'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: 3) Advanced JavaScript Example
       verticalAlign: bottom
@@ -462,6 +530,10 @@ nodes:
       height: 364px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         element.styles {
           border-width: 1px;
@@ -489,6 +561,10 @@ nodes:
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
       left: NaN
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         element.styles {
           border-width: 1px;
@@ -515,6 +591,10 @@ nodes:
       height: 620px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         element.styles {
           border-width: 1px;
@@ -575,6 +655,10 @@ nodes:
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
       left: '11'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         .size {
           width: 64px;
@@ -612,13 +696,13 @@ nodes:
           description: ''
           propType: string
           defaultValue: >-
-            https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTDark.70117c38.png&w=640&q=75
+            https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTDark.70117c38.png&w=640&q=75
         - id: ae03d5ff-200e-4df5-8533-de4012932243
           key: templateImageLinkLight
           description: ''
           propType: string
           defaultValue: >-
-            https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.com%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75
+            https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75
         - id: 25b7aa4b-d5d2-4f97-8dfd-6567560c78b7
           key: templateTitleText
           displayName: Template Title
@@ -658,6 +742,10 @@ nodes:
       height: 220px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         element.styles {
           border-width: 1px;
@@ -690,6 +778,10 @@ nodes:
       height: 60px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: Make Apps Dynamic with {{ "{{ Code \}}" }}
       width: fill
@@ -700,6 +792,10 @@ nodes:
       height: '11'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -726,6 +822,10 @@ nodes:
       height: '1'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: '4) Next: Make Apps Dynamic with {{ "{{ Code \}}" }}'
       verticalAlign: bottom
@@ -737,6 +837,10 @@ nodes:
       height: '3'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: |-
@@ -798,6 +902,10 @@ nodes:
       height: '3'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: |-
@@ -860,13 +968,17 @@ nodes:
       height: '5'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
       top: '2'
       value: >-
         Below we have a small user account management example that includes a
-        data table, text input, and dropdown. With `Test` mode selected, choose
+        data table, text input, and dropdown. With `Test` mode selected choose
         an account type, search for an account owner, or sort the data table.
       verticalAlign: top
       width: '12'
@@ -877,6 +989,10 @@ nodes:
       height: '4'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -896,7 +1012,11 @@ nodes:
       top: NaN
       left: NaN
       width: fill
+      minWidth: none
+      maxWidth: none
       height: 192px
+      minHeight: none
+      maxHeight: none
       backgroundColor: ''
       boxShadow: '0'
       borderRadius: '0'
@@ -937,6 +1057,10 @@ nodes:
       height: '2'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       styles: |-
         element.styles {
@@ -954,6 +1078,10 @@ nodes:
       isDisabled: '{{false}}'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         element.styles {
           border-radius: 2px;
@@ -985,6 +1113,10 @@ nodes:
       height: 684px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         element.styles {
           border-width: 1px;
@@ -1047,6 +1179,10 @@ nodes:
       height: '3'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -1080,6 +1216,10 @@ nodes:
       height: '3'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: |-
@@ -1256,6 +1396,10 @@ nodes:
       height: '21'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       paginationEnabled: '{{false}}'
       top: '9'
       width: '12'
@@ -1281,6 +1425,10 @@ nodes:
       height: 60px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: 🔍 Let's Explore Templates!
       width: fill
@@ -1291,6 +1439,10 @@ nodes:
       height: '16'
       href: '{{$props.cardLink}}'
       isEnabled: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: link
       showExternalIndicator: '{{false}}'
       target: _blank
@@ -1310,6 +1462,10 @@ nodes:
       height: '9'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -1340,6 +1496,10 @@ nodes:
       height: '1'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: '4) Next: Get Started Quickly with Templates'
       verticalAlign: bottom
@@ -1358,6 +1518,10 @@ nodes:
       isVisible: '{{true}}'
       label: Account Type
       left: '7'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       top: '7'
       values: |-
         {{
@@ -1385,6 +1549,10 @@ nodes:
       height: '4'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -1416,6 +1584,10 @@ nodes:
       height: 348px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         element.styles {
           border-width: 1px;
@@ -1443,6 +1615,10 @@ nodes:
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
       left: NaN
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         element.styles {
           border-width: 1px;
@@ -1459,6 +1635,10 @@ nodes:
       height: '1'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: 1) A {{inputStepBasicDataBinding.value || "Basic"}} Example
       verticalAlign: bottom
@@ -1470,6 +1650,10 @@ nodes:
       height: 96px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -1491,6 +1675,10 @@ nodes:
       isRequired: '{{false}}'
       isVisible: '{{true}}'
       label: Search
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       placeholder: Owner Name
       top: '7'
       width: '6'
@@ -1503,6 +1691,10 @@ nodes:
       height: '4'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       renderMode: markdown
       showExternalIndicator: '{{false}}'
       styles: ''
@@ -1525,6 +1717,10 @@ nodes:
       isLoading: '{{false}}'
       isVisible: '{{true}}'
       left: '5'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       onClick:
         function:
           ref: 1e33b59d-d7b9-4230-bf59-6bd887aef34c
@@ -1541,6 +1737,10 @@ nodes:
       isLoading: '{{false}}'
       isVisible: '{{true}}'
       left: '5'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       onClick:
         function:
           ref: 8cba5efc-01ce-402f-832e-0ab517766f2d
@@ -1572,6 +1772,10 @@ nodes:
       height: 920px
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       styles: |-
         element.styles {
           border-width: 1px;
@@ -1588,7 +1792,11 @@ nodes:
       top: '11'
       left: '9'
       width: '4'
+      minWidth: none
+      maxWidth: none
       height: '2'
+      minHeight: none
+      maxHeight: none
       styles: |-
         element.styles {
           padding-x: 8px;
@@ -1599,7 +1807,7 @@ nodes:
       textAlign: right
       verticalAlign: bottom
       fontWeight: bold
-      color: "{{isHovered.value ? 'text.primary' : 'text.muted'}}"
+      color: '{{isHovered.value ? ''text.primary'' : ''text.muted''}}'
   f9f22903-fa56-4182-b327-af0acdec0d36:
     type: BUTTON
     name: buttonNextUp
@@ -1610,6 +1818,10 @@ nodes:
       isLoading: '{{false}}'
       isVisible: '{{true}}'
       left: '5'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       onClick:
         function:
           ref: 4298f146-c2ef-48a5-bebf-eca74cf71723
@@ -1642,6 +1854,10 @@ nodes:
       height: '16'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       overflow: hidden
       padding: '8'
       width: '12'
@@ -1654,6 +1870,10 @@ nodes:
       height: '1'
       isEnabled: '{{true}}'
       isVisible: '{{true}}'
+      maxHeight: none
+      maxWidth: none
+      minHeight: none
+      minWidth: none
       showExternalIndicator: '{{false}}'
       value: Let's get started!
       verticalAlign: bottom
