@@ -286,9 +286,9 @@ nodes:
         [
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersDark.af7c6ec5.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateUsersDark.png",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateUsersLight.d244dd42.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateUsersLight.png",
             templateTitleText: "User Admin Panel",
             templateDescText:
               "See how to build a data-driven UI in Dynaboard involving the data table.",
@@ -296,9 +296,9 @@ nodes:
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTDark.70117c38.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateGPTDark.png",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateGPTLight.eb1c3bb2.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateGPTLight.png",
             templateTitleText: "GPT-3 Playground",
             templateDescText:
               "Get a head start on building your own GPT-3-powered application with a pre-built UI and included prompt examples.",
@@ -306,9 +306,9 @@ nodes:
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosDark.6741eeba.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateDemosDark.png",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateDemosLight.5f70eaaa.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateDemosLight.png",
             templateTitleText: "Lightning Demos",
             templateDescText:
               "Experience a complete application that leverages Dynaboard's built-in KV store for application storage.",
@@ -316,9 +316,9 @@ nodes:
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateFeedDark.c7fcdde1.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateFeedDark.png",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateFeedLight.d7415e49.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateFeedLight.png",
             templateTitleText: "Hacker News Clone",
             templateDescText:
               "Explore the advanced styling capabilities of Dynaboard, and see an example of a UI involving custom components.",
@@ -326,9 +326,9 @@ nodes:
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateVizDark.893e4e60.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateVizDark.png",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplateVizLight.da6eba1c.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templateVizLight.png",
             templateTitleText: "Charts UI",
             templateDescText:
               "Dive into the charting capabilities of Dynaboard with a couple of different examples.",
@@ -336,9 +336,9 @@ nodes:
           },
           {
             templateImageLinkDark:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplatePrivateAppDark.d3daa24f.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templatePrivateAppDark.png",
             templateImageLinkLight:
-              "https://dynaboard.app/_next/image?url=https%3A%2F%2Fapp-cdn.dynaboard.app%2Fportal-app%2F_next%2Fstatic%2Fmedia%2FtemplatePrivateAppLight.76309634.png&w=640&q=75",
+              "https://storage.googleapis.com/dynaboard-demo/TemplateImages/templatePrivateAppLight.png",
             templateTitleText: "Private App Boilerplate",
             templateDescText:
               "Learn how to build a private application in Dynaboard that requires authentication and how to secure it.",
